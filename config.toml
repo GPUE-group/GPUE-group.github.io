@@ -6,6 +6,7 @@ DefaultContentLanguage = "en"
 title = "GPUE"
 theme = "hugo-theme-docdock"
 footnoteReturnLinkContents = "↩"
+publishDir="public/.."
 
 pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
