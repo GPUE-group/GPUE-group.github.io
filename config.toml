@@ -1,0 +1,41 @@
+baseURL = "https://gpue-group.github.io/"
+
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+title = "GPUE"
+theme = "hugo-theme-docdock"
+footnoteReturnLinkContents = "↩"
+
+pygmentsCodeFences = true
+pygmentsStyle = "monokailight"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+
+[params]
+  AuthorName = "GPUE Group"
+  GitHubUser = "gpue-group"
+  ListOfFoo = ["foo1", "foo2"]
+  SidebarRecentLimit = 5
+  Subtitle = "aasdf"
+
+  editURL = "https://github.com/gpue-group/gpue-group.github.io"
+  showVisitedLinks = true # default is false
+  themeStyle = "flex" # "original" or "flex" # default "flex"
+  themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
+  ordersectionsby = "weight" # ordersectionsby = "title"
+  disableHomeIcon = false # default is false
+  disableSearch = false # default is false
+  disableNavChevron = false # set true to hide next/prev chevron, default is false
+  highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+  menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+  enableGitInfo = true
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+#Activate searchability
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
