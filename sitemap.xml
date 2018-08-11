@@ -3,7 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gpue-group.github.io/intro/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/functionality/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/data_analysis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/development/</loc>
+  </url>
+  
+  <url>
     <loc>https://gpue-group.github.io/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/api/gpue_build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/build/gpue_build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/data_analysis/gpue_build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/development/gpue_build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/functionality/gpue_functionality/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/intro/gpue_intro/</loc>
   </url>
   
   <url>

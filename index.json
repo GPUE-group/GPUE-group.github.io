@@ -1,10 +1,94 @@
 [
 {
+	"uri": "https://gpue-group.github.io/intro/",
+	"title": "Introduction to GPUE",
+	"tags": [],
+	"description": "",
+	"content": " Title 1   \n  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/build/",
+	"title": "Building GPUE",
+	"tags": [],
+	"description": "",
+	"content": " Title 1   \n  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/functionality/",
+	"title": "GPUE functionality",
+	"tags": [],
+	"description": "",
+	"content": " Title 1   \n  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/data_analysis/",
+	"title": "Data analysis",
+	"tags": [],
+	"description": "",
+	"content": " Title 1   \n  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/api/",
+	"title": "API",
+	"tags": [],
+	"description": "",
+	"content": " Title 1   \n  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/development/",
+	"title": "Development",
+	"tags": [],
+	"description": "",
+	"content": " Title 1   \n  Stuff goes here\n"
+},
+{
 	"uri": "https://gpue-group.github.io/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": " GPUE-group.github.io Documentation website for GPUE\n"
+},
+{
+	"uri": "https://gpue-group.github.io/api/gpue_build/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gpue-group.github.io/build/gpue_build/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gpue-group.github.io/data_analysis/gpue_build/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gpue-group.github.io/development/gpue_build/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gpue-group.github.io/functionality/gpue_functionality/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gpue-group.github.io/intro/gpue_intro/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "https://gpue-group.github.io/categories/",

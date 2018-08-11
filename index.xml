@@ -10,5 +10,59 @@
 	<atom:link href="https://gpue-group.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title></title>
+      <link>https://gpue-group.github.io/api/gpue_build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpue-group.github.io/api/gpue_build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gpue-group.github.io/build/gpue_build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpue-group.github.io/build/gpue_build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gpue-group.github.io/data_analysis/gpue_build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpue-group.github.io/data_analysis/gpue_build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gpue-group.github.io/development/gpue_build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpue-group.github.io/development/gpue_build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gpue-group.github.io/functionality/gpue_functionality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpue-group.github.io/functionality/gpue_functionality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gpue-group.github.io/intro/gpue_intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpue-group.github.io/intro/gpue_intro/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
