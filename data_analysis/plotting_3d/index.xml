@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plotting in 3D on GPUE</title>
+    <link>https://gpue-group.github.io/data_analysis/plotting_3d/</link>
+    <description>Recent content in Plotting in 3D on GPUE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://gpue-group.github.io/data_analysis/plotting_3d/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

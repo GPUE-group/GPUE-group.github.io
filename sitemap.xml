@@ -3,7 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gpue-group.github.io/data_analysis/output/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/development/gauge/</loc>
+  </url>
+  
+  <url>
     <loc>https://gpue-group.github.io/intro/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/functionality/running_gpue/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/development/ast/</loc>
   </url>
   
   <url>
@@ -11,7 +27,27 @@
   </url>
   
   <url>
+    <loc>https://gpue-group.github.io/functionality/config/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/data_analysis/python/</loc>
+  </url>
+  
+  <url>
     <loc>https://gpue-group.github.io/functionality/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/functionality/gauge/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/data_analysis/matlab/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/functionality/vortex_2d/</loc>
   </url>
   
   <url>
@@ -19,7 +55,15 @@
   </url>
   
   <url>
+    <loc>https://gpue-group.github.io/data_analysis/plotting_3d/</loc>
+  </url>
+  
+  <url>
     <loc>https://gpue-group.github.io/api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/functionality/dynamic_fields/</loc>
   </url>
   
   <url>

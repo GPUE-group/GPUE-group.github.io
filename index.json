@@ -1,10 +1,38 @@
 [
 {
+	"uri": "https://gpue-group.github.io/data_analysis/output/",
+	"title": "GPUE Output Format",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/development/gauge/",
+	"title": "Gauge Fields",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
+},
+{
 	"uri": "https://gpue-group.github.io/intro/",
 	"title": "Introduction to GPUE",
 	"tags": [],
 	"description": "",
 	"content": " Title 1   \n  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/functionality/running_gpue/",
+	"title": "Running GPUE",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/development/ast/",
+	"title": "Abstract Syntax Trees",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
 },
 {
 	"uri": "https://gpue-group.github.io/build/",
@@ -14,18 +42,60 @@
 	"content": " Title 1   \n  Stuff goes here\n"
 },
 {
+	"uri": "https://gpue-group.github.io/functionality/config/",
+	"title": "Configuration Files",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/data_analysis/python/",
+	"title": "Python Scripts",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
+},
+{
 	"uri": "https://gpue-group.github.io/functionality/",
 	"title": "GPUE functionality",
 	"tags": [],
 	"description": "",
-	"content": " Title 1   \n  Stuff goes here\n"
+	"content": " Title 1  Running GPUE Title 1 Stuff goes here\n  Configuration Files Title 1 Stuff goes here\n  Gauge Fields Title 1 Stuff goes here\n  2D Vortex Tracking Title 1 Stuff goes here\n  Dynamic Fields Title 1 Stuff goes here\n   \n  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/functionality/gauge/",
+	"title": "Gauge Fields",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/data_analysis/matlab/",
+	"title": "Matlab Scripts",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/functionality/vortex_2d/",
+	"title": "2D Vortex Tracking",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
 },
 {
 	"uri": "https://gpue-group.github.io/data_analysis/",
 	"title": "Data analysis",
 	"tags": [],
 	"description": "",
-	"content": " Title 1   \n  Stuff goes here\n"
+	"content": " Title 1  GPUE Output Format Title 1 Stuff goes here\n  Python Scripts Title 1 Stuff goes here\n  Matlab Scripts Title 1 Stuff goes here\n  Plotting in 3D Title 1 Stuff goes here\n   \n  Stuff goes here\n"
+},
+{
+	"uri": "https://gpue-group.github.io/data_analysis/plotting_3d/",
+	"title": "Plotting in 3D",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
 },
 {
 	"uri": "https://gpue-group.github.io/api/",
@@ -35,11 +105,18 @@
 	"content": " Title 1   \n  Stuff goes here\n"
 },
 {
+	"uri": "https://gpue-group.github.io/functionality/dynamic_fields/",
+	"title": "Dynamic Fields",
+	"tags": [],
+	"description": "",
+	"content": " Title 1  Stuff goes here\n"
+},
+{
 	"uri": "https://gpue-group.github.io/development/",
 	"title": "Development",
 	"tags": [],
 	"description": "",
-	"content": " Title 1   \n  Stuff goes here\n"
+	"content": " Title 1  Gauge Fields Title 1 Stuff goes here\n  Abstract Syntax Trees Title 1 Stuff goes here\n   \n  Stuff goes here\n"
 },
 {
 	"uri": "https://gpue-group.github.io/",

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Running GPUE on GPUE</title>
+    <link>https://gpue-group.github.io/functionality/running_gpue/</link>
+    <description>Recent content in Running GPUE on GPUE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://gpue-group.github.io/functionality/running_gpue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
