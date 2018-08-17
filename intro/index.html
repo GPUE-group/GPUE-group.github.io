@@ -35,6 +35,7 @@
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
 
+
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
 </header>
@@ -89,12 +90,6 @@
         ">
       <div>
       <a href="/functionality/running_gpue/">Running GPUE</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
-    <li data-nav-id="/functionality/config/" class="dd-item alwaysopen
-        ">
-      <div>
-      <a href="/functionality/config/">Configuration Files</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
     <li data-nav-id="/functionality/gauge/" class="dd-item alwaysopen
@@ -236,10 +231,6 @@
   - 
    Running GPUE</option> 
   
-    <option value="/functionality/config/" >
-  - 
-   Configuration Files</option> 
-  
     <option value="/functionality/gauge/" >
   - 
    Gauge Fields</option> 
@@ -319,10 +310,6 @@
 
 
 
-<h1 id="title-1">Title 1</h1>
-
-
-
 <ul class="children children-h2">
 
 <span><h2>
@@ -331,7 +318,12 @@
 </span>
 </ul>
 
-<p>Stuff goes here</p>
+<p>GPUE is a Gross&mdash;Pitaevskii equation solver that is accelerated on GPU hardware with CUDA.
+Though the project began as a general method to study vortex dynamics in 2 dimensional Bose&mdash;Einstein Condensates (BECs), it has since grown into a general-purpose BEC simulator using the Split-Operator method for 1, 2, and 3 dimensions and allows for dynamic gauge fields and potentials.
+The purpose of this documentation is to provide a general introduction to running GPUE for various purposes and provide a detailed guide for those wishing to develop GPUE in the future.</p>
+
+<p>GPUE supports linux and MacOS environments and has been developed primarily for HPC computing Tesla-series Nvidia compute devices.
+Though other platforms may run GPUE, they are not officially supported.</p>
 
 
 

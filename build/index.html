@@ -35,6 +35,7 @@
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
 
+
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
 </header>
@@ -89,12 +90,6 @@
         ">
       <div>
       <a href="/functionality/running_gpue/">Running GPUE</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
-    <li data-nav-id="/functionality/config/" class="dd-item alwaysopen
-        ">
-      <div>
-      <a href="/functionality/config/">Configuration Files</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
     <li data-nav-id="/functionality/gauge/" class="dd-item alwaysopen
@@ -236,10 +231,6 @@
   - 
    Running GPUE</option> 
   
-    <option value="/functionality/config/" >
-  - 
-   Configuration Files</option> 
-  
     <option value="/functionality/gauge/" >
   - 
    Gauge Fields</option> 
@@ -319,10 +310,6 @@
 
 
 
-<h1 id="title-1">Title 1</h1>
-
-
-
 <ul class="children children-h2">
 
 <span><h2>
@@ -331,7 +318,111 @@
 </span>
 </ul>
 
-<p>Stuff goes here</p>
+<p>GPUE is designed with both a traditional Makefile and CMake, both of which may be used for different purposes, depending on the hardware available.</p>
+
+<h2 id="dependencies-and-hardware">Dependencies and Hardware</h2>
+
+<p>We attempted to keep the dependency list small for GPUE, so we only require the following dependencies:</p>
+
+<ol>
+<li>CUDA (version $&gt;=$ 7.5.18)</li>
+<li>CUFFT (bundled with CUDA)</li>
+<li>GCC or clang</li>
+<li>CMake (version $&gt;=$ 3.8; optional)</li>
+</ol>
+
+<p>GPUE performs computation almost entirely on GPU hardware, and the <code>sm_2.0</code> (Fermi) to <code>sm_7.0</code> (Volta) architectures are all supported.
+A list of all cards within these ranges can be found <a href="https://en.wikipedia.org/wiki/CUDA#GPUs_supported">on wikipedia</a>.</p>
+
+<h2 id="makefile">Makefile</h2>
+
+<p>Here a slightly modified GPUE Makefile:</p>
+
+<pre><code>CUDA_HOME = /path/to/cuda/
+GPU_ARCH        = sm_XX
+OS:=    $(shell uname)
+ifeq ($(OS),Darwin)
+CUDA_LIB        = $(CUDA_HOME)/lib
+CUDA_HEADER     = $(CUDA_HOME)/include
+CC              = $(CUDA_HOME)/bin/nvcc -ccbin /usr/bin/clang --ptxas-options=-v
+CFLAGS          = -g -std=c++11 -Wno-deprecated-gpu-targets
+else
+CUDA_LIB        = $(CUDA_HOME)/lib64
+CUDA_HEADER     = $(CUDA_HOME)/include
+CC              = $(CUDA_HOME)/bin/nvcc --ptxas-options=-v --compiler-options -Wall
+CHOSTFLAGS      = #-fopenmp
+CFLAGS          = -g -O0 -std=c++11 -Xcompiler '-std=c++11' -Xcompiler '-fopenmp'
+endif
+
+CUDA_FLAGS      = -lcufft
+
+CLINKER         = $(CC)
+RM              = /bin/rm
+INCFLAGS        = -I$(CUDA_HEADER)
+LDFLAGS         = -L$(CUDA_LIB)
+EXECS           = gpue # BINARY NAME HERE
+
+DEPS = ./include/constants.h ./include/ds.h ./include/edge.h ./include/evolution.h 
+./include/fileIO.h ./include/init.h ./include/kernels.h ./include/lattice.h ./include/manip.h
+./include/minions.h ./include/node.h ./include/operators.h ./include/parser.h ./include/split_op.h
+./include/tracker.h ./include/unit_test.h ./include/vort.h ./include/vortex_3d.h ./include/dynamic.h
+
+OBJ = fileIO.o kernels.o split_op.o tracker.o minions.o ds.o edge.o node.o lattice.o manip.o
+vort.o parser.o evolution.o init.o unit_test.o operators.o vortex_3d.o dynamic.o
+
+%.o: ./src/%.cc $(DEPS)
+        $(CC) -c -o $@ $(INCFLAGS) $(CFLAGS) $(LDFLAGS) -Xcompiler &quot;-fopenmp&quot; -arch=$(GPU_ARCH) $&lt;
+
+%.o: ./src/%.cu $(DEPS)
+        $(CC) -c -o $@ $(INCFLAGS) $(CFLAGS) $(LDFLAGS) $(CUDA_FLAGS) -Xcompiler &quot;-fopenmp&quot; -arch=$(GPU_ARCH) $&lt; -dc
+
+gpue: $(OBJ)
+        $(CC) -o $@ $(INCFLAGS) $(CFLAGS) $(LDFLAGS) $(CUDA_FLAGS) -Xcompiler &quot;-fopenmp&quot; -arch=$(GPU_ARCH) $^
+
+clean:
+        @-$(RM) -f r_0 Phi_0 E* px_* py_0* xPy* xpy* ypx* x_* y_* yPx* p0* p1* p2*
+EKp* EVr* gpot wfc* Tpot 0* V_* K_* Vi_* Ki_* 0i* k s_* si_* *.o *~ PI* $(EXECS) $(OTHER_EXECS)
+*.dat *.eps *.ii *.i *cudafe* *fatbin* *hash* *module* *ptx test* vort* v_opt*;
+</code></pre>
+
+<p>To use the Makefile, the first 2 lines must be modified to reflect your desired <code>cuda/</code> path and the architecture of your GPU device.
+After this, simply <code>make</code> to build the code.
+If rebuilding is necessary, run <code>make clean</code> then <code>make</code>.</p>
+
+<p>If you are developing GPUE, this file will need to be modified as new code is developed.</p>
+
+<h2 id="cmake">CMake</h2>
+
+<p>CMake is the preferred building system for GPUE; however, if a CMake version $&gt;=$ 3.8 must be used.
+In this case, run</p>
+
+<pre><code>cmake .
+</code></pre>
+
+<p>in the primary GPUE directory and then run <code>make</code> as in the Makefile example.
+<code>make clean</code> will clean the directory for rebuilding.</p>
+
+<h2 id="testing-gpue">Testing GPUE</h2>
+
+<p>Once GPUE is built, please run unit tests with <code>./gpue -u</code> and make sure everything passes.
+If there is a failure in the build, please create an issue on <a href="https://github.com/GPUE-group/GPUE">GitHub</a>.</p>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
 
 
 

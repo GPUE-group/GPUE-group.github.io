@@ -35,6 +35,7 @@
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
 
+
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
 </header>
@@ -89,12 +90,6 @@
         ">
       <div>
       <a href="/functionality/running_gpue/">Running GPUE</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
-    <li data-nav-id="/functionality/config/" class="dd-item alwaysopen
-        ">
-      <div>
-      <a href="/functionality/config/">Configuration Files</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
     <li data-nav-id="/functionality/gauge/" class="dd-item parent active alwaysopen
@@ -236,10 +231,6 @@
   - 
    Running GPUE</option> 
   
-    <option value="/functionality/config/" >
-  - 
-   Configuration Files</option> 
-  
     <option value="/functionality/gauge/"  selected>
   - 
    Gauge Fields</option> 
@@ -317,16 +308,102 @@
     
     
 
+<p>One notable feature of GPUE is its ability to use gauge fields to create rotational effects in BEC simulations.
+Gauge fields are somewhat tricky to understand and this guide is not meant to provide a full physical understanding of what the fields are or how they work.
+If you with to learn more about the physical interpretation of these fields, <a href="https://arxiv.org/abs/1504.05520">this review by Jean Dalibard</a> is relatively in-depth.</p>
 
-
-<h1 id="title-1">Title 1</h1>
+<p>This section will highlight how gauge fields are implemented in GPUE and how to use them on your own as a user of the codebase.
+If you wish to provide a new default field in GPUE, itself, please go to the developer guide for this later in the documentation and provide an appropriate PR to GPUE on <a href="https://github.com/GPUE-group/GPUE">GitHub</a></p>
 
 
 
 <ul class="children children-h2">
 </ul>
 
-<p>Stuff goes here</p>
+<h2 id="introduction-to-gauge-fields">Introduction to gauge fields</h2>
+
+<p>For the purposes of the GPUE simulations, we will be solving the non-linear Schr&ouml;dinger equation:</p>
+
+<p>$$
+\frac{\partial \Psi(\mathbf{r},t)}{\partial t} = \left( \frac{(p-m\mathbf{A})^2}{2m} + V_0 + g|\Psi(\mathbf{r},t)|^2 \right)\Psi(\mathbf{r},t),
+$$</p>
+
+<p>where $\Psi(\mathbf{r},t)$ is a complex-valued wavefunction, $r$ is a real-space grid, $p$ is a momentum-space grid, $m$ is the mass of the atomic system, $V_0$ is a real-valued trapping potential, $g$ is a coupling constant, and $A$ is a real-valued gauge field.
+As mentioned, the gauge field is hard to physically interpret; however, it can be more easily understood through the artificial magnetic field, $B = \nabla \times A$.
+Here, it appears that rotation occurs around the magnetic field lines, so vortices in a BEC will follow the direction of the magnetic field at any moment in time.</p>
+
+<p>Gauge fields are implemented in GPUE by splitting the operator up in position and momentum space.
+Because $p$ is completely in momentum space, while $A$ is in real space, the $\frac{(p-mA)^2}{2m}$ term will have three different types of values after expanding:</p>
+
+<p>$$
+\frac{(p-mA)^2}{2m} = \frac{p^2 + (mA)^2 + 2mpA}{2m}
+$$</p>
+
+<p>Here, $\frac{p^2}{2m}$ will be in momentum-space, $\frac{mA^2}{2}$ will be completely in position-space, and $pA$ will be in momentum-space for one dimension and position space for all other dimensions.
+For example, one possible gauge field can be created with the angular momentum operator as $xp_y - yp_x$.</p>
+
+<p>Because of this, we need to perform a 1 dimensional FFT on our wavefunction in order to apply our gauge fields to the system.
+This means that when we run the simulation with gauge fields, we need to perform an additional FFT every timestep for each dimension of our system.
+In addition, we need to read in a field for each dimension.
+For example, with $A = xp_y - yp_x$, we will use the following field:</p>
+
+<p>$$
+\begin{align}
+A_x &amp;= -y \newline
+A_y &amp;= x \newline
+A_z &amp;= 0
+\end{align}
+$$</p>
+
+<p>To apply this field, we will need to FFT our wavefunction in first the x-direction, then multiply by $A_x$, iFFT back and do the same for $A_y$ and $A_z$.
+This is a costly process, which is why you should only use gauge fields if you need them.</p>
+
+<p>As mentioned, this documentation does not intend to provide a full in-depth description of gauge fields and artificial magnetic fields.
+It instead attepts to provide the basics for users that may need more information about what gauge fields are and how they influence the simulation.
+Basically, if you want to do vortex simulations, you will need gauge fields.</p>
+
+<h2 id="using-gauge-fields-in-gpue">Using gauge fields in GPUE</h2>
+
+<p>GPUE comes packaged with a few in-built gauge fields:</p>
+
+<ol>
+<li><em>Rotation</em>: This is used with the <code>./gpue -A rotation</code> flag.
+Here, we apply the rotational operation to the wavefunction as $\Omega(xp_y - yp_x)$, where $\Omega$ is some rotation frequency.
+If a rotation above some critical rotation frequency is used, vortices will appear in the BEC, eventually creating a triangular vortex lattice.</li>
+<li><em>Constant:</em> This is used with the <code>./gpue -A constant</code> flag.
+Here, we simply read in $A_x = A_y = A_z = 0$.
+This is useful for debugging in certain cases</li>
+<li><em>Test:</em> This is used with the <code>./gpue -A test</code> flag.
+Here, we apply a constant field in $A_y$ and $A_z$ and provide a sinusoudal field in $A_x$.
+This is another testing field that does not use standard rotation.</li>
+<li><em>File:</em> This is used with the <code>./gpue -A file</code> flag.
+Here, we read the fields in from file.
+This will naturally look for the fields in <code>data/Axgauge</code>, <code>data/Aygauge</code>, and <code>data/Azgauge</code>.
+If these files are not found, it will ask for an appropriate filename.
+If the file length does not match the dimensions of the system, it will also ask for a new file.</li>
+</ol>
+
+<p>To run the simulation with gauge fields, the <code>-l</code> flag is necessary and will turn on the part of the simulation with the additional FFT&rsquo;s for applying the necessary gauge field.
+<em>No gauge field will be applied without the <code>-l</code> flag!</em></p>
+
+<p>Gauge fields can also be used with the dynamic fields to be covered in the next section!</p>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
 
 
 
@@ -338,7 +415,7 @@
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/functionality/config/" title="Configuration Files"> <i class="fa fa-chevron-left"></i><label>Configuration Files</label></a>
+<a class="nav nav-prev" href="/functionality/running_gpue/" title="Running GPUE"> <i class="fa fa-chevron-left"></i><label>Running GPUE</label></a>
     <a class="nav nav-next" href="/functionality/vortex_2d/" title="2D Vortex Tracking" style="margin-right: 0px;"><label>2D Vortex Tracking</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 

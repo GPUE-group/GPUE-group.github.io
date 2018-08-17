@@ -27,10 +27,6 @@
   </url>
   
   <url>
-    <loc>https://gpue-group.github.io/functionality/config/</loc>
-  </url>
-  
-  <url>
     <loc>https://gpue-group.github.io/data_analysis/python/</loc>
   </url>
   
@@ -96,6 +92,10 @@
   
   <url>
     <loc>https://gpue-group.github.io/intro/gpue_intro/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/mathjax/</loc>
   </url>
   
   <url>

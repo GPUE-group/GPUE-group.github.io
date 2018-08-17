@@ -35,6 +35,7 @@
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
 
+
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
 </header>
@@ -89,12 +90,6 @@
         ">
       <div>
       <a href="/functionality/running_gpue/">Running GPUE</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
-    <li data-nav-id="/functionality/config/" class="dd-item alwaysopen
-        ">
-      <div>
-      <a href="/functionality/config/">Configuration Files</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
     <li data-nav-id="/functionality/gauge/" class="dd-item alwaysopen
@@ -236,10 +231,6 @@
   - 
    Running GPUE</option> 
   
-    <option value="/functionality/config/" >
-  - 
-   Configuration Files</option> 
-  
     <option value="/functionality/gauge/" >
   - 
    Gauge Fields</option> 
@@ -317,16 +308,42 @@
     
     
 
+<p>GPUE allows for users to input their own custom, dynamic fields that can vary with time, space, and auxiliary parameters.
+These fields are parsed during run-time and allow users to run GPUE with multiple different distributions without recompiling.
+This was done for the following reasons:</p>
 
-
-<h1 id="title-1">Title 1</h1>
+<ol>
+<li>GPUE hardware is inherently limited in memory.
+After some development, we found that there simply was not enough room on older GPU hardware for the wavefunction, gauge fields, and auxiliary operators for evolution.</li>
+<li>If we wanted to change these fields during evolution, that is very difficult to do on the GPU because transferring between the CPU host and GPU device is a slow process &ndash; even with recent progress in NVLink technology!</li>
+<li>We cannot assume that all users are also developers. Adding new operators to GPUE was once a very difficult process that would take a few hours on the part of the developer.
+This obviously meant that users could only use GPUE for a few small-scale simulations and could not use it for general use.
+By allowing users to input their own fields during run-time, GPUE can be used for a much larger number of cases.</li>
+</ol>
 
 
 
 <ul class="children children-h2">
 </ul>
 
-<p>Stuff goes here</p>
+<h2 id="using-dynamic-fields">Using dynamic fields</h2>
+
+<p>All dynamic fields must be specified in some configuration file to be read by the <code>./gpue -I file.cfg</code> flag.</p>
+
+<p>An example is provided in the <code>src/example.cfg</code> file:</p>
+
+<pre><code>rad = 10
+omegaR = 7071
+V = rad*omegaR*x*y*z
+</code></pre>
+
+<p>Here, we specify whatever variables we like.
+This also allows us to redefine parameters for the simulation.
+The terms <code>x</code>, <code>y</code>, <code>z</code>, <code>t</code>, <code>Ax</code>, <code>Ay</code>, <code>Az</code>, <code>V</code>, and <code>K</code> are all reserved and recognized by the parsing scheme.
+All standard mathematical operations are also supported.</p>
+
+<p>As a note: using the dynamic parser in this way saves on memory usage; however, it also slows down the simulation slightly.
+Dynamic fields should only be used if your simulation requires time-dependent potentials or gauge fields or if you need to save on memory.</p>
 
 
 
