@@ -144,12 +144,6 @@
       <a href="/data_analysis/matlab/">Matlab Scripts</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-    <li data-nav-id="/data_analysis/plotting_3d/" class="dd-item alwaysopen
-        ">
-      <div>
-      <a href="/data_analysis/plotting_3d/">Plotting in 3D</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
       <li data-nav-id="/data_analysis/gpue_build/" class="dd-item">
         <div>
           <a href="/data_analysis/gpue_build/">
@@ -259,10 +253,6 @@
   - 
    Matlab Scripts</option> 
   
-    <option value="/data_analysis/plotting_3d/" >
-  - 
-   Plotting in 3D</option> 
-  
       <option value="/data_analysis/gpue_build/" >- </option>
   
     <option value="/api/" >
@@ -310,18 +300,112 @@
 
 
 
-<h1 id="title-1">Title 1</h1>
+<p>GPUE provides a number of python scripts in the <code>py/</code> directory.
+This page explains what each script is and its intended use.</p>
 
+<p>As a note: GPUE is primarily a simulation program.
+Data analysis of this nature must be done on a case-by-case basis, and as such, these scripts only intend to provide basic functionality for plotting the output wavefunction and additional variables.
+If more advanced functions are required, please create these on your own or discuss them with us on <a href="https://github.com/GPUE-group/GPUE">GitHub</a></p>
 
+<h2 id="plot-py">plot.py</h2>
 
-<ul class="children children-h2">
-</ul>
+<p>This file is a stand-alone plotting script for 2 dimensional data and can be run like so:</p>
 
-<p>Stuff goes here</p>
+<pre><code>python plot.py i wfc g 256 256 r 0 1000 100 d data
+</code></pre>
 
+<p>This will plot the wavefunction from imaginary-time evolution using a grid of 256x256 from values 0 to 1000 in steps of 100.
+Obviously, the code requires these data files to exist in the <code>data</code> directory before plotting.
+The script will default to plotting only a single 512x512 data file from the <code>data</code> directory if no gridsize, range, or directory is provided.</p>
 
+<p>All 2 dimensional variables can be plotted in this way.
+If real-time dynamics are desired, simply use the <code>wfc_ev</code> flag instead of <code>wfc</code>.</p>
 
+<h2 id="gen-data-py">gen_data.py</h2>
 
+<p>This file is a list of functions necessary to analyze 3 dimensional data, and an example of how it might be used can be found in the <code>vis_scripts.py</code> file.</p>
+
+<p>Here are the primary functions and their intended usage:</p>
+
+<pre><code>wfc_density(xDim, yDim, zDim, data_dir, pltval, i)
+</code></pre>
+
+<p>This function outputs an <code>item</code> that corresponds to the wavefunction density.
+This <code>item</code> can be turned into a <code>.bvox</code> or <code>.vtk</code> file with the <code>to_bvox()</code> and <code>to_vtk()</code> functions described later.
+The <code>pltval</code> argument can read either <code>wfc</code> for imaginary-time evolution or <code>wfc_ev</code> for real-time evolution.</p>
+
+<pre><code>wfc_phase(xDim, yDim, zDim, data_dir, pltval, i)
+</code></pre>
+
+<p>This function outputs an <code>item</code> that corresponds to the wavefunction phase.
+This <code>item</code> can be turned into a <code>.bvox</code> or <code>.vtk</code> file with the <code>to_bvox()</code> and <code>to_vtk()</code> functions described later.
+The <code>pltval</code> argument can read either <code>wfc</code> for imaginary-time evolution or <code>wfc_ev</code> for real-time evolution.</p>
+
+<pre><code>proj_phase_2d(xDim, yDim, zDim, data_dir, pltval, i)
+</code></pre>
+
+<p>This slices the wavefunction along the z-axis and outputs the phase as a <code>wfc_ph_i</code> file, where <code>i</code> corresponds to the value read into this function.
+The <code>pltval</code> argument can read either <code>wfc</code> for imaginary-time evolution or <code>wfc_ev</code> for real-time evolution.
+This file can be plotted with <code>plot.py</code>, for example.</p>
+
+<pre><code>proj_2d(xDim, yDim, zDim, data_dir, pltval, i)
+</code></pre>
+
+<p>This slices the wavefunction along the z-axis and outputs the density as a <code>wfc_i</code> file, where <code>i</code> corresponds to the value read into this function.
+The <code>pltval</code> argument can read either <code>wfc</code> for imaginary-time evolution or <code>wfc_ev</code> for real-time evolution.
+This file can be plotted with <code>plot.py</code>, for example.</p>
+
+<pre><code>var(xDim, yDim, zDim, data_dir, pltval)
+</code></pre>
+
+<p>This function outputs an <code>item</code> that corresponds to the variable to be plotted.
+This <code>item</code> can be turned into a <code>.bvox</code> or <code>.vtk</code> file with the <code>to_bvox()</code> and <code>to_vtk()</code> functions described later.
+The <code>pltval</code> argument can be any existing file in the data_directory that is formatted for 3 dimensional output.</p>
+
+<pre><code>proj_var2d(xdim, yDim, zDim, data_dir, pltval, file_string)
+</code></pre>
+
+<p>This slices the 3 dimensional variable along the z-axis and outputs the phase as a file with the name <code>file_string</code>
+This file can be plotted with <code>plot.py</code>, for example.</p>
+
+<pre><code>proj_var1d(xdim, yDim, zDim, data_dir, pltval, file_string)
+</code></pre>
+
+<p>This slices the 3 dimensional variable along the z and y axes and outputs the phase as a file with the name <code>file_string</code>
+This file can be plotted with any standard plotter, like gnuplot.</p>
+
+<pre><code>to_bvox(item, xDim, yDim, zDim, nframes, filename)
+</code></pre>
+
+<p>This takes an <code>item</code> output from the <code>wfc_phase()</code>, <code>wfc_density()</code>, or <code>var()</code> functions and turns it into a <code>.bvox</code> file with name <code>filename</code> to be read by blender.
+The <code>nframes</code> function corresponds to the number of frames blender will plot.
+For almost all cases, this should be 1.
+The <code>.bvox</code> file can be used further with the <code>visualize_3d.py</code> file.</p>
+
+<pre><code>to_vtk(item, xDim, yDim, zDim, data_dir, filename)
+</code></pre>
+
+<p>This takes an <code>item</code> output from the <code>wfc_phase()</code>, <code>wfc_density()</code>, or <code>var()</code> functions and turns it into a <code>.vtk</code> file with name <code>filename</code> to be read by blender.
+This can be directly read into 3 dimensional plotters like Paraview and is the preferred method to visualize data in 3 dimensions.</p>
+
+<h2 id="visualize-3d-py">visualize_3d.py</h2>
+
+<p>This file works with the blender bpy library to create a 3 dimensional image from a <code>.bvox</code> file and the <code>voxelfile</code> and <code>outfile</code> must be modified depending on the file input and output.</p>
+
+<p>It is run with the following command:</p>
+
+<pre><code>blender -b -P visualize_3d.py
+</code></pre>
+
+<p>To open up the blender GUI with the density plotted, run:</p>
+
+<pre><code>blender -P visualize_3d.py
+</code></pre>
+
+<h2 id="en-py">en.py</h2>
+
+<p>This is an example script of how to find the energy of a 2 dimensional simulation from GPUE.
+As a note, this functionality is already completely implemented in GPUE by outputting the energy every timestep with the <code>-E</code> flag; however, this script provides an example of how this can be done with python.</p>
 
 
 
