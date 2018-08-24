@@ -5,6 +5,7 @@ weight = 6
 alwaysopen = true
 +++
 
-# Title 1 
-{{%children style="h2" description="true"%}}
-Stuff goes here
+Here is the [DOXYGEN generated documentation](html/).
+
+This section is devoted to particularly difficult or tricky parts of the GPUE codebase that deserve special attention for future development.
+More information will come as features are developed.

@@ -7,13 +7,6 @@
 	"content": " GPUE outputs data in a simple ASCII format where all arrays have been re-indexed and output element-by-element in a 1 dimensional array. For 1 dimensional simulations, these values can be immediately plotted with separate plotters like gnuplot. For 2 and 3 dimensional simulations, a certain amount of data analysis is required; however, this should be straightforward depending on the application.\nGPUE will automatically output the following files unless the -f flag is used:\n V_0: The potential of the first timestep K_0: The momentum-space components used in the split-operator method Ax_0, Ay_0, Az_0: The gauge field in the x, y, and z directions Bx_0, By_0, Bz_0: The magnetic field in the x, y, and z directions  Note that if the -J flag is used, the magnetic fields will be output in polar coordinates.\nIf the -W flag is used, the wavefunction will be output every printstep, which is set by the -p flag. For example:\n./gpue -e 1000 -W -p 100  will run GPUE in real-time for 1000 steps and output the wavefunction every timestep. In 2 dimensions, this will also output vortex tracking values and in 3 dimensions, this will output an additional Edges_n file, which is the sobel filter of the wavefunction density. The Edges_n file can be used for vortex highlighting in 3 dimensions.\nThe -d flag sets the data directory relative to the gpue executable. If the data directory does not exist, that directory will be created.\nReshaping arrays for usage in various scripting languages If GPUE is run in 2 or 3 dimensions and it is necessary to analyze the data, it may be worthwhile to reshape the data. For example, in python, this might look like:\n data = data_dir + \u0026quot;/\u0026quot; + val lines = np.loadtxt(data) A = np.reshape(lines, (xDim,yDim,zDim)); return A  This will create a 3 dimensional array that can be read as A[i,j,k]. A simlar procedure must be done in 2 dimensions, simply dropping the k index and zDim from the array indexing and reshaping function, respectively.\nParams.dat file GPUE holds many variables in an unordered map for usage within the code, itself. This allows us to keep a name associated with each variable for dynamic equation parsing and also allows us to output each variable into a single file for data analysis later. All of these variables can be found in the Params.dat file in the data directory. If the user needs a single variable for data analysis (such as xDim or dx), they can find it there. An example can be found here:\n[Params] dpz=125664 sepMinEpsilon=0 y0_shift=0 a0z=7.62574e-06 x0_shift=0 dy=1.95313e-07 fudge=1 winding=0 mask_2d=0.00015 yMax=2.5e-05 laser_power=0 gdt=0.0001 omegaX=6.283 xMax=2.5e-05 gammaY=1 omega=1 z0_shift=0 omegaZ=6.283 dpy=125664 DX=0 box_size=2.5e-05 interaction=1 thresh_const=1 omegaY=6.283 mass=1.44316e-25 a_s=4.76e-09 angle_sweep=0 a0x=7.62574e-06 a0y=7.62574e-06 dpx=125664 gDenConst=4.6095e-51 dt=0.0001 Rxy=0.36659 zMax=2.5e-05 pyMax=1.6085e+07 pxMax=1.6085e+07 pzMax=1.6085e+07 dz=1.95313e-07 dx=1.95313e-07 plan_dim3=5 plan_3d=6 plan_other2d=2 yDim=256 kill_idx=-1 gsteps=1 esteps=1 zDim=256 plan_dim2=4 plan_2d=1 atoms=1 xDim=256 dimnum=3 printSteps=100 kick_it=0 ramp_type=1 gSize=16777216 device=2 charge=0 result=0 plan_1d=3  "
 },
 {
-	"uri": "https://gpue-group.github.io/development/gauge/",
-	"title": "Gauge Fields",
-	"tags": [],
-	"description": "",
-	"content": " Title 1  Stuff goes here\n"
-},
-{
 	"uri": "https://gpue-group.github.io/intro/",
 	"title": "Introduction to GPUE",
 	"tags": [],
@@ -26,13 +19,6 @@
 	"tags": [],
 	"description": "",
 	"content": "  After building GPUE, it is important to run the unit tests with the ./gpue -u command and make sure all tests pass. If they do not, there could be a failure in the building process or a problem with running GPUE on the provided hardware.\nAfter the unit tests have passed, you are free to use GPUE to your heart\u0026rsquo;s content. The easiest way to run GPUE is by using the provided help menu with the ./gpue -h command and creating a command from that; however, a parameter file can also be used for this purpose if it is easier.\nThis section provides an introduction to the unit tests and a description of the help menu along with some example simulations to run.\nUnit tests GPUE provides a suite of unit tests for the following operations:\n Math Operator Test: A suite of tests for all in-built mathematical operators Double2 Functions Test: A suite of tests for all in-built operators on CufftDoubleComplex or double2 types Grid Test: This tests to ensures the gpu is functional and simply sends data back and forth to the GPU using a specified number of threads Parallel Summation Test: this tests the parallel summation routine necessary for imaginary-time evolution FFT Test: This is a simple test of the CUFFT library and makes sure that all plans used for FFT operations work Dynamic Test: This is a test of all Abstract Syntax Tree (AST) functions necessary for dynamic fields and potentials. Bessel Test: this is a test of the polynomial approximation to the bessel functions used in the AST data structure Make Complex Test: A test of the make_complex function that turns potentials into operators for evolution cMultPhi_test: Test of the cMultPhi kernel for evolution with an imprinted Phi parameter 10.*Evolution Test: Test of imaginary and real0time evolution in 1, 2, and 3 dimensions. This first runs the simulation in imaginary time to ensure the appropriate energy for a single particle in the ground state of an n-dimensional harmonic oscillator and then runs the simulation in real-time to ensure the energy does not vary from this value.  These are all done with the ./gpue -u command. Please run this command after building GPUE to test your installation.\nThe most important of these tests is the Evolution Test. This one ensures the physical accuracy of the results, so long as the appropriate energy is found in the ground state of the harmonic oscillator, the code should be working as-intended for simple evolution. If any test fails, please create an issue on GitHub\nHelp menu To run GPUE, simply use the ./gpue command with appropriate flags for the desired simulation. To determine which flags should be used, please use the ./gpue -h command, which will output the following:\n GPUE Graphics-Processing Unit Gross--Piteavskii Equation solver Options: -A rotation Set gauge field mode [beta] -a Set flag to graph [deprecated] -b 2.5e-5 Set box size (xyzMax in 3d) -C 0 Set device (Card) for GPU computing -c 2 Set coords (1, 2, 3 dimensions) -D 0.0 Set's offset for kill (-K flag) distance radially -d data Set data directory - where to store / read data (here in data/) -E Perform energy calculation every writing step -e 1 Set esteps, number of real-time evolution steps -f Unset write to file flag -G 1 Set GammaY, ratio of omega_y to omega_x -g 1 Set gsteps, number of imaginary-time evolution steps -H phrase Print help menu, searching for \u0026quot;phrase\u0026quot; -h Print help menu, exit GPUE -I \u0026quot;param.cfg\u0026quot; Set Input parameter file -i 1 Set interaction strength between particles -j 1 Set threshold multiplier for easier vortex detection -J Set cylindrical coordinate output for B-field (no letters) -K 0 Selects vortex with specified ID to be killed/flipped/mutliply-charged -k 0 Set kick_it, kicking for Moire lattice simulations 0 = off, 1 = periodic kicking, 2 = single kick -L 0 Set l, vortex winding [2*pi*L] -l Set ang_mom flag to use angular momentum -m Set 2d_mask for vortex tracking -n 1 Set N, number of particles in simulation -O 0 Set angle_sweep, kicking potential rotation angle -P 0 Set laser_power, strength of kicking [hbar * omega_perp] -p 100 Set printSteps, frequency of printing -Q 0 Set z0_shift, z shift of kicking potential (bad flag, I know) -q 0 Set the vortex winding for imprinting/annihilation/flipping during real-time. The value is the charge of the new vortex -R 1 Set ramping flag for imaginary time evolution 1 for ramping up, 0 for ramping down -r Set read_wfc to read wavefunction from file -S 0 Set sepMinEpsilon, kicking potential lattice spacing scaling -s Set gpe, flag for using Gross-Pitaevskii Equation -T 1e-4 Set gdt, timestep for imaginary-time -t 1e-4 Set dt, timestep for real-time -U 0 Set x0_shift, x shift of kicking potential, shift of the imprinting vortex position defined by K and q -u Performs all unit tests -V 0 Set y0_shift, y shift of kicking potential, shift of the imprinting vortex position defined by K and q -v Set potential [beta] -W Set write_it, flag to write to file -w 0 Set Omega_z, rotation rate relative to omega_perp This acts as a value to multiply the gauge fields by -X 6.283 Set omega_x -x 256 Set xDim, dimension in X (power of 2, please!) -Y 6.283 Set omega_y -y 256 Set yDim, dimension in Y (power of 2, please!) -Z 6.283 Set omega_z, confinement in z-dimension -z 256 Set zDim, dimension in Z (power of 2, please!) Notes: - Parameters specified above represent the default values for the classic linear Schrodinger equation and may need to be modified to match your specific problem. - We use real units with an Rb87 condensate - You may generate a simple vortex lattice in 2d with the following command: ./gpue -x 512 -y 512 -g 50000 -e 1 -p 5000 -W -w 0.5 -n 1e5 -s -l -Z 10 - Thanks for using GPUE!  If you would like to search this for a particular flag, please use the ./gpue -H search_variable command. For example, if I wanted to change omega_x I might search for it like so:\n./gpue -H omega  which will provide the following:\n-G 1 Set GammaY, ratio of omega_y to omega_x -P 0 Set laser_power, strength of kicking [hbar * omega_perp] -w 0 Set Omega_z, rotation rate relative to omega_perp -X 6.283 Set omega_x -Y 6.283 Set omega_y -Z 6.283 Set omega_z, confinement in z-dimension  This will make it easier to find the flags you might want for the simulation.\nSpecial considerations There are several flags that need special consideration here:\n -r: This flag will read in a wavefunction from file and will naturally look for it in the data/wfc_load and data_wfci_load files. If these files do not exist, GPUE will ask for appropriate filenames. If the file lengths do not match the dimensions of the simulation, it will ask for new filenames again. -A: This flag will read in a gauge field, which can be rotation, constant, test, or file. If the gauge field is being read in from a file, it will look for the field in the data/Axgauge, data/Aygauge, and data/Azgauge files. If they do not exist or are of the wrong dimensions, GPUE will prompt for a new file. -v: This flag is naturally set to be a harmonic oscillator, but can use the torus option in 3D. Otherwise, the flag\u0026rsquo;s default will be harmonic -I: This flag will read in a configuration file for dynamic fields, which will be described later in the documentation -d: This flag will specify a data directory. All configuration files are expected to be in this directory. If the directory does not exist at the start of the simulation, GPUE will create the directory.  Example simulations Examples to come!\n"
-},
-{
-	"uri": "https://gpue-group.github.io/development/ast/",
-	"title": "Abstract Syntax Trees",
-	"tags": [],
-	"description": "",
-	"content": " Title 1  Stuff goes here\n"
 },
 {
 	"uri": "https://gpue-group.github.io/build/",
@@ -84,13 +70,6 @@
 	"content": "GPUE outputs data in a basic ASCII format so it is easy for users to read the data into an auxiliary program and analyze it as necessary; however, GPUE also provides a series of scripts for 2 and 3D analysis with the following functionality:\n Plotting in 2 dimensions Generation of 2 dimensional slices of 3 dimensional data Generation of .vbox or .vtk files in 3 dimensional for plotting in blender and paraview, respectively Generation of images that can later be concatenated into a video with standard tools (ffmpeg, ImageMagick, etc.)  GPUE is primarily a simulation program and thus provides only limited tools necessary to visualize the data. If the user requires more advanced data analysis, these must be further developed by the user for their specific research purpose.\n"
 },
 {
-	"uri": "https://gpue-group.github.io/api/",
-	"title": "API",
-	"tags": [],
-	"description": "",
-	"content": " Title 1 DOXYGEN generated documentation\n"
-},
-{
 	"uri": "https://gpue-group.github.io/functionality/dynamic_fields/",
 	"title": "Dynamic Fields",
 	"tags": [],
@@ -102,7 +81,7 @@
 	"title": "Development",
 	"tags": [],
 	"description": "",
-	"content": " Title 1  Gauge Fields Title 1 Stuff goes here\n  Abstract Syntax Trees Title 1 Stuff goes here\n   \n  Stuff goes here\n"
+	"content": "Here is the DOXYGEN generated documentation.\nThis section is devoted to particularly difficult or tricky parts of the GPUE codebase that deserve special attention for future development. More information will come as features are developed.\n"
 },
 {
 	"uri": "https://gpue-group.github.io/",
@@ -110,20 +89,6 @@
 	"tags": [],
 	"description": "",
 	"content": " GPUE-group.github.io Documentation website for GPUE\n"
-},
-{
-	"uri": "https://gpue-group.github.io/api/gpue_build/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://gpue-group.github.io/api/html/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": " GPUE: GPU Gross-Pitaevskii Equation: Main Page      /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(document).ready(initResizable); /* @license-end */   MathJax.Hub.Config({ extensions: [\"tex2jax.js\"], jax: [\"input/TeX\",\"output/HTML-CSS\"], });      GPUE: GPU Gross-Pitaevskii Equation \u0026#160;0  GPU Gross-Pitaevskii equation solver      /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ var searchBox = new SearchBox(\"searchBox\", \"search\",false,'Search'); /* @license-end */    /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(function() { initMenu('',true,false,'search.php','Search'); $(document).ready(function() { init_search(); }); }); /* @license-end */       /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(document).ready(function(){initNavTree('index.html','');}); /* @license-end */     GPUE: GPU Gross-Pitaevskii Equation Documentation    Generated on Thu Aug 23 2018 16:30:33 for GPUE: GPU Gross-Pitaevskii Equation by  1.8.14      "
 },
 {
 	"uri": "https://gpue-group.github.io/build/gpue_build/",
@@ -145,6 +110,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://gpue-group.github.io/development/html/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " GPUE: GPU Gross-Pitaevskii Equation: Main Page      /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(document).ready(initResizable); /* @license-end */   MathJax.Hub.Config({ extensions: [\"tex2jax.js\"], jax: [\"input/TeX\",\"output/HTML-CSS\"], });      GPUE: GPU Gross-Pitaevskii Equation \u0026#160;0  GPU Gross-Pitaevskii equation solver      /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ var searchBox = new SearchBox(\"searchBox\", \"search\",false,'Search'); /* @license-end */    /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(function() { initMenu('',true,false,'search.php','Search'); $(document).ready(function() { init_search(); }); }); /* @license-end */       /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(document).ready(function(){initNavTree('index.html','');}); /* @license-end */     GPUE: GPU Gross-Pitaevskii Equation Documentation    Generated on Thu Aug 23 2018 16:30:33 for GPUE: GPU Gross-Pitaevskii Equation by  1.8.14      "
 },
 {
 	"uri": "https://gpue-group.github.io/functionality/gpue_functionality/",

@@ -7,19 +7,11 @@
   </url>
   
   <url>
-    <loc>https://gpue-group.github.io/development/gauge/</loc>
-  </url>
-  
-  <url>
     <loc>https://gpue-group.github.io/intro/</loc>
   </url>
   
   <url>
     <loc>https://gpue-group.github.io/functionality/running_gpue/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gpue-group.github.io/development/ast/</loc>
   </url>
   
   <url>
@@ -51,10 +43,6 @@
   </url>
   
   <url>
-    <loc>https://gpue-group.github.io/api/</loc>
-  </url>
-  
-  <url>
     <loc>https://gpue-group.github.io/functionality/dynamic_fields/</loc>
   </url>
   
@@ -67,14 +55,6 @@
   </url>
   
   <url>
-    <loc>https://gpue-group.github.io/api/gpue_build/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gpue-group.github.io/api/html/</loc>
-  </url>
-  
-  <url>
     <loc>https://gpue-group.github.io/build/gpue_build/</loc>
   </url>
   
@@ -84,6 +64,10 @@
   
   <url>
     <loc>https://gpue-group.github.io/development/gpue_build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpue-group.github.io/development/html/</loc>
   </url>
   
   <url>
