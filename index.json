@@ -74,7 +74,7 @@
 	"title": "2D Vortex Tracking",
 	"tags": [],
 	"description": "",
-	"content": "More to come!  "
+	"content": " One of the major components of GPUE is the ability to track and manipulate vortices in Bose-Einstein condensates. While we can work with creating vortices in 3D, the majority of the vortex creation and manipulation framework exists solely in 2D. This is due to the 2D vortex code being developed for the project on vortex dynamics, published in PRA here (arXiV version here).\nTo allow us to track and manipulate vortices in a (2D) condensates, we require some numerical techniques and tools:\n Vortex detection. Vortex position refinement Vortex unique identification and tracking. Arbitrary phase control of the condensate. Lattice model creation.  1. Vortex detection To find a vortex in the condensate, we can rely on several methods, such as tracking the condensate density minima. However, given the nature of the wavefunction (a complex valued scalar field), and a quantum vortex (topological defect of the wavefunction), we can examine the phase of the condensate, $\\phi$, such that $\\Psi=|\\Psi|\\exp\\left(i \\phi\\right)$. Every vortex in the condensate will have integer winding in the complex plane, wherein the phase has a singular point around which it winds through $2\\pi$. By examining the condensate for these phase windings, we can identify the presence of a vortex to a location on our numerical grid.\nThe above image show the phase of a condensate containing four vortices. The zoomed region shows the numerical values of the sampled grid near this vortex core. By following a closed path around the dotted green line the the vortex core can be determined when the value is $\\pm 2\\pi$, positive for vortices, negative for anti-vortices (ie, vortices rotating in the opposite direction). In this instance, $$ \\displaystyle\\sum\\limits_{i=1}^{4} \\phi_i = 3.14 + 3.14 -2.76 -2.76 = 2\\pi. $$ With this formalism, we can identify the vortex core to the region of a $2\\times 2$ grid plaquette. However, we may also determine a better sub-grid resolution position of the core, by realising that a vortex core corresponds with a zero-crossing in the complex plane for both the real and imaginary components. Following O\u0026rsquo;Riordan, 2017\n MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']], displayMath: [['$$','$$'], ['\\[','\\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'], TeX: { equationNumbers: { autoNumber: \"AMS\" }, extensions: [\"AMSmath.js\", \"AMSsymbols.js\"] } } });  "
 },
 {
 	"uri": "https://gpue-group.github.io/data_analysis/",
@@ -88,7 +88,7 @@
 	"title": "API",
 	"tags": [],
 	"description": "",
-	"content": " Title 1   \n  Stuff goes here\n"
+	"content": " Title 1 DOXYGEN generated documentation\n"
 },
 {
 	"uri": "https://gpue-group.github.io/functionality/dynamic_fields/",
@@ -117,6 +117,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://gpue-group.github.io/api/html/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " GPUE: GPU Gross-Pitaevskii Equation: Main Page      /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(document).ready(initResizable); /* @license-end */   MathJax.Hub.Config({ extensions: [\"tex2jax.js\"], jax: [\"input/TeX\",\"output/HTML-CSS\"], });      GPUE: GPU Gross-Pitaevskii Equation \u0026#160;0  GPU Gross-Pitaevskii equation solver      /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ var searchBox = new SearchBox(\"searchBox\", \"search\",false,'Search'); /* @license-end */    /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(function() { initMenu('',true,false,'search.php','Search'); $(document).ready(function() { init_search(); }); }); /* @license-end */       /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3\u0026amp;dn=gpl-2.0.txt GPL-v2 */ $(document).ready(function(){initNavTree('index.html','');}); /* @license-end */     GPUE: GPU Gross-Pitaevskii Equation Documentation    Generated on Thu Aug 23 2018 16:30:33 for GPUE: GPU Gross-Pitaevskii Equation by  1.8.14      "
 },
 {
 	"uri": "https://gpue-group.github.io/build/gpue_build/",

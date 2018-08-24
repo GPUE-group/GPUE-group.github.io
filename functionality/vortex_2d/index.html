@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.46" />
 <title>2D Vortex Tracking :: GPUE</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,6 @@
   
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
-
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
@@ -167,6 +166,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/api/html/" class="dd-item">
+        <div>
+          <a href="/api/html/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/development/" class="dd-item alwaysopen haschildren
@@ -258,6 +264,7 @@
     <option value="/api/" >
    API</option> 
       <option value="/api/gpue_build/" >- </option>
+      <option value="/api/html/" >- </option>
   
     <option value="/development/" >
    Development</option> 
@@ -298,16 +305,48 @@
     
     
 
-<p>More to come!
 
 
-<ul class="children children-h2">
-</ul>
+<p>One of the major components of GPUE is the ability to track and manipulate vortices in Bose-Einstein condensates. While we can work with creating vortices in 3D, the majority of the vortex creation and manipulation framework exists solely in 2D. This is due to the 2D vortex code being developed for the project on vortex dynamics, published in PRA <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603">here</a> (<a href="https://arxiv.org/abs/1608.07756">arXiV version here</a>).</p>
 
+<p>To allow us to track and manipulate vortices in a (2D) condensates, we require some numerical techniques and tools:</p>
 
+<ol>
+<li>Vortex detection.</li>
+<li>Vortex position refinement</li>
+<li>Vortex unique identification and tracking.</li>
+<li>Arbitrary phase control of the condensate.</li>
+<li>Lattice model creation.</li>
+</ol>
 
+<h2 id="1-vortex-detection">1. Vortex detection</h2>
 
-</p>
+<p>To find a vortex in the condensate, we can rely on several methods, such as tracking the condensate density minima. However, given the nature of the wavefunction (a complex valued scalar field), and a quantum vortex (topological defect of the wavefunction), we can examine the phase of the condensate, $\phi$, such that $\Psi=|\Psi|\exp\left(i \phi\right)$. Every vortex in the condensate will have integer winding in the complex plane, wherein the phase has a singular point around which it winds through $2\pi$. By examining the condensate for these phase windings, we can identify the presence of a vortex to a location on our numerical grid.</p>
+
+<p><img src="/img/phi_grid.png" alt="Phase plaquette" /></p>
+
+<p>The above image show the phase of a condensate containing four vortices. The zoomed region shows the numerical values of the sampled grid near this vortex core. By following a closed path around the dotted green line the the vortex core can be determined when the value is $\pm 2\pi$, positive for vortices, negative for anti-vortices (ie, vortices rotating in the opposite direction). In this instance,
+$$
+\displaystyle\sum\limits_{i=1}^{4} \phi_i = 3.14 + 3.14 -2.76 -2.76 = 2\pi.
+$$
+With this formalism, we can identify the vortex core to the region of a $2\times 2$ grid plaquette. However, we may also determine a better sub-grid resolution position of the core, by realising that a vortex core corresponds with a zero-crossing in the complex plane for both the real and imaginary components. Following <a href="https://oist.repo.nii.ac.jp/?action=pages_view_main&amp;active_action=repository_view_main_item_detail&amp;item_id=182&amp;item_no=1&amp;page_id=15&amp;block_id=79">O&rsquo;Riordan, 2017</a></p>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
 
 
 

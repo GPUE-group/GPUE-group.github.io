@@ -21,6 +21,15 @@
     
     <item>
       <title></title>
+      <link>https://gpue-group.github.io/api/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpue-group.github.io/api/html/</guid>
+      <description>GPUE: GPU Gross-Pitaevskii Equation: Main Page      /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;amp;dn=gpl-2.0.txt GPL-v2 */ $(document).ready(initResizable); /* @license-end */   MathJax.Hub.Config({ extensions: [&#34;tex2jax.js&#34;], jax: [&#34;input/TeX&#34;,&#34;output/HTML-CSS&#34;], });      GPUE: GPU Gross-Pitaevskii Equation &amp;#160;0  GPU Gross-Pitaevskii equation solver      /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;amp;dn=gpl-2.0.txt GPL-v2 */ var searchBox = new SearchBox(&#34;searchBox&#34;, &#34;search&#34;,false,&#39;Search&#39;); /* @license-end */    /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;amp;dn=gpl-2.0.txt GPL-v2 */ $(function() { initMenu(&#39;&#39;,true,false,&#39;search.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://gpue-group.github.io/build/gpue_build/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

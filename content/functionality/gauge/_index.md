@@ -96,4 +96,3 @@ MathJax.Hub.Config({
   }
 });
 </script>
-

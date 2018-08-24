@@ -20,7 +20,7 @@ enableMissingTranslationPlaceholders = false
   GitHubUser = "gpue-group"
   ListOfFoo = ["foo1", "foo2"]
   SidebarRecentLimit = 5
-  Subtitle = "aasdf"
+  Subtitle = ""
 
   editURL = "https://github.com/gpue-group/gpue-group.github.io"
   showVisitedLinks = true # default is false
