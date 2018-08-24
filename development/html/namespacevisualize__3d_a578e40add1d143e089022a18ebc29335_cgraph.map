@@ -1,5 +1,5 @@
 <map id="visualize_3d.def_scene" name="visualize_3d.def_scene">
-<area shape="rect" id="node2" href="$namespacevisualize__3d.html#a16aca96e7dac4671797d7c620890ab7a" title="visualize_3d.create_cube" alt="" coords="241,13,443,41"/>
-<area shape="rect" id="node4" href="$namespacevisualize__3d.html#ac45fe70304978093f6c7e69068b839ad" title="visualize_3d.remove_obj" alt="" coords="243,65,441,93"/>
-<area shape="rect" id="node3" href="$namespacevisualize__3d.html#a0186101f71bff1a13cd28eab9377c443" title="visualize_3d.create\l_volume" alt="" coords="491,5,649,49"/>
+<area shape="rect" id="node2" href="$namespacevisualize__3d.html#a16aca96e7dac4671797d7c620890ab7a" title="visualize_3d.create_cube" alt="" coords="235,14,432,43"/>
+<area shape="rect" id="node4" href="$namespacevisualize__3d.html#ac45fe70304978093f6c7e69068b839ad" title="visualize_3d.remove_obj" alt="" coords="236,67,431,97"/>
+<area shape="rect" id="node3" href="$namespacevisualize__3d.html#a0186101f71bff1a13cd28eab9377c443" title="visualize_3d.create\l_volume" alt="" coords="480,5,633,52"/>
 </map>

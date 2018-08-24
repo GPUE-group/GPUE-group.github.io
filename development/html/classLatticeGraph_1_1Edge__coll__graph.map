@@ -1,4 +1,4 @@
 <map id="LatticeGraph::Edge" name="LatticeGraph::Edge">
-<area shape="rect" id="node3" href="$classLatticeGraph_1_1Node.html" title="{LatticeGraph::Node\n|+ uid\l&#45; suid\l|+ Node()\l+ Node()\l+ ~Node()\l+ addEdge()\l+ getConnectedNode()\l+ getConnectedNodes()\l+ getData()\l+ getEdge()\l+ getEdges()\l+ getSuid()\land 7 more...\l}" alt="" coords="240,1017,431,1275"/>
-<area shape="rect" id="node4" href="$classVtx_1_1Vortex.html" title="Maintains vortex index in grid and least&#45;squares calculated values with winding/direction of vortex r..." alt="" coords="258,568,421,953"/>
+<area shape="rect" id="node3" href="$classLatticeGraph_1_1Node.html" title="{LatticeGraph::Node\n|+ uid\l&#45; suid\l|+ Node()\l+ Node()\l+ ~Node()\l+ addEdge()\l+ getConnectedNode()\l+ getConnectedNodes()\l+ getData()\l+ getEdge()\l+ getEdges()\l+ getSuid()\land 7 more...\l}" alt="" coords="262,1081,450,1357"/>
+<area shape="rect" id="node4" href="$classVtx_1_1Vortex.html" title="Maintains vortex index in grid and least&#45;squares calculated values with winding/direction of vortex r..." alt="" coords="273,601,439,1016"/>
 </map>

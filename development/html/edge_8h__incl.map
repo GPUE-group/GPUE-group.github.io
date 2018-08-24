@@ -1,5 +1,5 @@
-<map id="/Users/mlxd/Desktop/GPUE/include/edge.h" name="/Users/mlxd/Desktop/GPUE/include/edge.h">
-<area shape="rect" id="node6" href="$node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="245,97,316,125"/>
-<area shape="rect" id="node8" href="$tracker_8h.html" title="Vortex lattice position, orientation, and tracking. " alt="" coords="498,173,580,201"/>
-<area shape="rect" id="node13" href="$vort_8h.html" title="Class for keeping track of vortices. Implementation TBC. " alt="" coords="419,249,480,277"/>
+<map id="/home/james/projects/GPUE/include/edge.h" name="/home/james/projects/GPUE/include/edge.h">
+<area shape="rect" id="node6" href="$node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="247,100,315,129"/>
+<area shape="rect" id="node8" href="$tracker_8h.html" title="Vortex lattice position, orientation, and tracking. " alt="" coords="501,177,583,207"/>
+<area shape="rect" id="node13" href="$vort_8h.html" title="Class for keeping track of vortices. Implementation TBC. " alt="" coords="420,255,483,284"/>
 </map>

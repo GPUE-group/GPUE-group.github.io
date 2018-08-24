@@ -1,10 +1,10 @@
 <map id="observables.expec_val_" name="observables.expec_val_">
-<area shape="rect" id="node2" href="$namespaceobservables.html#a3b36e519b55c83fb6000ec01aa7fc641" title="observables.ang_mom" alt="" coords="269,5,453,33"/>
-<area shape="rect" id="node3" href="$namespaceobservables.html#aaa97b964ee477b8878e096013d46915c" title="observables.dens_struct_fact" alt="" coords="246,57,476,85"/>
-<area shape="rect" id="node5" href="$namespaceobservables.html#a9564b1f5f3779e78da6c98ddd9ebabaf" title="observables.energy\l_kinetic" alt="" coords="281,109,442,153"/>
-<area shape="rect" id="node6" href="$namespaceobservables.html#a09d3b04aafa504101156d8053c42cc5e" title="observables.energy\l_total" alt="" coords="281,177,442,221"/>
-<area shape="rect" id="node7" href="$namespaceobservables.html#af17849707b5d72bd22e2ee43df59524f" title="observables.expec_val\l_monopole" alt="" coords="269,245,453,289"/>
-<area shape="rect" id="node8" href="$namespaceobservables.html#ac0f3c9c099bdbdc1c2535d8c6ba49b34" title="observables.expec_val\l_quadrupole" alt="" coords="269,313,453,357"/>
-<area shape="rect" id="node9" href="$namespaceobservables.html#a1ba07e6f39f8efbd364e11f5beff5dfd" title="observables.kinertrum_loop" alt="" coords="252,381,470,409"/>
-<area shape="rect" id="node4" href="$namespaceobservables.html#a0e7336a1753bb5dc5695df4decc4111d" title="Kinetic energy spectrum = kinertrum. " alt="" coords="524,220,703,248"/>
+<area shape="rect" id="node2" href="$namespaceobservables.html#a3b36e519b55c83fb6000ec01aa7fc641" title="observables.ang_mom" alt="" coords="262,5,437,35"/>
+<area shape="rect" id="node3" href="$namespaceobservables.html#aaa97b964ee477b8878e096013d46915c" title="observables.dens_struct_fact" alt="" coords="237,59,461,88"/>
+<area shape="rect" id="node5" href="$namespaceobservables.html#a9564b1f5f3779e78da6c98ddd9ebabaf" title="observables.energy\l_kinetic" alt="" coords="275,113,423,159"/>
+<area shape="rect" id="node6" href="$namespaceobservables.html#a09d3b04aafa504101156d8053c42cc5e" title="observables.energy\l_total" alt="" coords="275,183,423,230"/>
+<area shape="rect" id="node7" href="$namespaceobservables.html#af17849707b5d72bd22e2ee43df59524f" title="observables.expec_val\l_monopole" alt="" coords="263,254,435,301"/>
+<area shape="rect" id="node8" href="$namespaceobservables.html#ac0f3c9c099bdbdc1c2535d8c6ba49b34" title="observables.expec_val\l_quadrupole" alt="" coords="263,325,435,371"/>
+<area shape="rect" id="node9" href="$namespaceobservables.html#a1ba07e6f39f8efbd364e11f5beff5dfd" title="observables.kinertrum_loop" alt="" coords="243,396,455,425"/>
+<area shape="rect" id="node4" href="$namespaceobservables.html#a0e7336a1753bb5dc5695df4decc4111d" title="Kinetic energy spectrum = kinertrum. " alt="" coords="509,228,680,257"/>
 </map>

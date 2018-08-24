@@ -7,9 +7,14 @@ var searchData=
   ['image_5fgen',['image_gen',['../namespacevis.html#a67ecb448a06b0ff642359f1dce74fc2b',1,'vis']]],
   ['image_5fgen_5fsingle',['image_gen_single',['../namespacevis.html#a54c0713ac818ab1beb401d0c07c4112b',1,'vis']]],
   ['incr',['incr',['../classplot_1_1params.html#a2edd7c17d9694d512341358d9c7fb4dc',1,'plot.params.incr()'],['../namespaceen.html#ae978a3c62cecdcadc0de55ed830a599f',1,'en.incr()'],['../namespacehist3d.html#a478fa425793c7f42926169ffad5a1bb6',1,'hist3d.incr()'],['../namespaceobservables.html#ada1bd9eb91465cb6be5f389a8de838cd',1,'observables.incr()'],['../namespacestats.html#a14afa5f9e9cc239ea9c9f1bb90d56b93',1,'stats.incr()'],['../namespacevis.html#aaf6a5542fb3abf2e336e39b99ca27d60',1,'vis.incr()'],['../namespacevort.html#a73d82e74efd49c6cf1ff50d48ee70a10',1,'vort.incr()']]],
-  ['index',['index',['../namespacevort.html#aaec1e74db145f3a0d8773bb4cdfebf09',1,'vort']]],
+  ['index',['index',['../namespacefind__scissors__angle.html#a09312ee5b44569f47cd0ca63d8e5a97f',1,'find_scissors_angle.index()'],['../namespacevort.html#aaec1e74db145f3a0d8773bb4cdfebf09',1,'vort.index()']]],
   ['index_5fr',['index_r',['../namespacevort.html#a39ca6bbf4b91af143f9ed6cab7e5d3d0',1,'vort']]],
   ['infile',['infile',['../namespacevisualize__3d.html#ab6ee66e93d1ab970666a9ec7cad89ade',1,'visualize_3d']]],
+  ['info_5farch',['info_arch',['../CMakeCUDACompilerId_8cudafe1_8c.html#a4bc07dcc4affb777f5e07c96c81a2db7',1,'info_arch():&#160;CMakeCUDACompilerId.cudafe1.c'],['../CMakeCXXCompilerId_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5fcompiler',['info_compiler',['../CMakeCUDACompilerId_8cudafe1_8c.html#a713a556cda33e23177607d19d435bd2c',1,'info_compiler():&#160;CMakeCUDACompilerId.cudafe1.c'],['../CMakeCXXCompilerId_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5flanguage_5fdialect_5fdefault',['info_language_dialect_default',['../CMakeCUDACompilerId_8cudafe1_8c.html#aba42e72fbac037fc6e53474ef85a9b26',1,'info_language_dialect_default():&#160;CMakeCUDACompilerId.cudafe1.c'],['../CMakeCXXCompilerId_8cpp.html#a1ce162bad2fe6966ac8b33cc19e120b8',1,'info_language_dialect_default():&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5fplatform',['info_platform',['../CMakeCUDACompilerId_8cudafe1_8c.html#ab2565ce2d8752a9c3c10f0993a8d3ac2',1,'info_platform():&#160;CMakeCUDACompilerId.cudafe1.c'],['../CMakeCXXCompilerId_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform():&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5fversion',['info_version',['../CMakeCUDACompilerId_8cudafe1_8c.html#aecec219d75f7bf2b0257db2b46be0158',1,'CMakeCUDACompilerId.cudafe1.c']]],
   ['init',['init',['../init_8h.html#aaa9d1f5752bac6c52792b906cc3a1fd0',1,'init.h']]],
   ['init_2ecu',['init.cu',['../init_8cu.html',1,'']]],
   ['init_2eh',['init.h',['../init_8h.html',1,'']]],
@@ -25,6 +30,6 @@ var searchData=
   ['ismember',['isMember',['../classLatticeGraph_1_1Edge.html#a4ca31d613663e1adbdb0f4c0b148bd94',1,'LatticeGraph::Edge']]],
   ['ison',['isOn',['../classVtx_1_1Vortex.html#afed22f3e146ab1117962751efd4e7ab6',1,'Vtx::Vortex::isOn()'],['../namespacevort.html#a35e30d26b620c6a27772675b83810b02',1,'vort.isOn()']]],
   ['isosurfaces',['Isosurfaces',['../namespaceparaview__plot.html#a3676cbefd73804c6a767244f8ad86096',1,'paraview_plot']]],
-  ['item',['item',['../classplot_1_1params.html#a666c476268de79cf97d35aaeef08fd5f',1,'plot.params.item()'],['../namespacevis__scripts.html#a30cafbf9d817ba97dea33dca15f8da20',1,'vis_scripts.item()']]],
+  ['item',['item',['../classplot_1_1params.html#a666c476268de79cf97d35aaeef08fd5f',1,'plot.params.item()'],['../namespacescissors.html#a47ddc7e6a21e65df460a0525207f77c6',1,'scissors.item()'],['../namespacescissors__0.html#a45427eaea15d77811ee8588f87d30502',1,'scissors_0.item()'],['../namespacescissors__check.html#aca8504c70be9ee23908089e4b7cad054',1,'scissors_check.item()'],['../namespacevis__scripts.html#a30cafbf9d817ba97dea33dca15f8da20',1,'vis_scripts.item()']]],
   ['ival',['ival',['../classGrid.html#a912a7387c13384befb2d5d252312c3f7',1,'Grid']]]
 ];

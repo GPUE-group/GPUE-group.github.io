@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['num_5fvort',['NUM_VORT',['../graphtest_8cc.html#a09a9d3d171da2cce56f1e8fee0377305',1,'NUM_VORT():&#160;graphtest.cc'],['../VtxTest_8cc.html#a09a9d3d171da2cce56f1e8fee0377305',1,'NUM_VORT():&#160;VtxTest.cc']]]
+  ['epsilon_5f0',['EPSILON_0',['../constants_8h.html#a2a807074b712c3124ad6e69887077b89',1,'constants.h']]]
 ];

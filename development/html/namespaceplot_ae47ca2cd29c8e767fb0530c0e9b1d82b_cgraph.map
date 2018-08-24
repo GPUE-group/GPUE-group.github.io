@@ -1,8 +1,8 @@
 <map id="plot.plot" name="plot.plot">
-<area shape="rect" id="node2" href="$namespaceplot.html#a6a89e7c37927783175ceb08bccad458f" title="plot.plot_complex" alt="" coords="139,5,285,33"/>
-<area shape="rect" id="node3" href="$namespaceplot.html#a7e7c5a070044c8b5d5d5652bde7ee820" title="plot.plot_var" alt="" coords="158,57,266,85"/>
-<area shape="rect" id="node4" href="$namespaceplot.html#a98ea510197f50439bdc19f0ae0712a3c" title="plot.plot_var_range" alt="" coords="133,109,291,137"/>
-<area shape="rect" id="node5" href="$namespaceplot.html#a8f20cad1f5ff54506ca36305fbd247a0" title="plot.plot_wfc" alt="" coords="157,161,267,189"/>
-<area shape="rect" id="node6" href="$namespaceplot.html#ae2093b1ff741152cd66231ecbbcf10f5" title="plot.plot_wfc_k" alt="" coords="149,213,276,241"/>
-<area shape="rect" id="node7" href="$namespaceplot.html#a33a7b8ff8a7578d0803d9558e24aa9fc" title="plot.plot_wfc_phase" alt="" coords="131,265,293,293"/>
+<area shape="rect" id="node2" href="$namespaceplot.html#a6a89e7c37927783175ceb08bccad458f" title="plot.plot_complex" alt="" coords="143,5,291,35"/>
+<area shape="rect" id="node3" href="$namespaceplot.html#a7e7c5a070044c8b5d5d5652bde7ee820" title="plot.plot_var" alt="" coords="160,59,273,88"/>
+<area shape="rect" id="node4" href="$namespaceplot.html#a98ea510197f50439bdc19f0ae0712a3c" title="plot.plot_var_range" alt="" coords="135,112,298,141"/>
+<area shape="rect" id="node5" href="$namespaceplot.html#a8f20cad1f5ff54506ca36305fbd247a0" title="plot.plot_wfc" alt="" coords="159,165,275,195"/>
+<area shape="rect" id="node6" href="$namespaceplot.html#ae2093b1ff741152cd66231ecbbcf10f5" title="plot.plot_wfc_k" alt="" coords="149,219,285,248"/>
+<area shape="rect" id="node7" href="$namespaceplot.html#a33a7b8ff8a7578d0803d9558e24aa9fc" title="plot.plot_wfc_phase" alt="" coords="133,272,300,301"/>
 </map>

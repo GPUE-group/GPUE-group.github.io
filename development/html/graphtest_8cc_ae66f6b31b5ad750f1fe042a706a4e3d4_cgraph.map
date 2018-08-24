@@ -1,9 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$classLatticeGraph_1_1Lattice.html#a6a8d489fa901c2254c5f7bebe2912303" title="Add edge e to the lattice (graph). " alt="" coords="109,5,278,49"/>
-<area shape="rect" id="node3" href="$classLatticeGraph_1_1Lattice.html#a478645d527f601fbd7ccad5855130151" title="Format adjacency matrix with Mathematica&#45;friendly output. " alt="" coords="109,73,278,117"/>
-<area shape="rect" id="node4" href="$classLatticeGraph_1_1Lattice.html#ab9eaf422585318bc0cc5f1b1300d34b1" title="Output adjacency matrix. " alt="" coords="109,141,278,185"/>
-<area shape="rect" id="node5" href="$classLatticeGraph_1_1Lattice.html#a6e26c19ac5a86db8e533f452d1d376be" title="Returns vortex specified at index idx. " alt="" coords="109,209,278,253"/>
-<area shape="rect" id="node6" href="$classLatticeGraph_1_1Lattice.html#a97286e2e67b23b4cddc6430993107609" title="Returns the vectors for vortices. " alt="" coords="109,277,278,321"/>
-<area shape="rect" id="node7" href="$classLatticeGraph_1_1Lattice.html#aef3eff0f0f7b3dc1d5630316240f4866" title="Remove edge from the lattice based on UID uid. " alt="" coords="109,345,278,389"/>
-<area shape="rect" id="node8" href="$classLatticeGraph_1_1Lattice.html#a3f71e6193afe0576f788bd9d7fcacc8c" title="Swap the elements at indices based on UID uid1 and uid2. " alt="" coords="109,413,278,457"/>
+<area shape="rect" id="node2" href="$classLatticeGraph_1_1Lattice.html#a6a8d489fa901c2254c5f7bebe2912303" title="Add edge e to the lattice (graph). " alt="" coords="109,5,280,52"/>
+<area shape="rect" id="node3" href="$classLatticeGraph_1_1Lattice.html#a478645d527f601fbd7ccad5855130151" title="Format adjacency matrix with Mathematica&#45;friendly output. " alt="" coords="109,76,280,123"/>
+<area shape="rect" id="node4" href="$classLatticeGraph_1_1Lattice.html#ab9eaf422585318bc0cc5f1b1300d34b1" title="Output adjacency matrix. " alt="" coords="109,147,280,193"/>
+<area shape="rect" id="node5" href="$classLatticeGraph_1_1Lattice.html#a6e26c19ac5a86db8e533f452d1d376be" title="Returns vortex specified at index idx. " alt="" coords="109,217,280,264"/>
+<area shape="rect" id="node6" href="$classLatticeGraph_1_1Lattice.html#a97286e2e67b23b4cddc6430993107609" title="Returns the vectors for vortices. " alt="" coords="109,288,280,335"/>
+<area shape="rect" id="node7" href="$classLatticeGraph_1_1Lattice.html#aef3eff0f0f7b3dc1d5630316240f4866" title="Remove edge from the lattice based on UID uid. " alt="" coords="109,359,280,405"/>
+<area shape="rect" id="node8" href="$classLatticeGraph_1_1Lattice.html#a3f71e6193afe0576f788bd9d7fcacc8c" title="Swap the elements at indices based on UID uid1 and uid2. " alt="" coords="109,429,280,476"/>
 </map>

@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['n',['N',['../namespaceobservables.html#ad49efbe831c4c893fdee39c5cff03946',1,'observables']]],
-  ['n1',['n1',['../classLatticeGraph_1_1Edge.html#a96d1f3dd9b89f44f67c6709afcc2febf',1,'LatticeGraph::Edge']]],
-  ['n2',['n2',['../classLatticeGraph_1_1Edge.html#a979ce1cb51be66c9965353bc1db4b0d6',1,'LatticeGraph::Edge']]],
-  ['nargs',['nargs',['../namespaceplot.html#afd49e606ad7749bc9806fee2c954046d',1,'plot']]],
-  ['next',['next',['../namespacevort.html#a738224df41e356b0edad1fad3daee4c1',1,'vort']]],
-  ['num_5fvort',['num_vort',['../namespaceen.html#a09a7642d12defeef739529c4658681ad',1,'en.num_vort()'],['../namespacehist3d.html#aa0b5f525df40648b8de632107b546ff5',1,'hist3d.num_vort()'],['../namespaceobservables.html#a03dff5bbc693592342a987d13e72273e',1,'observables.num_vort()'],['../namespacevis.html#a1fb02d9590cb51465d3a8e53f52360fa',1,'vis.num_vort()']]]
+  ['m',['m',['../namespaceobservables.html#a6a64d63c5b9424dc13374534d80f454e',1,'observables']]],
+  ['macheps',['macheps',['../namespaceen.html#a7f4d0aadf8eeedd4b1f09429fc91afae',1,'en']]],
+  ['mass',['mass',['../namespaceobservables.html#ab9e0daaf5756a66bda39f31f39cebaef',1,'observables']]],
+  ['max_5fuid',['max_uid',['../namespacevort.html#aac61079cd28178d578b13a093de07939',1,'vort']]],
+  ['metavar',['metavar',['../namespaceplot.html#a0e01eeee6600c10e013ccbca576a4997',1,'plot']]]
 ];

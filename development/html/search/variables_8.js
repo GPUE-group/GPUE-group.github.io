@@ -1,12 +1,18 @@
 var searchData=
 [
-  ['k',['K',['../namespaceen.html#ac39842aa41b29c5e232aa7babc55057c',1,'en.K()'],['../namespaceobservables.html#a53f12c3c5a4a4f672fda748d60e4167b',1,'observables.K()']]],
-  ['k_5fmag',['k_mag',['../namespaceobservables.html#af719a83fd64e32ebbe713ff8650724db',1,'observables']]],
-  ['kfn',['Kfn',['../classGrid.html#a02f8f414287acd3f62cf31e0f94c2e1f',1,'Grid']]],
-  ['km_5fmag',['km_mag',['../namespaceobservables.html#a0356df75894ff9f820434d1e2d6c87c4',1,'observables']]],
-  ['kmax',['kMax',['../namespaceobservables.html#a6ecb45c4e6c56b1ecc0ffc33c5cbe7da',1,'observables']]],
-  ['kx',['kx',['../namespaceobservables.html#a50217a000eb2351728c679c0ee62352b',1,'observables']]],
-  ['kxm',['kxm',['../namespaceobservables.html#a9940e24ec4e8c3b0ed43d1df4dd1a424',1,'observables']]],
-  ['ky',['ky',['../namespaceobservables.html#a9dfbaa141cc628729695a53e44cc6e34',1,'observables']]],
-  ['kym',['kym',['../namespaceobservables.html#ac4bd535198aed0753f49d0c0094f0ad5',1,'observables']]]
+  ['i',['i',['../namespacevis.html#a9aaedc8dc3a9c8a1b4fee8c6ee7842eb',1,'vis.i()'],['../namespacevort.html#a418a330f51ebe2e500a6da25a28024c7',1,'vort.i()']]],
+  ['id_5flist',['id_list',['../classGrid.html#ad7ae77957f16f34a9969cdfd45883307',1,'Grid']]],
+  ['incr',['incr',['../classplot_1_1params.html#a2edd7c17d9694d512341358d9c7fb4dc',1,'plot.params.incr()'],['../namespaceen.html#ae978a3c62cecdcadc0de55ed830a599f',1,'en.incr()'],['../namespacehist3d.html#a478fa425793c7f42926169ffad5a1bb6',1,'hist3d.incr()'],['../namespaceobservables.html#ada1bd9eb91465cb6be5f389a8de838cd',1,'observables.incr()'],['../namespacestats.html#a14afa5f9e9cc239ea9c9f1bb90d56b93',1,'stats.incr()'],['../namespacevis.html#aaf6a5542fb3abf2e336e39b99ca27d60',1,'vis.incr()'],['../namespacevort.html#a73d82e74efd49c6cf1ff50d48ee70a10',1,'vort.incr()']]],
+  ['index',['index',['../namespacefind__scissors__angle.html#a09312ee5b44569f47cd0ca63d8e5a97f',1,'find_scissors_angle.index()'],['../namespacevort.html#aaec1e74db145f3a0d8773bb4cdfebf09',1,'vort.index()']]],
+  ['index_5fr',['index_r',['../namespacevort.html#a39ca6bbf4b91af143f9ed6cab7e5d3d0',1,'vort']]],
+  ['infile',['infile',['../namespacevisualize__3d.html#ab6ee66e93d1ab970666a9ec7cad89ade',1,'visualize_3d']]],
+  ['info_5farch',['info_arch',['../CMakeCUDACompilerId_8cudafe1_8c.html#a4bc07dcc4affb777f5e07c96c81a2db7',1,'info_arch():&#160;CMakeCUDACompilerId.cudafe1.c'],['../CMakeCXXCompilerId_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5fcompiler',['info_compiler',['../CMakeCUDACompilerId_8cudafe1_8c.html#a713a556cda33e23177607d19d435bd2c',1,'info_compiler():&#160;CMakeCUDACompilerId.cudafe1.c'],['../CMakeCXXCompilerId_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5flanguage_5fdialect_5fdefault',['info_language_dialect_default',['../CMakeCUDACompilerId_8cudafe1_8c.html#aba42e72fbac037fc6e53474ef85a9b26',1,'info_language_dialect_default():&#160;CMakeCUDACompilerId.cudafe1.c'],['../CMakeCXXCompilerId_8cpp.html#a1ce162bad2fe6966ac8b33cc19e120b8',1,'info_language_dialect_default():&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5fplatform',['info_platform',['../CMakeCUDACompilerId_8cudafe1_8c.html#ab2565ce2d8752a9c3c10f0993a8d3ac2',1,'info_platform():&#160;CMakeCUDACompilerId.cudafe1.c'],['../CMakeCXXCompilerId_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform():&#160;CMakeCXXCompilerId.cpp']]],
+  ['info_5fversion',['info_version',['../CMakeCUDACompilerId_8cudafe1_8c.html#aecec219d75f7bf2b0257db2b46be0158',1,'CMakeCUDACompilerId.cudafe1.c']]],
+  ['is_5fdynamic',['is_dynamic',['../ds_8h.html#a491dfb298f7cb148bfe0b8b045bc292c',1,'EqnNode::is_dynamic()'],['../ds_8h.html#a73f2337241a38e26a29d7d7b876888d0',1,'EqnNode_gpu::is_dynamic()']]],
+  ['ison',['isOn',['../classVtx_1_1Vortex.html#afed22f3e146ab1117962751efd4e7ab6',1,'Vtx::Vortex::isOn()'],['../namespacevort.html#a35e30d26b620c6a27772675b83810b02',1,'vort.isOn()']]],
+  ['isosurfaces',['Isosurfaces',['../namespaceparaview__plot.html#a3676cbefd73804c6a767244f8ad86096',1,'paraview_plot']]],
+  ['item',['item',['../classplot_1_1params.html#a666c476268de79cf97d35aaeef08fd5f',1,'plot.params.item()'],['../namespacescissors.html#a47ddc7e6a21e65df460a0525207f77c6',1,'scissors.item()'],['../namespacescissors__0.html#a45427eaea15d77811ee8588f87d30502',1,'scissors_0.item()'],['../namespacescissors__check.html#aca8504c70be9ee23908089e4b7cad054',1,'scissors_check.item()'],['../namespacevis__scripts.html#a30cafbf9d817ba97dea33dca15f8da20',1,'vis_scripts.item()']]]
 ];

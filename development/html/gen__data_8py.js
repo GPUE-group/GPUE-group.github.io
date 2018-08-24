@@ -1,5 +1,8 @@
 var gen__data_8py =
 [
+    [ "find_angle", "gen__data_8py.html#a18d75e4826d5ecc31397115429c0d694", null ],
+    [ "find_com", "gen__data_8py.html#a4cd9e52778e239b39928885e2ed6f91d", null ],
+    [ "find_thresh", "gen__data_8py.html#a1d0c64fa521afb385d90b2c18da2b400", null ],
     [ "proj_2d", "gen__data_8py.html#aba7065d50318f94caf2516c4c45eb60d", null ],
     [ "proj_k2d", "gen__data_8py.html#ab0a900f6511a6222c0cc521fcda6e4d5", null ],
     [ "proj_phase_2d", "gen__data_8py.html#aee399a0469fa05868852a693787802c5", null ],
@@ -7,7 +10,7 @@ var gen__data_8py =
     [ "proj_var2d", "gen__data_8py.html#ad10989a17f1ce55fc04811d1ed7a89bf", null ],
     [ "proj_var2d", "gen__data_8py.html#a9e8205af1cdb4314530ef1dff07d9f6e", null ],
     [ "to_bvox", "gen__data_8py.html#ab32470d84c45ca2c95199bf06cc331e7", null ],
-    [ "to_vtk", "gen__data_8py.html#a1c64821de7f3da430bb2d8cb20697cb1", null ],
+    [ "to_vtk", "gen__data_8py.html#a04bc7f430758017ae38d6ebf125778cf", null ],
     [ "var", "gen__data_8py.html#abb24bafb80f618e0b3153249bb349774", null ],
     [ "var_r2", "gen__data_8py.html#a7565055a9bbf5848c253a33f6652faae", null ],
     [ "wfc_com", "gen__data_8py.html#a6f3d0e5326f660d24524cc2558de8f26", null ],

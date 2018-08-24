@@ -1,6 +1,0 @@
-<map id="Grid" name="Grid">
-<area shape="rect" id="node3" title="STL class. " alt="" coords="825,192,916,273"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="797,5,943,103"/>
-<area shape="rect" id="node7" href="$ds_8h.html#structEqnNode" title="Struct to hold the node information for the AST on the CPU. " alt="" coords="45,160,160,305"/>
-<area shape="rect" id="node13" href="$ds_8h.html#structEqnNode__gpu" title="Struct to hold the node information for the AST on the GPU. " alt="" coords="1348,152,1472,313"/>
-</map>

@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['x',['x',['../ds_8h.html#a6ea0780e4b810f88e2dbabd142d381e9',1,'pos::x()'],['../classGrid.html#a56bfe1195840949dbab33a3e7e80140c',1,'Grid::x()'],['../namespaceen.html#a980bf878d4a2d8b1aa59ce5126abfb56',1,'en.X()'],['../namespaceobservables.html#a3ea5907d5deba202885ab9204aa15feb',1,'observables.x()'],['../namespacevort.html#a37d7947233d6b72f785082e627f3608c',1,'vort.x()']]],
-  ['xdim',['xDim',['../classplot_1_1params.html#aff561f74f1b3570cbe07b4faf3bce17e',1,'plot.params.xDim()'],['../namespaceen.html#ad53475a1f124a8243ae3041fa5e2ce98',1,'en.xDim()'],['../namespacegen__data.html#a6c4dc1aa6bee7078e934cf755416fc20',1,'gen_data.xDim()'],['../namespacehist3d.html#aa61d6362fddc91882628dd493675f960',1,'hist3d.xDim()'],['../namespaceobservables.html#a45308a4ee1b16b43bf9fbed7d5dcb95b',1,'observables.xDim()'],['../namespacestats.html#a198381c3858af8f570db5addb64bb0f7',1,'stats.xDim()'],['../namespacevis.html#af3290bf7447762d16738f02dfa9af287',1,'vis.xDim()'],['../namespacevisualize__3d.html#a7516dbbb0065ab99b353cb4762c5294d',1,'visualize_3d.xDim()'],['../namespacevort.html#ae6337b93e50011704bb83298c350362f',1,'vort.xDim()']]],
-  ['xm',['XM',['../namespaceen.html#a8d03f6ddf52246e7c408b318d20e10ce',1,'en']]],
-  ['xmax',['xMax',['../namespaceen.html#a83f701b9562250a9d81742a4d7e1f3e5',1,'en.xMax()'],['../namespacehist3d.html#ad1f42a17eb0b44008a147ecdbbcb6b36',1,'hist3d.xMax()'],['../namespaceobservables.html#a6a18ba83ebdbc43f41467d7016e3cf43',1,'observables.xMax()'],['../namespacevis.html#a30f866e37ac6f018c34eedb7bae7cfba',1,'vis.xMax()'],['../namespacevort.html#a2f1716e23eacd57fe79daad835320c12',1,'vort.xMax()']]],
-  ['xp',['xp',['../classGrid.html#a5eb109ed6cc381a514350499eae890c0',1,'Grid']]],
-  ['xpy',['xPy',['../namespaceobservables.html#a54f7fa5f8df9c734ddcde11647a7ca42',1,'observables']]]
+  ['weight',['weight',['../classLatticeGraph_1_1Edge.html#aebf46c6c2f4c69b0ee8fdce38f4b4ca1',1,'LatticeGraph::Edge']]],
+  ['wfc_5ffn',['wfc_fn',['../classGrid.html#a93a9c2038887f211e07878182e1a2714',1,'Grid']]],
+  ['wfcfn',['Wfcfn',['../classGrid.html#aa89b54b9e9e7ef7f87929f0330edb87d',1,'Grid']]],
+  ['winding',['winding',['../classVtx_1_1Vortex.html#a4735c5f6a7f5f96bc8574430b5462814',1,'Vtx::Vortex']]]
 ];

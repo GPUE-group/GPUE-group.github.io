@@ -1,11 +1,11 @@
-<map id="/Users/mlxd/Desktop/GPUE/include/tracker.h" name="/Users/mlxd/Desktop/GPUE/include/tracker.h">
-<area shape="rect" id="node2" href="$node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="115,97,295,141"/>
-<area shape="rect" id="node4" href="$lattice_8h.html" title="Class for treating vortices as a graph. " alt="" coords="239,281,425,325"/>
-<area shape="rect" id="node5" href="$evolution_8h.html" title="function for evolution. " alt="" coords="378,373,586,417"/>
-<area shape="rect" id="node6" href="$init_8h.html" title="/Users/mlxd/Desktop\l/GPUE/include/init.h" alt="" coords="468,465,637,509"/>
-<area shape="rect" id="node8" href="$split__op_8h.html" title="command line parser file. " alt="" coords="500,281,699,325"/>
-<area shape="rect" id="node9" href="$fileIO_8h.html" title="Routines for input and output of simulation data. " alt="" coords="724,281,905,325"/>
-<area shape="rect" id="node10" href="$minions_8h.html" title="Helper functions for evaluating and manipulating data. " alt="" coords="739,189,938,233"/>
-<area shape="rect" id="node3" href="$edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="51,189,231,233"/>
-<area shape="rect" id="node7" href="$graphtest_8cc.html" title="/Users/mlxd/Desktop\l/GPUE/src/graphtest.cc" alt="" coords="115,373,303,417"/>
+<map id="/home/james/projects/GPUE/include/tracker.h" name="/home/james/projects/GPUE/include/tracker.h">
+<area shape="rect" id="node2" href="$node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="116,100,304,147"/>
+<area shape="rect" id="node4" href="$lattice_8h.html" title="Class for treating vortices as a graph. " alt="" coords="242,289,439,336"/>
+<area shape="rect" id="node5" href="$evolution_8h.html" title="function for evolution. " alt="" coords="386,384,604,431"/>
+<area shape="rect" id="node6" href="$init_8h.html" title="/home/james/projects\l/GPUE/include/init.h" alt="" coords="479,479,658,525"/>
+<area shape="rect" id="node8" href="$split__op_8h.html" title="command line parser file. " alt="" coords="514,289,727,336"/>
+<area shape="rect" id="node9" href="$fileIO_8h.html" title="Routines for input and output of simulation data. " alt="" coords="752,289,945,336"/>
+<area shape="rect" id="node10" href="$minions_8h.html" title="Helper functions for evaluating and manipulating data. " alt="" coords="768,195,976,241"/>
+<area shape="rect" id="node3" href="$edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="51,195,238,241"/>
+<area shape="rect" id="node7" href="$graphtest_8cc.html" title="/home/james/projects\l/GPUE/src/graphtest.cc" alt="" coords="116,384,311,431"/>
 </map>

@@ -1,6 +1,6 @@
-<map id="/Users/mlxd/Desktop/GPUE/include/lattice.h" name="/Users/mlxd/Desktop/GPUE/include/lattice.h">
-<area shape="rect" id="node5" href="$node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="205,97,276,125"/>
-<area shape="rect" id="node7" href="$edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="119,173,189,201"/>
-<area shape="rect" id="node9" href="$tracker_8h.html" title="Vortex lattice position, orientation, and tracking. " alt="" coords="550,173,632,201"/>
-<area shape="rect" id="node14" href="$vort_8h.html" title="Class for keeping track of vortices. Implementation TBC. " alt="" coords="516,249,578,277"/>
+<map id="/home/james/projects/GPUE/include/lattice.h" name="/home/james/projects/GPUE/include/lattice.h">
+<area shape="rect" id="node5" href="$node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="216,100,284,129"/>
+<area shape="rect" id="node7" href="$edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="125,177,191,207"/>
+<area shape="rect" id="node9" href="$tracker_8h.html" title="Vortex lattice position, orientation, and tracking. " alt="" coords="555,177,638,207"/>
+<area shape="rect" id="node14" href="$vort_8h.html" title="Class for keeping track of vortices. Implementation TBC. " alt="" coords="520,255,583,284"/>
 </map>

@@ -12,5 +12,6 @@ var searchData=
   ['operators_2eh',['operators.h',['../operators_8h.html',1,'']]],
   ['oppot',['opPot',['../namespacevis.html#afc9f23236f9fb991244d0e5be2e0f3da',1,'vis']]],
   ['optlatsetup',['optLatSetup',['../split__op_8h.html#a833c6ae1e681309010fa37d2d81d0481',1,'split_op.h']]],
+  ['outfile',['outfile',['../namespacevisualize__3d.html#a8c395f9161d6e38717123b9f0db3ba35',1,'visualize_3d']]],
   ['overlap',['overlap',['../namespacevis.html#af8acaf56c6f6b0970cd65ba833292561',1,'vis']]]
 ];
