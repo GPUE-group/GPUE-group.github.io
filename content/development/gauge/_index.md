@@ -1,7 +1,7 @@
 +++
-title = "Development"
+title = "Gauge Fields"
 description = ""
-weight = 6
+weight = 1
 alwaysopen = true
 +++
 
