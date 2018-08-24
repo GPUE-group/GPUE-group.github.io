@@ -1,6 +1,7 @@
 var searchData=
 [
   ['add',['add',['../kernels_8h.html#a33f594a30771813f0acb6847a50830af',1,'add():&#160;kernels.h'],['../namespacevort.html#abcca11d0e38e448ceaa0f3f2750f8154',1,'vort.add()']]],
+  ['add_5ffiber',['add_fiber',['../namespacevisualize__3d.html#ad6bc81c6c0419736aa4e78b89b1dc103',1,'visualize_3d']]],
   ['addedge',['addEdge',['../classLatticeGraph_1_1Lattice.html#a6a8d489fa901c2254c5f7bebe2912303',1,'LatticeGraph::Lattice::addEdge(std::shared_ptr&lt; Edge &gt; e)'],['../classLatticeGraph_1_1Lattice.html#a347ea7ec7508b898a9aa887ed1a8f622',1,'LatticeGraph::Lattice::addEdge(std::shared_ptr&lt; Node &gt; n1, std::shared_ptr&lt; Node &gt; n2)'],['../classLatticeGraph_1_1Lattice.html#ab306ff475ca54c8ec5a0524a7f90a210',1,'LatticeGraph::Lattice::addEdge(std::shared_ptr&lt; Edge &gt; e, std::shared_ptr&lt; Node &gt; n1, std::shared_ptr&lt; Node &gt; n2)'],['../classLatticeGraph_1_1Node.html#af043bcf2290d424796c9027a281a7b23',1,'LatticeGraph::Node::addEdge()']]],
   ['addvortex',['addVortex',['../classLatticeGraph_1_1Lattice.html#a573d2af59cf8372c7aea1d694ea59670',1,'LatticeGraph::Lattice']]],
   ['addvtx',['addVtx',['../classVtx_1_1VtxList.html#ad323572db30b31fbff464d7e1e652902',1,'Vtx::VtxList::addVtx(std::shared_ptr&lt; Vtx::Vortex &gt; vtx)'],['../classVtx_1_1VtxList.html#abef5b85f8b093b3161e5cb7ad5e0b503',1,'Vtx::VtxList::addVtx(std::shared_ptr&lt; Vtx::Vortex &gt; vtx, std::size_t idx)']]],

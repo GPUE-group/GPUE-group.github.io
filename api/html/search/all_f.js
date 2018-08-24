@@ -40,7 +40,6 @@ var searchData=
   ['pos_5fl',['pos_l',['../namespacevort.html#a44a42936183c9477183f8d9a5d97cabe',1,'vort']]],
   ['pow',['pow',['../kernels_8h.html#a04e15f6be22fe4b532ecc10589bc4ebf',1,'kernels.h']]],
   ['prec',['prec',['../namespaceen.html#a335d0f2c45d4e0d98594299dcc38ae74',1,'en.prec()'],['../namespaceobservables.html#a246fef598817582e1b3fc238830ab4ac',1,'observables.prec()'],['../namespacevis.html#ac2a375bf8b2cbe75a691ea03e485dea6',1,'vis.prec()']]],
-  ['print_5fds',['print_ds',['../kernels_8h.html#af7faddf7e41e1d43b31364c32d16b2c3',1,'kernels.h']]],
   ['print_5fhelp_2esh',['print_help.sh',['../print__help_8sh.html',1,'']]],
   ['print_5fmap',['print_map',['../classGrid.html#a0a409de03ff5a0b58d2d167ef6ae57ca',1,'Grid']]],
   ['proc',['proc',['../namespacevis.html#a298c08ba27cd4b41e2b98cfc6badd447',1,'vis']]],

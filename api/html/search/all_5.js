@@ -8,7 +8,6 @@ var searchData=
   ['en',['en',['../namespaceen.html',1,'']]],
   ['en_2epy',['en.py',['../en_8py.html',1,'']]],
   ['end',['end',['../classplot_1_1params.html#af38f325f86aeafc1b1dcf6e17b701ce9',1,'plot::params']]],
-  ['energy_5fangmom',['energy_angmom',['../split__op_8h.html#ac790342df44431d570ab0c8029a9b556',1,'split_op.h']]],
   ['energy_5fcalc',['energy_calc',['../split__op_8h.html#a1c3d76341fa16b3ff2f54c43bbd04365',1,'split_op.h']]],
   ['energy_5fkinetic',['energy_kinetic',['../namespaceobservables.html#a9564b1f5f3779e78da6c98ddd9ebabaf',1,'observables']]],
   ['energy_5fpotential',['energy_potential',['../namespaceobservables.html#a97b52ea9a4be6c91b59b73717f63fbfd',1,'observables']]],

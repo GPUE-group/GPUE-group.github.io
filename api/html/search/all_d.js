@@ -3,8 +3,6 @@ var searchData=
   ['n',['N',['../namespaceobservables.html#ad49efbe831c4c893fdee39c5cff03946',1,'observables']]],
   ['n1',['n1',['../classLatticeGraph_1_1Edge.html#a96d1f3dd9b89f44f67c6709afcc2febf',1,'LatticeGraph::Edge']]],
   ['n2',['n2',['../classLatticeGraph_1_1Edge.html#a979ce1cb51be66c9965353bc1db4b0d6',1,'LatticeGraph::Edge']]],
-  ['naivetranspose2d',['naivetranspose2d',['../kernels_8h.html#ae62a7ea5c25b9b7594b4a208f9462e4a',1,'kernels.h']]],
-  ['naivetranspose2d2',['naivetranspose2d2',['../kernels_8h.html#a241c14a3b3af253f4d19d9cca4539c6e',1,'kernels.h']]],
   ['nargs',['nargs',['../namespaceplot.html#afd49e606ad7749bc9806fee2c954046d',1,'plot']]],
   ['next',['next',['../namespacevort.html#a738224df41e356b0edad1fad3daee4c1',1,'vort']]],
   ['node',['Node',['../classLatticeGraph_1_1Node.html',1,'LatticeGraph::Node'],['../classLatticeGraph_1_1Node.html#ab7dfe059b1545e2eff5a4c680246ba26',1,'LatticeGraph::Node::Node()'],['../classLatticeGraph_1_1Node.html#a3924ece0b336fd2f4ba045ab5062ae14',1,'LatticeGraph::Node::Node(Vtx::Vortex &amp;data)']]],

@@ -23,6 +23,7 @@ var searchData=
   ['counter',['counter',['../namespacevort.html#aea8a83badb8cd32d0b974a438f0d6aaf',1,'vort']]],
   ['cpus',['CPUs',['../namespaceen.html#a12cad9cb7a589b6f955b60c327905b72',1,'en.CPUs()'],['../namespacevis.html#af3f94e25054234855fcf81fcad6a8505',1,'vis.CPUs()']]],
   ['create_5fcube',['create_cube',['../namespacevisualize__3d.html#a16aca96e7dac4671797d7c620890ab7a',1,'visualize_3d']]],
+  ['create_5fnew_5fmaterial',['create_new_material',['../namespacevisualize__3d.html#a61aa9aeef00298748cc32981edd29815',1,'visualize_3d']]],
   ['create_5fvolume',['create_volume',['../namespacevisualize__3d.html#a0186101f71bff1a13cd28eab9377c443',1,'visualize_3d']]],
   ['createcage',['createCage',['../namespacevisualize__3d.html#aa5f16be2b0026157ccc50f785290ec77',1,'visualize_3d']]],
   ['createedges',['createEdges',['../classLatticeGraph_1_1Lattice.html#ad44bd7824d23da20300a5db36dcb34ed',1,'LatticeGraph::Lattice::createEdges(unsigned int radius)'],['../classLatticeGraph_1_1Lattice.html#adcf4ef1dde77d0f8faef569d25d434d2',1,'LatticeGraph::Lattice::createEdges(double radius)']]],

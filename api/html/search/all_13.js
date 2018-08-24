@@ -13,8 +13,5 @@ var searchData=
   ['tracker_2ecu',['tracker.cu',['../tracker_8cu.html',1,'']]],
   ['tracker_2eh',['tracker.h',['../tracker_8h.html',1,'']]],
   ['transfer_5fsobel',['transfer_sobel',['../vortex__3d_8h.html#a46f9edb95b147409bd42270eaac57332',1,'vortex_3d.h']]],
-  ['transpose2d',['transpose2d',['../kernels_8h.html#ae5c7ab9a06c67c43b682fe947cf37d2f',1,'kernels.h']]],
-  ['transpose2d2',['transpose2d2',['../kernels_8h.html#ab63bf59721b3eccab5d18a0aeac0bda3',1,'kernels.h']]],
-  ['trapz',['trapz',['../unit__test_8h.html#ab7ee3122481aeef6cfdb504f1a87ec3f',1,'unit_test.h']]],
   ['tree_5fto_5farray',['tree_to_array',['../dynamic_8h.html#ad64ecaa33297a0415ef5e50aa25efe58',1,'dynamic.h']]]
 ];
