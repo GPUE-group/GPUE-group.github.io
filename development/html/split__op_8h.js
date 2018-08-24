@@ -1,5 +1,6 @@
 var split__op_8h =
 [
+    [ "energy_angmom", "split__op_8h.html#ac790342df44431d570ab0c8029a9b556", null ],
     [ "energy_calc", "split__op_8h.html#a1c3d76341fa16b3ff2f54c43bbd04365", null ],
     [ "isError", "split__op_8h.html#aa669758e0ed36be3910f0dc6cf1bc52e", null ],
     [ "optLatSetup", "split__op_8h.html#a833c6ae1e681309010fa37d2d81d0481", null ],

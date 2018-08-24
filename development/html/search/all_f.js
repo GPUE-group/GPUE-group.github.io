@@ -25,7 +25,6 @@ var searchData=
   ['phasewinding',['phaseWinding',['../namespaceWFC.html#a3c11f462e400b1299fcd403b37459fb9',1,'WFC::phaseWinding(double *phi, int winding, double *x, double *y, double dx, double dy, double posx, double posy, int dim)'],['../namespaceWFC.html#a96d09bde5100e74f85e3047115c3bff0',1,'WFC::phaseWinding(double *phi, int winding, double *x, double *y, double dx, double dy, double *posx, double *posy, int sites, int dim)']]],
   ['pi',['PI',['../constants_8h.html#a598a3330b3c21701223ee0ca14316eca',1,'PI():&#160;constants.h'],['../namespaceobservables.html#afd7e03e45b418a3ca52235a703da695a',1,'observables.PI()']]],
   ['pinvortex',['pinVortex',['../kernels_8h.html#a949c33043c7045560b480ce311c46255',1,'kernels.h']]],
-  ['platform_5fid',['PLATFORM_ID',['../CMakeCXXCompilerId_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'CMakeCXXCompilerId.cpp']]],
   ['plot',['plot',['../namespaceplot.html',1,'plot'],['../namespaceplot.html#ae47ca2cd29c8e767fb0530c0e9b1d82b',1,'plot.plot()']]],
   ['plot_2epy',['plot.py',['../plot_8py.html',1,'']]],
   ['plot_5fcomplex',['plot_complex',['../namespaceplot.html#a6a89e7c37927783175ceb08bccad458f',1,'plot']]],
@@ -41,6 +40,7 @@ var searchData=
   ['pos_5fl',['pos_l',['../namespacevort.html#a44a42936183c9477183f8d9a5d97cabe',1,'vort']]],
   ['pow',['pow',['../kernels_8h.html#a04e15f6be22fe4b532ecc10589bc4ebf',1,'kernels.h']]],
   ['prec',['prec',['../namespaceen.html#a335d0f2c45d4e0d98594299dcc38ae74',1,'en.prec()'],['../namespaceobservables.html#a246fef598817582e1b3fc238830ab4ac',1,'observables.prec()'],['../namespacevis.html#ac2a375bf8b2cbe75a691ea03e485dea6',1,'vis.prec()']]],
+  ['print_5fds',['print_ds',['../kernels_8h.html#af7faddf7e41e1d43b31364c32d16b2c3',1,'kernels.h']]],
   ['print_5fhelp_2esh',['print_help.sh',['../print__help_8sh.html',1,'']]],
   ['print_5fmap',['print_map',['../classGrid.html#a0a409de03ff5a0b58d2d167ef6ae57ca',1,'Grid']]],
   ['proc',['proc',['../namespacevis.html#a298c08ba27cd4b41e2b98cfc6badd447',1,'vis']]],
@@ -50,6 +50,5 @@ var searchData=
   ['proj_5fvar1d',['proj_var1d',['../namespacegen__data.html#abf5d3d74b139251281d717452afd5a7c',1,'gen_data']]],
   ['proj_5fvar2d',['proj_var2d',['../namespacegen__data.html#ad10989a17f1ce55fc04811d1ed7a89bf',1,'gen_data.proj_var2d(xdim, yDim, zDim, data_dir, pltval)'],['../namespacegen__data.html#a9e8205af1cdb4314530ef1dff07d9f6e',1,'gen_data.proj_var2d(xdim, yDim, zDim, data_dir, pltval, file_string)']]],
   ['psi2',['psi2',['../namespaceMinions.html#a09f7d5442c5606e0fe5960380efffc86',1,'Minions']]],
-  ['psum',['pSum',['../kernels_8h.html#ac0dfa15b7a550f33bc9b6e416d95790f',1,'kernels.h']]],
-  ['ptrdiff_5ft',['ptrdiff_t',['../CMakeCUDACompilerId_8cudafe1_8cpp.html#a1391029fd5d5d35fab28d7423c8cca9b',1,'CMakeCUDACompilerId.cudafe1.cpp']]]
+  ['psum',['pSum',['../kernels_8h.html#ac0dfa15b7a550f33bc9b6e416d95790f',1,'kernels.h']]]
 ];

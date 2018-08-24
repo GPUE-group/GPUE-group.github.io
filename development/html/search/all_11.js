@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['r',['r',['../namespacevort.html#ae10a8a98cd2cb630ac04c5dd899d00f1',1,'vort.r()'],['../namespaceen.html#aa7ef3f0b36e5e6642ca135e461556d2b',1,'en.R()']]],
+  ['r',['R',['../namespaceen.html#aa7ef3f0b36e5e6642ca135e461556d2b',1,'en.R()'],['../namespacevort.html#ae10a8a98cd2cb630ac04c5dd899d00f1',1,'vort.r()']]],
   ['readin',['readIn',['../namespaceFileIO.html#a47cdf68bafa4f89fbbd4b3c553b949c6',1,'FileIO']]],
   ['readstate',['readState',['../namespaceFileIO.html#a4062840d0ff04aa222bea5743b5f9ae8',1,'FileIO']]],
   ['real_5fast',['real_ast',['../kernels_8h.html#a1f147ddfbfb074a0a98fad13fdb31d35',1,'kernels.h']]],
   ['realcompmult',['realCompMult',['../kernels_8h.html#a9918c6037affc705b3102994fef2c01b',1,'kernels.h']]],
-  ['reduce',['reduce',['../kernels_8h.html#ab02d547427ec75d264b1a712534d61ed',1,'kernels.h']]],
+  ['reduce',['reduce',['../kernels_8h.html#ab02d547427ec75d264b1a712534d61ed',1,'reduce(double2 *in, double *out):&#160;kernels.h'],['../kernels_8h.html#aab8929307f175cee6b505e52192fec29',1,'reduce(double *input, double *output):&#160;kernels.h']]],
   ['remove',['remove',['../namespacevort.html#a0cf326457a849e9c931a951e272125a8',1,'vort']]],
   ['remove_5fobj',['remove_obj',['../namespacevisualize__3d.html#ac45fe70304978093f6c7e69068b839ad',1,'visualize_3d']]],
   ['removeedge',['removeEdge',['../classLatticeGraph_1_1Lattice.html#ac746dc26198c885c0a06f7243ff58b7a',1,'LatticeGraph::Lattice::removeEdge(std::shared_ptr&lt; Node &gt; n1, std::shared_ptr&lt; Node &gt; n2)'],['../classLatticeGraph_1_1Lattice.html#a29575248578d4f159b46a1d9d5608f20',1,'LatticeGraph::Lattice::removeEdge(std::shared_ptr&lt; Edge &gt; e)'],['../classLatticeGraph_1_1Node.html#a514c9ff0a9abea10bb55e93e4f3d573d',1,'LatticeGraph::Node::removeEdge(std::shared_ptr&lt; Node &gt; n)'],['../classLatticeGraph_1_1Node.html#aa1eb6dd0c3a96464da50acd779c765b9',1,'LatticeGraph::Node::removeEdge(std::weak_ptr&lt; Edge &gt; e)']]],

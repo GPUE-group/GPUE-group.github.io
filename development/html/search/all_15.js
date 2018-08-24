@@ -34,7 +34,7 @@ var searchData=
   ['vortangle',['vortAngle',['../namespaceTracker.html#a8a6c1ff8993d8e3e95be8217ea1591c1',1,'Tracker']]],
   ['vortarrange',['vortArrange',['../namespaceTracker.html#af98a5f09f8a51a17f63f7cfc23fbf135',1,'Tracker']]],
   ['vortcentre',['vortCentre',['../namespaceTracker.html#ad66918be0f6b9a2c326c91277236bc4c',1,'Tracker']]],
-  ['vortex',['Vortex',['../namespacevort.html#classvort_1_1Vortex',1,'vort.Vortex'],['../classVtx_1_1Vortex.html',1,'Vtx::Vortex'],['../classVtx_1_1Vortex.html#a9e48cea8d19703ab99bc29047e3f9e1a',1,'Vtx::Vortex::Vortex()'],['../classVtx_1_1Vortex.html#aed76498f372edf90bd9100d7c61916d6',1,'Vtx::Vortex::Vortex(int2 coords, double2 coordsD, int winding, bool isOn, std::size_t timeStep)']]],
+  ['vortex',['Vortex',['../classVtx_1_1Vortex.html',1,'Vtx::Vortex'],['../namespacevort.html#classvort_1_1Vortex',1,'vort.Vortex'],['../classVtx_1_1Vortex.html#a9e48cea8d19703ab99bc29047e3f9e1a',1,'Vtx::Vortex::Vortex()'],['../classVtx_1_1Vortex.html#aed76498f372edf90bd9100d7c61916d6',1,'Vtx::Vortex::Vortex(int2 coords, double2 coordsD, int winding, bool isOn, std::size_t timeStep)']]],
   ['vortex_5f3d_2ecu',['vortex_3d.cu',['../vortex__3d_8cu.html',1,'']]],
   ['vortex_5f3d_2eh',['vortex_3d.h',['../vortex__3d_8h.html',1,'']]],
   ['vortices',['vortices',['../classLatticeGraph_1_1Lattice.html#a9ac44927618fe8fd033ce1c3c0196c21',1,'LatticeGraph::Lattice::vortices()'],['../classVtx_1_1VtxList.html#a207de3f0732f9b14df5880814bbf12ac',1,'Vtx::VtxList::vortices()']]],
@@ -53,6 +53,6 @@ var searchData=
   ['vtx_5fpos_5fc',['vtx_pos_c',['../namespacevort.html#a73bc1c614ec11f93fdbfedbdbdcc9430',1,'vort']]],
   ['vtx_5fpos_5fp',['vtx_pos_p',['../namespacevort.html#a6568ef666004671f2bf84dac9aced133',1,'vort']]],
   ['vtx_5fuid',['vtx_uid',['../namespacevort.html#a8a3cdf271a0a6996b62897c2c1c905d1',1,'vort']]],
-  ['vtxlist',['VtxList',['../classVtx_1_1VtxList.html',1,'Vtx::VtxList'],['../namespacevort.html#classvort_1_1VtxList',1,'vort.VtxList'],['../classVtx_1_1Vortex.html#a9328a84d5e64fcea306a5b5023aa39f3',1,'Vtx::Vortex::VtxList()'],['../classVtx_1_1VtxList.html#a1d59256e202716f6d9129cc3c0515564',1,'Vtx::VtxList::VtxList()'],['../classVtx_1_1VtxList.html#a5442faaa700ddab5ffdc68baf726c4f3',1,'Vtx::VtxList::VtxList(std::size_t reserveSize)']]],
+  ['vtxlist',['VtxList',['../namespacevort.html#classvort_1_1VtxList',1,'vort.VtxList'],['../classVtx_1_1VtxList.html',1,'Vtx::VtxList'],['../classVtx_1_1Vortex.html#a9328a84d5e64fcea306a5b5023aa39f3',1,'Vtx::Vortex::VtxList()'],['../classVtx_1_1VtxList.html#a1d59256e202716f6d9129cc3c0515564',1,'Vtx::VtxList::VtxList()'],['../classVtx_1_1VtxList.html#a5442faaa700ddab5ffdc68baf726c4f3',1,'Vtx::VtxList::VtxList(std::size_t reserveSize)']]],
   ['vtxtest_2ecc',['VtxTest.cc',['../VtxTest_8cc.html',1,'']]]
 ];

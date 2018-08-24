@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wavefunction_2ecu',['wavefunction.cu',['../wavefunction_8cu.html',1,'']]]
+  ['zippit_2esh',['zippit.sh',['../zippit_8sh.html',1,'']]]
 ];

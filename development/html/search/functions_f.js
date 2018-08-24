@@ -19,6 +19,7 @@ var searchData=
   ['plot_5fxyz_5fhistogram',['plot_xyz_histogram',['../namespacehist3d.html#a558351d9b8943d1f430fc702a82671b0',1,'hist3d']]],
   ['poly_5fj',['poly_j',['../dynamic_8h.html#a2b04c196dd99a5e7c29dc79ccaf185a3',1,'dynamic.h']]],
   ['pow',['pow',['../kernels_8h.html#a04e15f6be22fe4b532ecc10589bc4ebf',1,'kernels.h']]],
+  ['print_5fds',['print_ds',['../kernels_8h.html#af7faddf7e41e1d43b31364c32d16b2c3',1,'kernels.h']]],
   ['print_5fmap',['print_map',['../classGrid.html#a0a409de03ff5a0b58d2d167ef6ae57ca',1,'Grid']]],
   ['proj_5f2d',['proj_2d',['../namespacegen__data.html#aba7065d50318f94caf2516c4c45eb60d',1,'gen_data']]],
   ['proj_5fk2d',['proj_k2d',['../namespacegen__data.html#ab0a900f6511a6222c0cc521fcda6e4d5',1,'gen_data']]],

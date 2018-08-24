@@ -1,4 +1,4 @@
 <map id="LatticeGraph::Node" name="LatticeGraph::Node">
-<area shape="rect" id="node2" href="$classVtx_1_1Vortex.html" title="Maintains vortex index in grid and least&#45;squares calculated values with winding/direction of vortex r..." alt="" coords="113,5,279,420"/>
-<area shape="rect" id="node5" href="$classLatticeGraph_1_1Edge.html" title="{LatticeGraph::Edge\n|+ uid\l&#45; direction\l&#45; weight\l&#45; suid\l|+ Edge()\l+ Edge()\l+ Edge()\l+ ~Edge()\l+ getDirection()\l+ getSuid()\l+ getUid()\l+ getVortex()\l+ getWeight()\l+ isMember()\l+ operator\&lt;()\l+ setDirection()\l+ setWeight()\l+ updateVortex()\l}" alt="" coords="41,1012,199,1375"/>
+<area shape="rect" id="node2" href="$classVtx_1_1Vortex.html" title="Maintains vortex index in grid and least&#45;squares calculated values with winding/direction of vortex r..." alt="" coords="108,5,271,391"/>
+<area shape="rect" id="node5" href="$classLatticeGraph_1_1Edge.html" title="{LatticeGraph::Edge\n|+ uid\l&#45; direction\l&#45; weight\l&#45; suid\l|+ Edge()\l+ Edge()\l+ Edge()\l+ ~Edge()\l+ getDirection()\l+ getSuid()\l+ getUid()\l+ getVortex()\l+ getWeight()\l+ isMember()\l+ operator\&lt;()\l+ setDirection()\l+ setWeight()\l+ updateVortex()\l}" alt="" coords="37,953,196,1291"/>
 </map>

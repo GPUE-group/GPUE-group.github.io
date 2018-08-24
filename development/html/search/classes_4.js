@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['node',['Node',['../classLatticeGraph_1_1Node.html',1,'LatticeGraph']]]
+  ['params',['params',['../classplot_1_1params.html',1,'plot']]],
+  ['pos',['pos',['../ds_8h.html#structpos',1,'']]]
 ];

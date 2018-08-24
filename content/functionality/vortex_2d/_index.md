@@ -12,8 +12,7 @@ To allow us to track and manipulate vortices in a (2D) condensates, we require s
 1. Vortex detection.
 2. Vortex position refinement
 3. Vortex unique identification and tracking.
-4. Arbitrary phase control of the condensate.
-5. Lattice model creation.
+4. Lattice model creation and arbitrary phase control.
 
 ## 1. Vortex detection
 To find a vortex in the condensate, we can rely on several methods, such as tracking the condensate density minima. However, given the nature of the wavefunction (a complex valued scalar field), and a quantum vortex (topological defect of the wavefunction), we can examine the phase of the condensate, $\phi$, such that $\Psi=|\Psi|\exp\left(i \phi\right)$. Every vortex in the condensate will have integer winding in the complex plane, wherein the phase has a singular point around which it winds through $2\pi$. By examining the condensate for these phase windings, we can identify the presence of a vortex to a location on our numerical grid.
@@ -89,7 +88,7 @@ $$
          \Im(\mathrm{c})
      \end{array}\right),
 $$
-which allows us to examine the zero crossings in both the real and imaginary planes for both $x$ and $y$ dimensions. Using this approach our vortex positions are now siginificantly more accurate, and can be used to allow trajectory calculations, and statistical properties. When tracking vortices, the condensate outputs their discovered positions into a CSV file `vort\_arr\_<timestep>`, one for every printed wavefunction time-point. A sample output of the CSV file format is 
+which allows us to examine the zero crossings in both the real and imaginary planes for both $x$ and $y$ dimensions. Using this approach our vortex positions are now siginificantly more accurate, and can be used to allow trajectory calculations, and statistical properties. When tracking vortices, the condensate outputs their discovered positions into a CSV file `vort_arr_XYZ`, one for every printed wavefunction time-point `XYZ`. A sample output of the CSV file format is 
 ```csv
 #  X,   X_refined,  Y,   Y_refined, Winding
  485,4.858494e+02,485,4.858132e+02,1
@@ -98,12 +97,20 @@ which allows us to examine the zero crossings in both the real and imaginary pla
  538,5.381506e+02,538,5.381441e+02,1
 ```
 for a given four vortex condensate. The values for positions are given in terms of the numerical grid coordinates. To determine actual positions, for a given simulation, it is necessary to examine `Params.dat`, and check the grid-size ($\textrm{xDim}$), grid-increments ($\textrm{dx}$), and normalise the values from 0. As an example, $X\_\textrm{pos} = (X\_\textrm{refined}-\textrm{xDim}/2)*\textrm{dx}$. For the above simulation, $\textrm{xDim}=1024$, $\textrm{dx}=6.84732\times 10^{-7}~\textrm{(m)}$, given a position of $X\_\textrm{pos} = -1.7906\times 10^{-5}$ for a condensate centered on $(0,0)$ at grid point $[511,511]$ (or $[512, 512]$ if you are a 1-based indexing person).
+
 ## 3. Vortex unique identification and tracking.
 If we are interested in statistical quantities such as vortex count, average separation, or distribution of windings (rotation directions), we can use the above methods. However, sometimes we wish to indentify and track unqiue vortices over the course of a simulation. As we are employing a field-based simulation in GPUE, namely solving the Gross-Pitaevskii equation for the wavefunction at points in time, we cannot maintain knowledge of our vortices between timesteps --- each newly simulated wavefunction follows no particle objects which may be easily tracked. Instead, we must re-run the above tracking methods for each wavefunction at an in time to determine the vortex positions.
 
-Given these newly determined vortex positions, it is important to identify which vortices at previous timepoints correspond to vortices in the current timepoints. For this, we rely on the unordered vortex positions file
+Given these newly determined vortex positions, it is important to identify which vortices at previous timepoints correspond to vortices in the current timepoints. For this, we rely on the unordered vortex positions file `vort_arr_XYZ`, and the Python script `py/vorts.py`. This file reads all available `vort_arr_XYZ` files, creates a vortex with a unique index, maintains it in a lniked-list (the ability to move and link vortices becomes important for larger condensates). For every vortex, at timepoint $t\_i$, the identified vortices at $t\_{i-1}$ are compared, with a distance threshold set to determine if the vortex within a given radius could have moved through the set range between the timesteps. The vortex that is closest between timesteps is identified as the successor of the previous time-points unique index, and the list is array to reflect this new information. 
+
+Upon processing this data, the file outputs a new file `vort_ord_XYZ.csv`, which can be used to examine vortex trajectories over time. The new CSV file changes the output format to `#  X_refined, Y_refined, Winding, UID, onFlag`. The `onFlag` in this instance is used to indicate whether a vortex which was found at an earlier time point exists at later time points. Given certain perturbations can remove vortices from the condensate, this flag is a useful indicator of the physical behaviour. It is worth nothing, the the first 2 timepoints of analysis do not output files, as these are used to set-up the ordering of the later observed vortex data.
 
 
+## 4. Lattice model creation and arbitrary phase control.
+For condensates with multiple vortices, it is well known that the vortices arrange themselves into an ordered lattice. Therefore, it can be useful to have a lattice model for the vortices in rotating condensates. The C++ files ` "include/lattice.h", include/node.h, include/edge.h"` define the function signatures that create lattices of vortices, and maintain this structure as a graph. Each vortex represents a node having a unique index and the previously determined positions, the nearest vortices are connected as edges determined by nearest-neighbour distances, and the overall structure is maintained as a lattice. This data structure allows us to address specific vortices in the condensate, read their properties, and even manipulate them before output to a `vort_arr_XYZ` file.
+
+Given the ability to index a vortex, we can also implement functions that operate on the vortices at given positions. For a vortex at position $\mathbf{r}\_1 = (x\_1,y\_1)$, one such application of the lattice model is that we can modified the phase at this position. For the [previously mentioned work](https://arxiv.org/abs/1608.07756), we chose the annihilate and add vortices to the condensate at pre-defined positions by apply a phase profile that matches that of a vortex core. As such, the lattice model allows one to read this position directly for a vortex of arbitrary UID, and use the resulting poisiton for further manipulations. Such functions to apply arbitrary phase profiles are defined in `include/manip.h`.
+`
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">

@@ -1,7 +1,7 @@
-<map id="/home/james/projects/GPUE/include/constants.h" name="/home/james/projects/GPUE/include/constants.h">
-<area shape="rect" id="node2" href="$split__op_8h.html" title="command line parser file. " alt="" coords="5,100,219,147"/>
-<area shape="rect" id="node3" href="$evolution_8h.html" title="function for evolution. " alt="" coords="149,195,368,241"/>
-<area shape="rect" id="node4" href="$init_8h.html" title="/home/james/projects\l/GPUE/include/init.h" alt="" coords="316,289,495,336"/>
-<area shape="rect" id="node5" href="$manip_8h.html" title="Routines for manipulating the wavefunction. " alt="" coords="293,100,491,147"/>
-<area shape="rect" id="node6" href="$operators_8h.html" title="File to hold all operators for finding fields on the GPU. " alt="" coords="565,195,784,241"/>
+<map id="/Users/mlxd/Desktop/GPUE/include/constants.h" name="/Users/mlxd/Desktop/GPUE/include/constants.h">
+<area shape="rect" id="node2" href="$split__op_8h.html" title="command line parser file. " alt="" coords="5,97,205,141"/>
+<area shape="rect" id="node3" href="$evolution_8h.html" title="function for evolution. " alt="" coords="142,189,350,233"/>
+<area shape="rect" id="node4" href="$init_8h.html" title="/Users/mlxd/Desktop\l/GPUE/include/init.h" alt="" coords="303,281,472,325"/>
+<area shape="rect" id="node5" href="$manip_8h.html" title="Routines for manipulating the wavefunction. " alt="" coords="279,97,467,141"/>
+<area shape="rect" id="node6" href="$operators_8h.html" title="/Users/mlxd/Desktop\l/GPUE/include/operators.h" alt="" coords="540,189,752,233"/>
 </map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hist3d_2epy',['hist3d.py',['../hist3d_8py.html',1,'']]],
-  ['hist_5fit_2epy',['hist_it.py',['../hist__it_8py.html',1,'']]]
+  ['init_2ecu',['init.cu',['../init_8cu.html',1,'']]],
+  ['init_2eh',['init.h',['../init_8h.html',1,'']]]
 ];
