@@ -126,3 +126,33 @@ blender -P visualize_3d.py
 
 This is an example script of how to find the energy of a 2 dimensional simulation from GPUE.
 As a note, this functionality is already completely implemented in GPUE by outputting the energy every timestep with the `-E` flag; however, this script provides an example of how this can be done with python.
+
+## vort.py
+This file enables ordering and trajectory calculation of the vortices that are output from GPUE. All available `vort_arr_XYZ` files are loaded from the GPUE simulation output, and a linked-list data-structure is create, wherein each vortex is assigned a unique ID (`uid`). These `uid` values are then ordered and swapped between subsequent timesteps to the most-likely candidate after each time-step of evolution. The resulting data, once ordered, is then output into a new file format `vort_ord_XYZ.csv`, with each vortex `uid` constant over the time-series. This allows for the creation of vortex trajectories, as is perfomed by `matlab/vtxTrajectory.m`. Some additional details are also given on the [2D GPUE functionality page](/functionality/vortex_2d/).
+
+```bash
+python py/vort.py
+```
+
+## mpi_vis.py
+This script enables MPI-distributed wavefunction density generation for 2D data only. $|\Psi|^2$ is plotted over all available timesteps, and is distributed using mpi4py. To ensure this works, mpi4py MUST be built against the MPI library running on the local machine (be it a laptop, or a supercomputer). Some useful instructions on this are provided by [NERSC](http://www.nersc.gov/users/data-analytics/data-analytics-2/python/anaconda-python/) under the "Building MPI4PY" subtitle.
+
+Once set-up, this script can be run to generate images both with and without the colour-bar, and enumerating the specific vortices as analysed by `vort.py`, as follows:
+
+Note: to ensure this script runs correctly, `vort.py` should be run first to generate ordered vortex lists as `vort_ord_XYZ.csv`.
+
+```bash
+mpirun -n 32 python py/mpi_vis.py true true #first true is for colorur-bar, second true is for vortex enumeration in plot
+```
+
+The result will be `n` PNG images, one for each wavefunction dataset. 
+
+## stats.py [deprecated]
+This file was originally developed for calculating statistical quantities over the vrortex data. However, much of the functionality has been added to other segments of the code-base, and all that remains here is a sample script for the vortex least-squares position estimation, as discussed [here](/functionality/vortex_2d/). The example can be run as:
+
+```bash
+python py/stats.py 0 1000 #where 0 and 1000 represent the start and end values for which to calculate the least-sqyuares refinement.
+```
+
+## observables.py [deprecated]
+This file offers a re-write of the MATLAB code for calculation of the kinetic energy spectra, as well as the ability to calculate values for some known observables, such as the quadrupole mode, breathing mode, and angular momentum as key examples. Running this file expects the wavefunctions and Params.dat to be available in the running directory. Values are calculated and plotted over the available timesteps, and output as PDF files.

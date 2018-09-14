@@ -374,6 +374,28 @@ This can be directly read into 3 dimensional plotters like Paraview and is the p
 <p>This is an example script of how to find the energy of a 2 dimensional simulation from GPUE.
 As a note, this functionality is already completely implemented in GPUE by outputting the energy every timestep with the <code>-E</code> flag; however, this script provides an example of how this can be done with python.</p>
 
+<h2 id="vort-py">vort.py</h2>
+
+<p>This file enables ordering and trajectory calculation of the vortices that are output from GPUE. All available <code>vort_arr_XYZ</code> files are loaded from the GPUE simulation output, and a linked-list data-structure is create, wherein each vortex is assigned a unique ID (<code>uid</code>). These <code>uid</code> values are then ordered and swapped between subsequent timesteps to the most-likely candidate after each time-step of evolution. The resulting data, once ordered, is then output into a new file format <code>vort_ord_XYZ.csv</code>, with each vortex <code>uid</code> constant over the time-series. This allows for the creation of vortex trajectories, as is perfomed by <code>matlab/vtxTrajectory.m</code>. Some additional details are also given on the <a href="/functionality/vortex_2d/">2D GPUE functionality page</a>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python py/vort.py</code></pre></div>
+<h2 id="mpi-vis-py">mpi_vis.py</h2>
+
+<p>This script enables MPI-distributed wavefunction density generation for 2D data only. $|\Psi|^2$ is plotted over all available timesteps, and is distributed using mpi4py. To ensure this works, mpi4py MUST be built against the MPI library running on the local machine (be it a laptop, or a supercomputer). Some useful instructions on this are provided by <a href="http://www.nersc.gov/users/data-analytics/data-analytics-2/python/anaconda-python/">NERSC</a> under the &ldquo;Building MPI4PY&rdquo; subtitle.</p>
+
+<p>Once set-up, this script can be run to generate images both with and without the colour-bar, and enumerating the specific vortices as analysed by <code>vort.py</code>, as follows:</p>
+
+<p>Note: to ensure this script runs correctly, <code>vort.py</code> should be run first to generate ordered vortex lists as <code>vort_ord_XYZ.csv</code>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mpirun -n <span style="color:#ae81ff">32</span> python py/mpi_vis.py <span style="color:#111">true</span> <span style="color:#111">true</span> #first <span style="color:#111">true</span> is <span style="color:#00a8c8">for</span> colorur-bar, second <span style="color:#111">true</span> is <span style="color:#00a8c8">for</span> vortex enumeration in plot</code></pre></div>
+<p>The result will be <code>n</code> PNG images, one for each wavefunction dataset.</p>
+
+<h2 id="stats-py-deprecated">stats.py [deprecated]</h2>
+
+<p>This file was originally developed for calculating statistical quantities over the vrortex data. However, much of the functionality has been added to other segments of the code-base, and all that remains here is a sample script for the vortex least-squares position estimation, as discussed <a href="/functionality/vortex_2d/">here</a>. The example can be run as:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python py/stats.py <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1000</span> #where <span style="color:#ae81ff">0</span> and <span style="color:#ae81ff">1000</span> represent the start and end values <span style="color:#00a8c8">for</span> which to calculate the least-sqyuares refinement.</code></pre></div>
+<h2 id="observables-py-deprecated">observables.py [deprecated]</h2>
+
+<p>This file offers a re-write of the MATLAB code for calculation of the kinetic energy spectra, as well as the ability to calculate values for some known observables, such as the quadrupole mode, breathing mode, and angular momentum as key examples. Running this file expects the wavefunctions and Params.dat to be available in the running directory. Values are calculated and plotted over the available timesteps, and output as PDF files.</p>
+
 
 
     
