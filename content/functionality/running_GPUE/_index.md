@@ -152,6 +152,3 @@ Otherwise, the flag's default will be `harmonic`
 5. `-d`: This flag will specify a data directory.
 All configuration files are expected to be in this directory.
 If the directory does not exist at the start of the simulation, GPUE will create the directory.
-
-## Example simulations
-Examples to come!
