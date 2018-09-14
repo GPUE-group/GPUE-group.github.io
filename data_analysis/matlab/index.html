@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.46" />
 <title>Matlab Scripts :: GPUE</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,6 @@
   
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
-
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
@@ -268,18 +267,95 @@
 
 
 
-<h1 id="title-1">Title 1</h1>
+<p>GPUE provides a number of MATLAB scripts in the <code>matlab/</code> directory.
+This page explains what each script is and its intended use. Please note that these scripts were verified to work under MATLAB r2016b, but have not been tested with newer releases. Some in-built function changes may require updating, but it is expected that most scripts work as standard. MATLAB development has ceased on this project, and any newer funcionality required should be performed in Julia, Python, or C++/CUDA directly.</p>
 
+<p>As with the Python scripts, data analysis of this nature must be done on a case-by-case basis, and as such, these scripts only intend to provide basic functionality for data examination of the simulation results. If more advanced functions are required, please create these on your own or discuss them with us on <a href="https://github.com/GPUE-group/GPUE">GitHub</a></p>
 
+<h2 id="bindata-m">binData.m</h2>
 
-<ul class="children children-h2">
-</ul>
+<p>Bin the data returned from g6_struct into equi-separated partitions</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [g6B,bin] = binData(g6C,binMax,bins)
+% g6C:       Matrix containing the g6 values output from g6_struct
+% binMax:    The maximum binning value
+% bins:      The number of bins to take
+%Returns
+% g6B:       The binned g6 data
+% bin:       The bin values of g6B</code></pre></div>
+<h2 id="findnn-m">findNN.m</h2>
 
-<p>Stuff goes here</p>
+<p>Returns values and indices of nearest neighbours to location <code>pos</code> in positions <code>X,Y</code> within <code>radius</code>.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [neighbours,locations] = findNN(pos,X,Y,radius)</code></pre></div>
+<h2 id="getangle-m">getAngle.m</h2>
 
+<p>Returns angle between 2 points on a plane</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [ang] = getAngle(P1,P2)</code></pre></div>
+<h2 id="kinspec-m">kinSpec.m</h2>
 
+<p>This function is used to process a large number of wavefunctions to examine
+the kinetic energy spectra. The function first transforms the position-space wavefunction
+into momentum space, and decomposes the kinetic energy into compressible (phonons) and incompressible (vortices)
+components (quantum pressure term assumed to be neglible for these routines).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [EKc,EKi] = kinSpec(wfc_str,dimSize,dx,mass,qSpec,init,incr,fin)
+%   wfc_str is the string of the wavefunction name. For time-ev this is
+%       usually wfc_ev; wfc_0_const or wfc_0_ramp for ground-states
+%   dimSize is a vector with the dimenion size, so that the wavefunctions
+%       can be appropriately reshaped when loaded
+%   dx is the increment along x. dx==dy
+%   qSpec enables classical (0) or quantum (1) variant of energy spectra
+%   init,incr,fin are the loop values for specifiying the range of the data</code></pre></div>
+<h2 id="loadvtx-m">loadVtx.m</h2>
 
+<p>Loads the processed vorts from the output file produced from <code>vort.py</code>, and structures them
+into Matlab structs for Vortex position and index. Forms the basis of analysing all vortex data
+output from GPUE.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [vorts] = loadVtx(start, step, fin, lostCheck)
+%   start step and fin are the initial dataset, step size, and final
+%   dataset to load for the vortex postions
+%   lostCheck turns on the ability to test for vortex losses and ensure
+%   that these vortices do not contribute to the dataset.
+%   The Data should be in the format of [X Y Sign UID IsLost] </code></pre></div>
+<h2 id="psi6-m">psi6.m</h2>
 
+<p>Calculate the orientational order parameter defined at point pos between the points <code>(X,Y)</code></p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">[nn,idx] = findNN(pos,X,Y,radius); %find number of neighbours and indices of neighbours for (X,Y)
+% pos:       Defines the location to calculate the orientational order parameter
+% X,Y:       Vector of entire X,Y range of points
+% radius:    Radius over which to determine neighbouring points
+%Returns
+% psi6_pos:  The value of orientational order psi_6 at position pos
+% nn:        Number of nearest neighbours</code></pre></div>
+<h2 id="uniqpairidx-precalc-m">uniqPairIdx_precalc.m</h2>
+
+<h2 id="voronoi2dcellcolour-m">voronoi2dCellColour.m</h2>
+
+<h2 id="vtxtrajectory-m">vtxTrajectory.m</h2>
+
+<h2 id="defecttriangulation-m">defectTriangulation.m</h2>
+
+<p>%Plots delaunay triangulation of input data points, with (5,7) (3,9) and
+%(4,8) dislocations indicated. Can be used to calculate the defects numbers with
+%no plotting by setting plotit to 0</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [h,DefCount] = defectTriangulation(x, y, dx, dimSize, plotit, radius)
+%   radius defines the distance from 0,0, for which the defects will be
+%considered. This can be used to avoid defects that arise naturally from
+%the edge of the triangulation
+%   h is a handle for generated plot
+%   DefCount is a vector of the total number of defects counted for each
+%   type with the index representing the number of connected edges</code></pre></div>
+<h2 id="g6-struct-m">g6_struct.m</h2>
+
+<h2 id="gpe-2d-m">GPE_2d.m</h2>
+
+<h2 id="latexfig-m">latexFig.m</h2>
+
+<h2 id="psi6-dt-m">psi6_DT.m</h2>
+
+<h2 id="qukineticspec-m">quKineticSpec.m</h2>
+
+<h2 id="velfield-m">velField.m</h2>
+
+<h2 id="vtxcorr-m">VtxCorr.m</h2>
 
 
 
