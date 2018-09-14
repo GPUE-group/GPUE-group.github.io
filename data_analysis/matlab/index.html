@@ -288,7 +288,7 @@ This page explains what each script is and its intended use. Please note that th
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [neighbours,locations] = findNN(pos,X,Y,radius)</code></pre></div>
 <h2 id="getangle-m">getAngle.m</h2>
 
-<p>Returns angle between 2 points on a plane</p>
+<p>Returns angle between 2 points on a plane.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [ang] = getAngle(P1,P2)</code></pre></div>
 <h2 id="kinspec-m">kinSpec.m</h2>
 
@@ -327,15 +327,55 @@ output from GPUE.</p>
 % nn:        Number of nearest neighbours</code></pre></div>
 <h2 id="uniqpairidx-precalc-m">uniqPairIdx_precalc.m</h2>
 
+<p>Calculate all unique pairings of the orientational correlations from the
+orientational order parameters, and create a struct to return that holds
+the distance between paired elements, and the respective orientational order values.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [S] = uniqPairIdx_precalc(R,psi6p)
+% R:        Vectors of R=[X Y] values for points.
+% psi6p:    Orientational order values defined over the range of points
+%Return:
+% S:        Struct of orientational corder values cor0,cor1 and distance
+%            between elements</code></pre></div>
 <h2 id="voronoi2dcellcolour-m">voronoi2dCellColour.m</h2>
 
+<p>Determine the Voronoi diagram of the input data vortex position data, and colour the
+cells with the value of the orientational correlations defined at each
+site (col=1), or with the area of the cell (col=0).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [p6cp6, area, avg_area, num_edges, var]=voronoi2dCellColour(x,y,radius,edgeCol,dx,colScheme)
+%vorCellColour 
+%x,y: are the locations of the sites
+%radius: is the area over which to perform the triangulation. This should
+%     avoid too large values to ensure the traingulation does not run off to
+%     infinity
+%edgeCol: Defines the Voronoi diagram edge colours for edge indexed pair. edgeCol&lt;0 is 
+%     red, edgeCol==0 is black, edgeCol&gt;0 is white
+%dx: this is the increment size of the data
+%colScheme: defines the colouring scheme, 1 for orientational correlations on the site 
+%     with 6-fold symmetry, 0 for cell area 
+% Returns:  p6cp6 = local values of correlations
+%           area = cell areas
+%           avg_area = average area of cells
+%           num_edges = cell edges count
+%           var = variance</code></pre></div>
+<p>Testcase: Generate a 2D grid centred on 0 and calculate voronoi diagram:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">x=linspace(-1,1,20); y=x;
+ radius = 0.5; dx = 1; q = ones(length(x)*length(y),1);
+ voronoi2dCellColour(kron(x&#39;,ones(length(y),1)),kron(ones(length(x),1),y&#39;),0.75,zeros(length(x)^2,1),1,0);</code></pre></div>
 <h2 id="vtxtrajectory-m">vtxTrajectory.m</h2>
 
+<p>Generates trajectory plots of 2D vortex data from the postprocessed vortex positions as loaded by <code>loadVtx.m</code>. Since the processed data assumes an initial starting position the data at 0 is named vort_arr_0, while postprocessed data is vort_ord_xxx. Plotting assumes the data to be centered at 0 with for half $dimSize$ of the system.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [vorts] = vtxTrajectory(start, step, fin, initial,threeD, dx, dimSize, dt)
+%   Start step and fin are the initial, stepsize and final datasets
+%   initial indicates if you wish to highlight the 
+%   threeD also plots aspacetime (XYT) diagram in 3D.
+%   dx is the stepsize along one dimension and assumes the same over x,y
+%   dimSize is the length of the dimensions, and assumes x==y
+%   dt is the time increment for the spacetime diagram.</code></pre></div>
 <h2 id="defecttriangulation-m">defectTriangulation.m</h2>
 
-<p>%Plots delaunay triangulation of input data points, with (5,7) (3,9) and
-%(4,8) dislocations indicated. Can be used to calculate the defects numbers with
-%no plotting by setting plotit to 0</p>
+<p>Plots delaunay triangulation of input data points, with (5,7) (3,9) and
+(4,8) dislocations indicated. Can be used to calculate the defects numbers with
+no plotting by setting <code>plotit</code> to 0</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [h,DefCount] = defectTriangulation(x, y, dx, dimSize, plotit, radius)
 %   radius defines the distance from 0,0, for which the defects will be
 %considered. This can be used to avoid defects that arise naturally from
@@ -345,18 +385,77 @@ output from GPUE.</p>
 %   type with the index representing the number of connected edges</code></pre></div>
 <h2 id="g6-struct-m">g6_struct.m</h2>
 
+<p>Determine the orientational correlation function between every pairing of points, and sorts the results based on distance between points. This gives $g_6&reg;$.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [g6C] = g6_struct(X,Y,rad)
+% X,Y:   Vectors of x,y values for points.
+% rad:   Radius in which to examine for neighbouring points.
+%Return:
+% g6C:   Matrix of g6 values and parameters</code></pre></div>
 <h2 id="gpe-2d-m">GPE_2d.m</h2>
+
+<p>This script is an example code for simulating a rotating BEC using the split-operator based Gross&ndash;Pitaevskii equation. This simulation code is merely a test-case for simple functionality tests of the Gross&ndash;Pitaevskii equation.</p>
 
 <h2 id="latexfig-m">latexFig.m</h2>
 
+<p>LaTeXify the plot axes for an existing figure. This sets the plotting axis on supplied figure to be LaTeX formatted.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function latexFig(gca, fontSize, cbar, xtick, ytick, xticklabels, yticklabels)
+%   {x,y}tick can be used to overwrite the automatically defined tick
+%   locations
+%   {x,y}ticklabels overwrites the labels at the positions defined by
+%   {x,y}tick values
+%   This assumes that the Latin Modern fonts are installed
+%   Fontsize sets the size of the text
+%   cbar enables the colorbar if needed</code></pre></div>
+<p>Example usage:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">pcolor(rand(10,10));
+latexFig(gca, 30, 1, 2:2:10, 1:2:10, {&#39;a1&#39;,&#39;b1&#39;,&#39;c1&#39;,&#39;d1&#39;,&#39;e1&#39;}, {&#39;a2&#39;,&#39;b2&#39;,&#39;c2&#39;,&#39;d2&#39;,&#39;e2&#39;})</code></pre></div>
 <h2 id="psi6-dt-m">psi6_DT.m</h2>
+
+<p><code>psi6.m</code> variant for use in Delaunay triangulation/Voronoi cell calculation routines. Use of <code>psi6.m</code> is preferred.</p>
 
 <h2 id="qukineticspec-m">quKineticSpec.m</h2>
 
+<p>Evalutes the quantum kinetic energy spectrum (see <a href="https://oist.repo.nii.ac.jp/?action=pages_view_main&amp;active_action=repository_view_main_item_detail&amp;item_id=182&amp;item_no=1&amp;page_id=15&amp;block_id=79">O&rsquo;Riordan, 2017</a> for specific details). Used by <code>kinSpec.m</code> for evaluation of both quantum and classical kinetic energy spectra in compressible and incompressible cases.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [varargout] = quKineticSpec(Psir,m,dx,q,avg,iii)
+
+% Ek = quKineticSpec(Psir,m,dx,q,avg,iii), 
+% Psir N-dim wavefunction in r space with grid spacing dx and mass m
+% q = include phase for quantum spectrum, 1=yes,0=no; 
+% avg = perform angled average. Likely always want this to be yes, 1
+% iii output index for naming the figure files. Useful when looped with
+% kinSpec script</code></pre></div>
 <h2 id="velfield-m">velField.m</h2>
 
+<p>Calculates the velocity field of wavefunction, and plots the magnitude and direction of the velocity field for the given wavefunction in 2D.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [] = velField(wfc0,dx,m,incr,x,y,normed, lims)
+% dx is the increment along x, and assumes dx==dy
+% m is the mass of the atomic species
+% incr is the increment over which to calculate field direction. Too low
+%     and it may be very dense, too high and very sparse. Start at 1, and
+%     increase until happy
+% x,y are the grid spacings along the x and y axis
+% normed specifies whether to normalise the vector directions. 1 if yes, 0 otherwise
+% lims is [xMin xMax yMin yMax]. Hides the edge garbage. Otherwise, []</code></pre></div>
 <h2 id="vtxcorr-m">VtxCorr.m</h2>
 
+<p>Plot the Voronoi diagram over the range of values spanned by dataSteps, and print the results to file. Essentially wraps
+voronoi2dCellColour and saves the resulting plots, with mean, variance and standard deviation values.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-matlab" data-lang="matlab">function [] = VtxCorr(dataSteps, dx, dimSize, radius, printIt, edgeCol)
+%
+%dataSteps: The range of values to be plotted (e.g. [1e3 1e4 5e6])
+%dx:        this is the spatial increment size of the data
+%dimSize:   The number of elements along one dimension. Used to calculate
+%               max and min spatial values. Assumes x==y
+%radius:    defines the bounded region to calculate the Voronoi diagram and all 
+%               quantities. Useful to avoid cells tending to infinity.
+%               Assumes a circularly symmetric dataset.
+%printIt:   1 if plots are to be saved, 0 otherwise.
+%edgeCol:   Defines the Voronoi diagram edge colours for edge indexed pair. 
+%               edgeCol==0 is black, edgeCol&gt;0 is white
+% Returns
+%%Testcase: Generate diagrams for data at steps 1e3 1e4 and 1e5
+% dx=1e-4; dimSize=1024; radius = 200*dx; printIt = 0; edgeCol = 1;
+% VtxCorr([1e3 1e4 1e5], dx, dimSize, radius, printIt, edgeCol)</code></pre></div>
 
 
     
