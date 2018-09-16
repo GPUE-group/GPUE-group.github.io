@@ -130,7 +130,12 @@ As a note, this functionality is already completely implemented in GPUE by outpu
 ## vort.py
 This file enables ordering and trajectory calculation of the vortices that are output from GPUE. All available `vort_arr_XYZ` files are loaded from the GPUE simulation output, and a linked-list data-structure is create, wherein each vortex is assigned a unique ID (`uid`). These `uid` values are then ordered and swapped between subsequent timesteps to the most-likely candidate after each time-step of evolution. The resulting data, once ordered, is then output into a new file format `vort_ord_XYZ.csv`, with each vortex `uid` constant over the time-series. This allows for the creation of vortex trajectories, as is perfomed by `matlab/vtxTrajectory.m`. Some additional details are also given on the [2D GPUE functionality page](/functionality/vortex_2d/).
 
+
+A typical workflow of involving this file is as follows:
+
 ```bash
+gpue <simulation parameters>
+cd <data_directory>
 python py/vort.py
 ```
 
