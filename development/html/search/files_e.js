@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run_2esh',['run.sh',['../run_8sh.html',1,'']]]
+  ['qukineticspec_2em',['quKineticSpec.m',['../qu_kinetic_spec_8m.html',1,'']]]
 ];

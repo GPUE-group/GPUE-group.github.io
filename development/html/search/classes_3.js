@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['node',['Node',['../classLatticeGraph_1_1Node.html',1,'LatticeGraph']]]
+  ['node',['Node',['../class_lattice_graph_1_1_node.html',1,'LatticeGraph']]]
 ];

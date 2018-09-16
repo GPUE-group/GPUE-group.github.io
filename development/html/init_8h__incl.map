@@ -1,19 +1,19 @@
-<map id="/Users/mlxd/Desktop/GPUE/include/init.h" name="/Users/mlxd/Desktop/GPUE/include/init.h">
-<area shape="rect" id="node2" href="$split__op_8h.html" title="command line parser file. " alt="" coords="1604,173,1762,201"/>
-<area shape="rect" id="node13" href="$tracker_8h.html" title="Vortex lattice position, orientation, and tracking. " alt="" coords="647,325,729,353"/>
-<area shape="rect" id="node17" href="$vort_8h.html" title="Class for keeping track of vortices. Implementation TBC. " alt="" coords="245,401,307,429"/>
-<area shape="rect" id="node24" href="$ds_8h.html" title="Dastructure for simulation runtime parameters. " alt="" coords="2608,249,2659,277"/>
-<area shape="rect" id="node31" href="$constants_8h.html" title="Useful physical constants. " alt="" coords="2227,249,2330,277"/>
-<area shape="rect" id="node32" href="$kernels_8h.html" title="GPU kernel definitions. " alt="" coords="804,173,959,201"/>
-<area shape="rect" id="node33" href="$fileIO_8h.html" title="Routines for input and output of simulation data. " alt="" coords="1084,173,1225,201"/>
-<area shape="rect" id="node34" href="$minions_8h.html" title="Helper functions for evaluating and manipulating data. " alt="" coords="737,249,895,277"/>
-<area shape="rect" id="node35" href="$parser_8h.html" title="../include/parser.h" alt="" coords="2513,97,2660,125"/>
-<area shape="rect" id="node39" href="$unit__test_8h.html" title="../include/unit_test.h" alt="" coords="2310,173,2474,201"/>
-<area shape="rect" id="node40" href="$operators_8h.html" title="../include/operators.h" alt="" coords="3028,173,3199,201"/>
-<area shape="rect" id="node41" href="$lattice_8h.html" title="Class for treating vortices as a graph. " alt="" coords="349,173,494,201"/>
-<area shape="rect" id="node42" href="$node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="188,249,258,277"/>
-<area shape="rect" id="node43" href="$edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="188,325,258,353"/>
-<area shape="rect" id="node44" href="$manip_8h.html" title="Routines for manipulating the wavefunction. " alt="" coords="2089,173,2236,201"/>
-<area shape="rect" id="node45" href="$evolution_8h.html" title="function for evolution. " alt="" coords="1331,97,1498,125"/>
-<area shape="rect" id="node46" href="$vortex__3d_8h.html" title="vortex_3d.h" alt="" coords="969,249,1074,277"/>
+<map id="include/init.h" name="include/init.h">
+<area shape="rect" id="node2" href="$split__op_8h.html" title="command line parser file. " alt="" coords="1581,155,1715,181"/>
+<area shape="rect" id="node13" href="$tracker_8h.html" title="Vortex lattice position, orientation, and tracking. " alt="" coords="641,304,713,331"/>
+<area shape="rect" id="node17" href="$vort_8h.html" title="Class for keeping track of vortices. Implementation TBC. " alt="" coords="246,379,301,405"/>
+<area shape="rect" id="node24" href="$ds_8h.html" title="Dastructure for simulation runtime parameters. " alt="" coords="2547,229,2594,256"/>
+<area shape="rect" id="node31" href="$constants_8h.html" title="Useful physical constants. " alt="" coords="2179,229,2269,256"/>
+<area shape="rect" id="node32" href="$kernels_8h.html" title="GPU kernel definitions. " alt="" coords="821,155,953,181"/>
+<area shape="rect" id="node33" href="$file_i_o_8h.html" title="Routines for input and output of simulation data. " alt="" coords="1079,155,1201,181"/>
+<area shape="rect" id="node34" href="$minions_8h.html" title="Helper functions for evaluating and manipulating data. " alt="" coords="749,229,883,256"/>
+<area shape="rect" id="node35" href="$parser_8h.html" title="../include/parser.h" alt="" coords="2436,80,2561,107"/>
+<area shape="rect" id="node39" href="$unit__test_8h.html" title="function for evolution. " alt="" coords="2245,155,2385,181"/>
+<area shape="rect" id="node40" href="$operators_8h.html" title="File to hold all operators for finding fields on the GPU. " alt="" coords="2921,155,3065,181"/>
+<area shape="rect" id="node41" href="$lattice_8h.html" title="Class for treating vortices as a graph. " alt="" coords="369,155,495,181"/>
+<area shape="rect" id="node42" href="$node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="207,229,268,256"/>
+<area shape="rect" id="node43" href="$edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="207,304,268,331"/>
+<area shape="rect" id="node44" href="$manip_8h.html" title="Routines for manipulating the wavefunction. " alt="" coords="2044,155,2169,181"/>
+<area shape="rect" id="node45" href="$evolution_8h.html" title="function for evolution. " alt="" coords="1319,80,1462,107"/>
+<area shape="rect" id="node46" href="$vortex__3d_8h.html" title="vortex_3d.h" alt="" coords="959,229,1049,256"/>
 </map>

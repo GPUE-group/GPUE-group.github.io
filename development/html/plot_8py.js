@@ -1,6 +1,6 @@
 var plot_8py =
 [
-    [ "params", "classplot_1_1params.html", "classplot_1_1params" ],
+    [ "params", "classplot_1_1params.html", null ],
     [ "parse_args", "plot_8py.html#a2db37459dda0733e563610fe2508967a", null ],
     [ "plot", "plot_8py.html#ae47ca2cd29c8e767fb0530c0e9b1d82b", null ],
     [ "plot_complex", "plot_8py.html#a6a89e7c37927783175ceb08bccad458f", null ],

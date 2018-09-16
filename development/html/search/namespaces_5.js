@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['minions',['Minions',['../namespaceMinions.html',1,'']]]
+  ['minions',['Minions',['../namespace_minions.html',1,'']]],
+  ['mpi_5fvis',['mpi_vis',['../namespacempi__vis.html',1,'']]]
 ];

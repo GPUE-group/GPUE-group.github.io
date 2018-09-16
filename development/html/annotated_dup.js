@@ -1,11 +1,11 @@
 var annotated_dup =
 [
-    [ "LatticeGraph", "namespaceLatticeGraph.html", "namespaceLatticeGraph" ],
+    [ "LatticeGraph", "namespace_lattice_graph.html", "namespace_lattice_graph" ],
     [ "plot", "namespaceplot.html", "namespaceplot" ],
     [ "vort", "namespacevort.html", "namespacevort" ],
-    [ "Vtx", "namespaceVtx.html", "namespaceVtx" ],
-    [ "EqnNode", "ds_8h.html#structEqnNode", "ds_8h_structEqnNode" ],
-    [ "EqnNode_gpu", "ds_8h.html#structEqnNode__gpu", "ds_8h_structEqnNode__gpu" ],
-    [ "Grid", "classGrid.html", "classGrid" ],
-    [ "pos", "ds_8h.html#structpos", "ds_8h_structpos" ]
+    [ "Vtx", "namespace_vtx.html", "namespace_vtx" ],
+    [ "EqnNode", "struct_eqn_node.html", "struct_eqn_node" ],
+    [ "EqnNode_gpu", "struct_eqn_node__gpu.html", "struct_eqn_node__gpu" ],
+    [ "Grid", "class_grid.html", "class_grid" ],
+    [ "pos", "structpos.html", "structpos" ]
 ];

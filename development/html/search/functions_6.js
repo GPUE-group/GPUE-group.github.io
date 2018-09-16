@@ -1,14 +1,22 @@
 var searchData=
 [
-  ['file_5fa',['file_A',['../operators_8h.html#a43fd3cc4d585e1380b191601e6012a8b',1,'operators.h']]],
-  ['filecheck',['filecheck',['../operators_8h.html#a98f400318126e7c1f79b606d30b37d5d',1,'operators.h']]],
-  ['find_5fedges',['find_edges',['../vortex__3d_8h.html#acc393fa4aa687bf9ef888b0901972cfb',1,'vortex_3d.h']]],
-  ['find_5felement_5fnum',['find_element_num',['../dynamic_8h.html#aee2a065288e123ec53df14d690b7790a',1,'dynamic.h']]],
-  ['find_5ffield',['find_field',['../dynamic_8h.html#a0b209c5757f0535f6c4c40c3e8f860cf',1,'dynamic.h']]],
-  ['find_5fskeletons',['find_skeletons',['../vortex__3d_8h.html#a59eae74b40d2acf8436ff25ce85ed04d',1,'vortex_3d.h']]],
-  ['find_5fsobel',['find_sobel',['../vortex__3d_8h.html#ae6b5dee397e929f3ad5ee7a6f1680f07',1,'vortex_3d.h']]],
-  ['find_5fsobel_5f2d',['find_sobel_2d',['../vortex__3d_8h.html#ac509d00575751b0ac36b3c9bccb168b4',1,'vortex_3d.h']]],
-  ['findolmaxima',['findOLMaxima',['../namespaceTracker.html#a9f2ba80ee45add6eedc0ca9c07bd8192',1,'Tracker']]],
-  ['findvortex',['findVortex',['../namespaceTracker.html#a7156d2a14528dfa9702281cf77cbc033',1,'Tracker']]],
-  ['finvsqrt',['fInvSqRt',['../namespaceMinions.html#aff46b4bf1b9327e33a8f34ca278b5f33',1,'Minions']]]
+  ['edge',['Edge',['../class_lattice_graph_1_1_edge.html#a3e2b5b6660b37bfe901d1526b045bd99',1,'LatticeGraph::Edge::Edge()'],['../class_lattice_graph_1_1_edge.html#a51ee2ed0e9f47dc04391101df29260b0',1,'LatticeGraph::Edge::Edge(std::weak_ptr&lt; Node &gt; n1, std::weak_ptr&lt; Node &gt; n2)'],['../class_lattice_graph_1_1_edge.html#a43fb534754ac538db9a4b23895c48ecf',1,'LatticeGraph::Edge::Edge(std::weak_ptr&lt; Node &gt; n1, std::weak_ptr&lt; Node &gt; n2, int dir, double weight)']]],
+  ['edgecol',['edgeCol',['../voronoi2d_cell_colour_8m.html#af82aab81175246096dec14aba1728340',1,'voronoi2dCellColour.m']]],
+  ['ek',['Ek',['../qu_kinetic_spec_8m.html#ac0c5e8fd464b4626f988e8e291570cb6',1,'quKineticSpec.m']]],
+  ['ekc',['ekc',['../qu_kinetic_spec_8m.html#a029583ed2ef8b026e18c053bd9ab49da',1,'quKineticSpec.m']]],
+  ['eki',['eki',['../qu_kinetic_spec_8m.html#ab462f6900aa17793d58fc36c1c89f202',1,'quKineticSpec.m']]],
+  ['element',['element',['../namespacevort.html#a2eaeae7eb94f43c9b73d7219c0206f19',1,'vort']]],
+  ['en',['En',['../_g_p_e__2d_8m.html#acb9bd1aca2077865735de08f52843672',1,'En(c1):&#160;GPE_2d.m'],['../_g_p_e__2d_8m.html#a559e209d084bfef21c55137d05c54c48',1,'En(c1+500):&#160;GPE_2d.m']]],
+  ['energy_5fcalc',['energy_calc',['../split__op_8h.html#a1c3d76341fa16b3ff2f54c43bbd04365',1,'split_op.h']]],
+  ['energy_5fkinetic',['energy_kinetic',['../namespaceobservables.html#a9564b1f5f3779e78da6c98ddd9ebabaf',1,'observables']]],
+  ['energy_5fpotential',['energy_potential',['../namespaceobservables.html#a97b52ea9a4be6c91b59b73717f63fbfd',1,'observables']]],
+  ['energy_5ftotal',['energy_total',['../namespaceen.html#ab43eea44aa8ad8a8ca1f9f4521e61a2d',1,'en.energy_total()'],['../namespaceobservables.html#a09d3b04aafa504101156d8053c42cc5e',1,'observables.energy_total()']]],
+  ['energycalc',['energyCalc',['../kernels_8h.html#a9d9b86f06eb672f2771758f22eb0a058',1,'kernels.h']]],
+  ['evaluate_5feqn_5fgpu',['evaluate_eqn_gpu',['../dynamic_8h.html#ae8c6476325296510881cd60308fa6600',1,'dynamic.h']]],
+  ['evolve',['evolve',['../evolution_8h.html#aaa34633fbbcfa10c0ffad3b0a741eb41',1,'evolution.h']]],
+  ['expec_5fval_5f',['expec_val_',['../namespaceobservables.html#ae413428c47d7f9b12fe38dd8da32ecfb',1,'observables']]],
+  ['expec_5fval_5fmonopole',['expec_val_monopole',['../namespaceobservables.html#af17849707b5d72bd22e2ee43df59524f',1,'observables']]],
+  ['expec_5fval_5fquadrupole',['expec_val_quadrupole',['../namespaceobservables.html#ac0f3c9c099bdbdc1c2535d8c6ba49b34',1,'observables']]],
+  ['expectvaluer',['expectValueR',['../namespaceen.html#abf7478f1cbb75b72f5b7ded05783a522',1,'en']]],
+  ['extract_5ffield',['extract_field',['../namespaceextract__gauge.html#a115d1fe02162f2d81f9e1b3b807882f1',1,'extract_gauge']]]
 ];

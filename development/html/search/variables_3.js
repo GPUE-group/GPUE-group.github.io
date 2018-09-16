@@ -1,8 +1,20 @@
 var searchData=
 [
-  ['edges',['edges',['../classLatticeGraph_1_1Lattice.html#a167d8bb397c770b11d0c5530a068fe05',1,'LatticeGraph::Lattice::edges()'],['../classLatticeGraph_1_1Node.html#a722e89bb54fbc82455a17351240e15d5',1,'LatticeGraph::Node::edges()']]],
-  ['end',['end',['../classplot_1_1params.html#af38f325f86aeafc1b1dcf6e17b701ce9',1,'plot::params']]],
-  ['ev_5fproc',['ev_proc',['../namespacevis.html#a7524185a5fc8dc36cd8b38f56a729301',1,'vis']]],
-  ['evimglist',['evImgList',['../namespacevis.html#afea7911ba4a7a46b32114bb3b0671f2e',1,'vis']]],
-  ['evmaxval',['evMaxVal',['../namespaceen.html#ab7add6499fc04c6aababff8ec0027218',1,'en.evMaxVal()'],['../namespacehist3d.html#a821b125d579287bcb389c2989c7a26fe',1,'hist3d.evMaxVal()'],['../namespaceobservables.html#a02792ef03881d6b1df2b730f83558996',1,'observables.evMaxVal()'],['../namespacevis.html#a71a1cb6ec664e35ac46d62310661316e',1,'vis.evMaxVal()'],['../namespacevort.html#a0f8c72398ec40651fa04f13b1601af15',1,'vort.evMaxVal()']]]
+  ['a',['A',['../_g_p_e__2d_8m.html#a3b98e2dffc6cb06a89dcb0d5c60a0206',1,'A():&#160;GPE_2d.m'],['../_g_p_e__2d_8m.html#a230414213a9710ed03b6cf8d2695ee94',1,'a():&#160;GPE_2d.m'],['../load_vtx_8m.html#a4124bc0a9335c27f086f24ba207a4912',1,'a():&#160;loadVtx.m']]],
+  ['afn',['Afn',['../class_grid.html#a87219070e02aa63ddbc50aed124eec46',1,'Grid']]],
+  ['also',['Also',['../vtx_trajectory_8m.html#afb0ee0c36c3936cc9be58d79209f278a',1,'vtxTrajectory.m']]],
+  ['area',['area',['../voronoi2d_cell_colour_8m.html#a4329d2992f02e00a6e706a5443269afc',1,'voronoi2dCellColour.m']]],
+  ['args',['args',['../namespaceplot.html#a64ec1b7bf5cd5e3cc032b18ba2abea3a',1,'plot']]],
+  ['arre',['arrE',['../namespacempi__vis.html#ac97e91dd0fe13617333597d87544f533',1,'mpi_vis']]],
+  ['arrg',['arrG',['../namespacempi__vis.html#a93619b52d38054f8a72dc651a5e757e7',1,'mpi_vis']]],
+  ['as',['as',['../_g_p_e__2d_8m.html#a20d8d35d0e800da91f13d09eeba1d4d6',1,'GPE_2d.m']]],
+  ['at',['at',['../vel_field_8m.html#a1c5c765f344d79de660accd23828776b',1,'velField.m']]],
+  ['avg',['avg',['../qu_kinetic_spec_8m.html#a527b4c2b7b24c383ef3e0d274bc1cc86',1,'quKineticSpec.m']]],
+  ['avg_5farea',['avg_area',['../voronoi2d_cell_colour_8m.html#a0c1660055d7f50eed6404fe1bfc494ff',1,'voronoi2dCellColour.m']]],
+  ['ax_5ffn',['Ax_fn',['../class_grid.html#ab1a034455c03b2962feff56278f309f8',1,'Grid']]],
+  ['axfile',['Axfile',['../class_grid.html#ab974880810566c0456342968ca7e3c75',1,'Grid']]],
+  ['ay_5ffn',['Ay_fn',['../class_grid.html#a3d8588dbe061d46e7042ea3b74a21ed5',1,'Grid']]],
+  ['ayfile',['Ayfile',['../class_grid.html#ae50e305ba5acb1557589dfa7a3ef6d85',1,'Grid']]],
+  ['az_5ffn',['Az_fn',['../class_grid.html#a0abe559791b86bd597297fa5f6308386',1,'Grid']]],
+  ['azfile',['Azfile',['../class_grid.html#a833685b5195509a2a56e32ef8a6f35b4',1,'Grid']]]
 ];

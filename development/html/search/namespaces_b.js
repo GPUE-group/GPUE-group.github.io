@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wfc',['WFC',['../namespaceWFC.html',1,'']]]
+  ['wfc',['WFC',['../namespace_w_f_c.html',1,'']]]
 ];

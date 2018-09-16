@@ -1,5 +1,5 @@
 var namespacevort =
 [
-    [ "Vortex", "namespacevort.html#classvort_1_1Vortex", null ],
-    [ "VtxList", "namespacevort.html#classvort_1_1VtxList", null ]
+    [ "Vortex", "classvort_1_1_vortex.html", null ],
+    [ "VtxList", "classvort_1_1_vtx_list.html", null ]
 ];

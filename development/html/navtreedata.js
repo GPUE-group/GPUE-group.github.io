@@ -23,7 +23,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "GPUE:  GPU Gross-Pitaevskii Equation", "index.html", [
+  [ "GPUE", "index.html", [
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -31,26 +31,25 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ]
+        [ "Variables", "namespacemembers_vars.html", "namespacemembers_vars" ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", "globals_vars" ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -60,10 +59,12 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"VtxTest_8cc.html",
-"dynamic_8h.html#a22b2d43f756c529e664fe62051aa7b79",
-"namespaceWFC.html",
-"vis__scripts_8py.html#a30cafbf9d817ba97dea33dca15f8da20"
+"_g_p_e__2d_8m.html",
+"class_vtx_1_1_vortex.html#a62568691c80f4652035d27936515cca3",
+"globals_func_p.html",
+"namespace_tracker.html",
+"qu_kinetic_spec_8m.html#aadd84b46ee6d2e3ae04d2920f4e78bfd",
+"vort_8py.html#a3ecba3af22e8090d6e6a51955b66dff5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

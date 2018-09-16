@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['y',['y',['../ds_8h.html#a92558c73ea34841a429ce59be1fedb49',1,'pos::y()'],['../classGrid.html#a9fb254078547e3a6a6da5701af1d4811',1,'Grid::y()'],['../namespaceobservables.html#a10a5a4b6ac8d34c82aba618f620d2ab1',1,'observables.y()'],['../namespacevort.html#a802f106c639c70f259c4ded87074724e',1,'vort.y()'],['../namespaceen.html#a06302013ed8c9681a99f5606de96cb19',1,'en.Y()']]],
-  ['ydim',['yDim',['../classplot_1_1params.html#a89e15d9f8f514ee85f78ceceb26cd5d5',1,'plot.params.yDim()'],['../namespaceen.html#a74964862c84b621a64b257c2df62f9c6',1,'en.yDim()'],['../namespacehist3d.html#a47ac05800385700a1f76cbbe4d4a7468',1,'hist3d.yDim()'],['../namespaceobservables.html#a139cee494aecb85bb35487067852169e',1,'observables.yDim()'],['../namespacestats.html#a77f36f6d5b104598ed1cdf47f770c34e',1,'stats.yDim()'],['../namespacevis.html#a141b8c45b2d3266a8622f6c380198044',1,'vis.yDim()'],['../namespacevort.html#ad6af20247b9961a90f8c379720adbde9',1,'vort.yDim()']]],
-  ['ym',['YM',['../namespaceen.html#aeaec871d64c991cbda2d6bb8a7180367',1,'en']]],
-  ['ymax',['yMax',['../namespaceen.html#a4f2138589fb671c3a3a101ca9fe216bc',1,'en.yMax()'],['../namespacehist3d.html#aa058b832ea055523dbd1b6ede087f4fc',1,'hist3d.yMax()'],['../namespaceobservables.html#a8a39ef37fe42ed2df54912c9f2dea854',1,'observables.yMax()'],['../namespacevis.html#ab9771db0a948b6c481087ac561eb8f17',1,'vis.yMax()'],['../namespacevort.html#a656f0f2e6da63c7cf683bea2ebe337c0',1,'vort.yMax()']]],
-  ['yp',['yp',['../classGrid.html#a3939ab1242f92efda7cc7c6113a53692',1,'Grid']]],
-  ['ypx',['yPx',['../namespaceobservables.html#ad65c99bc6e52075013865eb3d5d5953f',1,'observables']]]
+  ['tail',['tail',['../namespacevort.html#a1dad4606a81171acb961168ca14deacd',1,'vort']]],
+  ['test',['test',['../namespaceparaview__plot.html#ac38b2ab9ee850b0d25ff2c650ccb9cdf',1,'paraview_plot']]],
+  ['testcase',['Testcase',['../_vtx_corr_8m.html#a164b2ec6ec51bffd262160fb193cfb89',1,'VtxCorr.m']]],
+  ['them',['them',['../g6__struct_8m.html#a609384d2267e8267d85987833415fe01',1,'g6_struct.m']]],
+  ['threads',['threads',['../class_grid.html#af42983cf3f8b0a083284003a43fc7ff9',1,'Grid']]],
+  ['ticklabelinterpreter',['TickLabelInterpreter',['../latex_fig_8m.html#affb4e6ed23070ea9490f7a6fddc43337',1,'TickLabelInterpreter():&#160;latexFig.m'],['../qu_kinetic_spec_8m.html#adb02553e18c0d581f5c977ee1b964beb',1,'TickLabelInterpreter():&#160;quKineticSpec.m']]],
+  ['tight',['tight',['../_vtx_corr_8m.html#a1a71f5e406b211ed616173276484b78b',1,'VtxCorr.m']]],
+  ['time',['time',['../defect_triangulation_8m.html#aa924369085364a1e26f6b362d091c0c7',1,'defectTriangulation.m']]],
+  ['triangulation',['triangulation',['../defect_triangulation_8m.html#a27ebf79cd26f16e9209272295b628974',1,'defectTriangulation.m']]]
 ];

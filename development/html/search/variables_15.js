@@ -1,9 +1,15 @@
 var searchData=
 [
-  ['x',['x',['../ds_8h.html#a6ea0780e4b810f88e2dbabd142d381e9',1,'pos::x()'],['../classGrid.html#a56bfe1195840949dbab33a3e7e80140c',1,'Grid::x()'],['../namespaceen.html#a980bf878d4a2d8b1aa59ce5126abfb56',1,'en.X()'],['../namespaceobservables.html#a3ea5907d5deba202885ab9204aa15feb',1,'observables.x()'],['../namespacevort.html#a37d7947233d6b72f785082e627f3608c',1,'vort.x()']]],
-  ['xdim',['xDim',['../classplot_1_1params.html#aff561f74f1b3570cbe07b4faf3bce17e',1,'plot.params.xDim()'],['../namespaceen.html#ad53475a1f124a8243ae3041fa5e2ce98',1,'en.xDim()'],['../namespacegen__data.html#a6c4dc1aa6bee7078e934cf755416fc20',1,'gen_data.xDim()'],['../namespacehist3d.html#aa61d6362fddc91882628dd493675f960',1,'hist3d.xDim()'],['../namespaceobservables.html#a45308a4ee1b16b43bf9fbed7d5dcb95b',1,'observables.xDim()'],['../namespacestats.html#a198381c3858af8f570db5addb64bb0f7',1,'stats.xDim()'],['../namespacevis.html#af3290bf7447762d16738f02dfa9af287',1,'vis.xDim()'],['../namespacevisualize__3d.html#a7516dbbb0065ab99b353cb4762c5294d',1,'visualize_3d.xDim()'],['../namespacevort.html#ae6337b93e50011704bb83298c350362f',1,'vort.xDim()']]],
-  ['xm',['XM',['../namespaceen.html#a8d03f6ddf52246e7c408b318d20e10ce',1,'en']]],
-  ['xmax',['xMax',['../namespaceen.html#a83f701b9562250a9d81742a4d7e1f3e5',1,'en.xMax()'],['../namespacehist3d.html#ad1f42a17eb0b44008a147ecdbbcb6b36',1,'hist3d.xMax()'],['../namespaceobservables.html#a6a18ba83ebdbc43f41467d7016e3cf43',1,'observables.xMax()'],['../namespacevis.html#a30f866e37ac6f018c34eedb7bae7cfba',1,'vis.xMax()'],['../namespacevort.html#a2f1716e23eacd57fe79daad835320c12',1,'vort.xMax()']]],
-  ['xp',['xp',['../classGrid.html#a5eb109ed6cc381a514350499eae890c0',1,'Grid']]],
-  ['xpy',['xPy',['../namespaceobservables.html#a54f7fa5f8df9c734ddcde11647a7ca42',1,'observables']]]
+  ['s',['S',['../g6__struct_8m.html#ae0d4591b2ec88f9abbf94e05b07c89b0',1,'g6_struct.m']]],
+  ['sarr',['sArr',['../_vtx_corr_8m.html#aa535eb5ddea9eb97d71cee35495b4fc9',1,'VtxCorr.m']]],
+  ['scene',['scene',['../namespacevisualize__3d.html#a15d5ad57156052898cd9341be02aa952',1,'visualize_3d']]],
+  ['sep',['sep',['../namespaceen.html#a7677b5d663f7eff9d50804fa73b9a398',1,'en.sep()'],['../namespacehist3d.html#a9a58d2fa9e4c5817c5f09757e146af86',1,'hist3d.sep()'],['../namespacempi__vis.html#a601f113ab805c0f5523fa49ef48fdf90',1,'mpi_vis.sep()'],['../namespacevis.html#ad6412d0363ffa8ad47bd344d3224a458',1,'vis.sep()']]],
+  ['sign',['sign',['../namespacevort.html#ab82c9df9f496be099c88570404f10f35',1,'vort']]],
+  ['size',['size',['../namespacempi__vis.html#abdc26797ca70b63207c7e28910824fd8',1,'mpi_vis.size()'],['../load_vtx_8m.html#ab97793c975631ef57b3ba07e41be2447',1,'size():&#160;loadVtx.m']]],
+  ['space',['space',['../_g_p_e__2d_8m.html#a41c2fc97640b312337df0234214e0784',1,'GPE_2d.m']]],
+  ['square',['square',['../defect_triangulation_8m.html#ac4497e2392e94d73eff636b15d8defc4',1,'square():&#160;defectTriangulation.m'],['../_g_p_e__2d_8m.html#ac4497e2392e94d73eff636b15d8defc4',1,'square():&#160;GPE_2d.m'],['../qu_kinetic_spec_8m.html#ac4497e2392e94d73eff636b15d8defc4',1,'square():&#160;quKineticSpec.m'],['../vel_field_8m.html#ac4497e2392e94d73eff636b15d8defc4',1,'square():&#160;velField.m'],['../voronoi2d_cell_colour_8m.html#ac4497e2392e94d73eff636b15d8defc4',1,'square():&#160;voronoi2dCellColour.m']]],
+  ['ssorted',['SSorted',['../g6__struct_8m.html#a044341b7966a3797d3fc7ed63ff1c3aa',1,'g6_struct.m']]],
+  ['st',['st',['../namespacestats.html#ada14a6100361170f7fe35feb8fee379c',1,'stats']]],
+  ['start',['start',['../classplot_1_1params.html#a7e7a6f4813a430a19aceb61d5d572e7e',1,'plot::params']]],
+  ['steps',['steps',['../load_vtx_8m.html#a4d629e97dab1ddb8b4348b94f29fd12d',1,'loadVtx.m']]]
 ];

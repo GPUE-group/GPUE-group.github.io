@@ -1,12 +1,13 @@
 var searchData=
 [
-  ['main',['main',['../graphtest_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;graphtest.cc'],['../VtxTest_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;VtxTest.cc']]],
-  ['make_5fcomplex',['make_complex',['../kernels_8h.html#a830983a4a5d3288f32b5fcf328dd579d',1,'kernels.h']]],
-  ['make_5fcufftdoublecomplex',['make_cufftDoubleComplex',['../kernels_8h.html#aeb43ee6efa71a31e0e2c3b64ec0c2d70',1,'kernels.h']]],
-  ['max_5fuid',['max_uid',['../namespacevort.html#a1b650d0399eed379edb020fdc6ce53bf',1,'vort']]],
-  ['maxvalue',['maxValue',['../namespaceMinions.html#a07cae5db493227dcf1965ef64d88467d',1,'Minions']]],
-  ['mindistpair',['minDistPair',['../classVtx_1_1VtxList.html#afb9c33624eaff624e678a5ddf82517b0',1,'Vtx::VtxList']]],
-  ['minvalue',['minValue',['../namespaceMinions.html#a7dba5efd722d88bab6a3e35356af2b8f',1,'Minions']]],
-  ['mult',['mult',['../kernels_8h.html#a83f1f17015c44449ec6bcef768a4e95e',1,'mult(double2 a, double b):&#160;kernels.h'],['../kernels_8h.html#aaa48f3498ae39b0fc5234b48dd27626e',1,'mult(double2 a, double2 b):&#160;kernels.h']]],
-  ['multipass',['multipass',['../kernels_8h.html#a5f5942047a3677a84a15810facc26bca',1,'multipass(double2 *input, double2 *output, int pass):&#160;kernels.h'],['../kernels_8h.html#a72a465b49751125f0312142d84889e5d',1,'multipass(double *input, double *output):&#160;kernels.h']]]
+  ['l2_5fnorm',['l2_norm',['../kernels_8h.html#a519e115ab2827be5f9114d8540eae0b0',1,'l2_norm(double *in1, double *in2, double *in3, double *out):&#160;kernels.h'],['../kernels_8h.html#ab2fdfb93eea74cf2f350d3aa17f3aff2',1,'l2_norm(double2 *in1, double2 *in2, double2 *in3, double *out):&#160;kernels.h'],['../kernels_8h.html#a8967c7000428b905090366a505dfb68f',1,'l2_norm(double *in1, double *in2, double *out):&#160;kernels.h'],['../kernels_8h.html#a762afce78eb515dc633e24f09ada96cf',1,'l2_norm(double2 *in1, double2 *in2, double *out):&#160;kernels.h']]],
+  ['laplacian',['laplacian',['../namespacevis.html#a14f9cb87164bf01820063c1618cda36a',1,'vis']]],
+  ['latexfig',['latexFig',['../latex_fig_8m.html#ad0b25a6633b3c0fc2099fcc7e99e4333',1,'latexFig(gca, fontSize, cbar, xtick, ytick, xticklabels, yticklabels) % latexFig LaTeXify the plot axes % This sets the plotting axis on supplied figure to LaTeX formatted %:&#160;latexFig.m'],['../latex_fig_8m.html#a128120e42dcb0b7ac071a0796b04a9b6',1,'latexFig(gca, 30, 1, 2:2:10, 1:2:10,{ &apos;a1&apos;, &apos;b1&apos;, &apos;c1&apos;, &apos;d1&apos;, &apos;e1&apos;},{ &apos;a2&apos;, &apos;b2&apos;, &apos;c2&apos;, &apos;d2&apos;, &apos;e2&apos;}) set(gca:&#160;latexFig.m']]],
+  ['lattice',['Lattice',['../class_lattice_graph_1_1_lattice.html#a828bc02d5aeaee931a5f6f97d59f5532',1,'LatticeGraph::Lattice']]],
+  ['legend',['legend',['../qu_kinetic_spec_8m.html#ac6bbb325beb4e87a84f2e41047071807',1,'quKineticSpec.m']]],
+  ['length',['length',['../bin_data_8m.html#ab154f94d2eb2ecc78ca743bcbfb3614e',1,'length(idx) &gt;0 g6B(kk):&#160;binData.m'],['../defect_triangulation_8m.html#a85ea45b9d430f8fc83de109898ca866f',1,'length(DT.vertexAttachments{ii}):&#160;defectTriangulation.m'],['../_vtx_corr_8m.html#adf93a043520a3c12f14890dc5fc71519',1,'length(sArr)):&#160;VtxCorr.m']]],
+  ['linewidth',['LineWidth',['../defect_triangulation_8m.html#a43d911ec62400de6ce5268d9570f8790',1,'defectTriangulation.m']]],
+  ['loglog',['loglog',['../qu_kinetic_spec_8m.html#a1ac3452e6c5d22ebb1e7caed42794450',1,'loglog(k_mag(1:(xDim/2-1)), ekc, k_mag(1:(xDim/2-1)), eki, &apos;LineWidth&apos;, 2):&#160;quKineticSpec.m'],['../qu_kinetic_spec_8m.html#a6d3c205731fd76ae9acb07f3cf955bf0',1,'loglog(k_mag(1:511), eki, &apos;LineWidth&apos;, 2):&#160;quKineticSpec.m'],['../qu_kinetic_spec_8m.html#aeceb5547753a80ca71c790eefcecedee',1,'loglog(k_mag(1:511), Ek):&#160;quKineticSpec.m']]],
+  ['lsfit',['lsFit',['../namespace_tracker.html#a8700fec352c4c5a5d597712ce134ca00',1,'Tracker::lsFit()'],['../namespacestats.html#aa53581289aa4346ef3e6b35bed6ff33b',1,'stats.lsFit()']]],
+  ['lz',['Lz',['../_g_p_e__2d_8m.html#aace757908c033f9608b8c29b0c8240df',1,'Lz(c1):&#160;GPE_2d.m'],['../_g_p_e__2d_8m.html#a17e0572b4297029878f9eae25a25cc68',1,'Lz(c1+500):&#160;GPE_2d.m']]]
 ];

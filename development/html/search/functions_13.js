@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['update_5fnext',['update_next',['../namespacevort.html#a1efb7f4fc7c0040be713c76614b9444d',1,'vort']]],
-  ['update_5fon',['update_on',['../namespacevort.html#af87273b203aebb62f0fb5f8aa5848f01',1,'vort']]],
-  ['update_5fuid',['update_uid',['../namespacevort.html#a1cea225cc46dc26723104b986e241941',1,'vort']]],
-  ['updatecoords',['updateCoords',['../classVtx_1_1Vortex.html#a83317f0626f89b2daa68223edab13fd7',1,'Vtx::Vortex']]],
-  ['updatecoordsd',['updateCoordsD',['../classVtx_1_1Vortex.html#aac06cb20ba0b931c872e80de5bba9ae5',1,'Vtx::Vortex']]],
-  ['updateison',['updateIsOn',['../classVtx_1_1Vortex.html#a62568691c80f4652035d27936515cca3',1,'Vtx::Vortex']]],
-  ['updatetimestep',['updateTimeStep',['../classVtx_1_1Vortex.html#a04d49e2e5ffe6cca00ca42d52caa6168',1,'Vtx::Vortex']]],
-  ['updateuid',['updateUID',['../classVtx_1_1Vortex.html#a9644a3bf4ae03abbdb7927bd813d1ec0',1,'Vtx::Vortex']]],
-  ['updatevortex',['updateVortex',['../classLatticeGraph_1_1Edge.html#a611967fa532a5a9c9490b8f72fc7bb24',1,'LatticeGraph::Edge']]],
-  ['updatewinding',['updateWinding',['../classVtx_1_1Vortex.html#a76a6bce9d18ad7d15c89c6e2a464bbb3',1,'Vtx::Vortex']]]
+  ['test_5fall',['test_all',['../unit__test_8h.html#aa1c715cac916839a95e25b65b4071c4a',1,'unit_test.h']]],
+  ['thread_5ftest',['thread_test',['../kernels_8h.html#a75a1dadce8ed8e43dd7142a13c4ea256',1,'kernels.h']]],
+  ['title',['title',['../qu_kinetic_spec_8m.html#a986785cf75733eb5890c93e15d776d02',1,'title(&apos;|U|&apos;):&#160;quKineticSpec.m'],['../qu_kinetic_spec_8m.html#a5276ba066fd0fc1bdaf3ce38ad8c9e2e',1,'title([&apos;Comp &apos;, int2str(iii)]) set(gca:&#160;quKineticSpec.m'],['../qu_kinetic_spec_8m.html#a80f2a1f30a8e4d6799a2e7a99fb45702',1,'title(&apos;EK&apos;):&#160;quKineticSpec.m'],['../qu_kinetic_spec_8m.html#a23d54f35a1bf178c2dccf93ac9ae94c0',1,'title(&apos;eki&apos;):&#160;quKineticSpec.m']]],
+  ['to_5fbvox',['to_bvox',['../namespacegen__data.html#ab32470d84c45ca2c95199bf06cc331e7',1,'gen_data']]],
+  ['to_5fvtk',['to_vtk',['../namespacegen__data.html#a1c64821de7f3da430bb2d8cb20697cb1',1,'gen_data']]],
+  ['transfer_5fsobel',['transfer_sobel',['../vortex__3d_8h.html#a46f9edb95b147409bd42270eaac57332',1,'vortex_3d.h']]],
+  ['tree_5fto_5farray',['tree_to_array',['../dynamic_8h.html#ad64ecaa33297a0415ef5e50aa25efe58',1,'dynamic.h']]],
+  ['triplot',['triplot',['../defect_triangulation_8m.html#ab92c75e304d0e0c0f6526f2be1330569',1,'triplot(DT, &apos;color&apos;, [0.6 0.6 0.6], &apos;LineWidth&apos;, 2):&#160;defectTriangulation.m'],['../defect_triangulation_8m.html#ac1852125fa95c83d3ecd864ee2f7fc46',1,'triplot(DT, &apos;color&apos;, RGB(1,:), &apos;LineWidth&apos;, 3):&#160;defectTriangulation.m']]]
 ];
