@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['i',['i',['../namespacevis.html#a9aaedc8dc3a9c8a1b4fee8c6ee7842eb',1,'vis.i()'],['../namespacevort.html#a418a330f51ebe2e500a6da25a28024c7',1,'vort.i()']]],
-  ['id_5flist',['id_list',['../classGrid.html#ad7ae77957f16f34a9969cdfd45883307',1,'Grid']]],
-  ['incr',['incr',['../classplot_1_1params.html#a2edd7c17d9694d512341358d9c7fb4dc',1,'plot.params.incr()'],['../namespaceen.html#ae978a3c62cecdcadc0de55ed830a599f',1,'en.incr()'],['../namespacehist3d.html#a478fa425793c7f42926169ffad5a1bb6',1,'hist3d.incr()'],['../namespaceobservables.html#ada1bd9eb91465cb6be5f389a8de838cd',1,'observables.incr()'],['../namespacestats.html#a14afa5f9e9cc239ea9c9f1bb90d56b93',1,'stats.incr()'],['../namespacevis.html#aaf6a5542fb3abf2e336e39b99ca27d60',1,'vis.incr()'],['../namespacevort.html#a73d82e74efd49c6cf1ff50d48ee70a10',1,'vort.incr()']]],
-  ['index',['index',['../namespacevort.html#aaec1e74db145f3a0d8773bb4cdfebf09',1,'vort']]],
-  ['index_5fr',['index_r',['../namespacevort.html#a39ca6bbf4b91af143f9ed6cab7e5d3d0',1,'vort']]],
-  ['infile',['infile',['../namespacevisualize__3d.html#ab6ee66e93d1ab970666a9ec7cad89ade',1,'visualize_3d']]],
-  ['is_5fdynamic',['is_dynamic',['../ds_8h.html#a491dfb298f7cb148bfe0b8b045bc292c',1,'EqnNode::is_dynamic()'],['../ds_8h.html#a73f2337241a38e26a29d7d7b876888d0',1,'EqnNode_gpu::is_dynamic()']]],
-  ['ison',['isOn',['../classVtx_1_1Vortex.html#afed22f3e146ab1117962751efd4e7ab6',1,'Vtx::Vortex::isOn()'],['../namespacevort.html#a35e30d26b620c6a27772675b83810b02',1,'vort.isOn()']]],
-  ['isosurfaces',['Isosurfaces',['../namespaceparaview__plot.html#a3676cbefd73804c6a767244f8ad86096',1,'paraview_plot']]],
-  ['item',['item',['../classplot_1_1params.html#a666c476268de79cf97d35aaeef08fd5f',1,'plot.params.item()'],['../namespacevis__scripts.html#a30cafbf9d817ba97dea33dca15f8da20',1,'vis_scripts.item()']]]
+  ['ec',['Ec',['../qu_kinetic_spec_8m.html#a67abf79962819ebcd2be7e4adb72a646',1,'quKineticSpec.m']]],
+  ['edgecol',['edgeCol',['../voronoi2d_cell_colour_8m.html#a9d8ca865c71faa77cd5c8210b8fe0361',1,'edgeCol():&#160;voronoi2dCellColour.m'],['../_vtx_corr_8m.html#aac30c9e2c6cc77c91456bbaa83d04a50',1,'edgeCol():&#160;VtxCorr.m']]],
+  ['edges',['edges',['../_vtx_corr_8m.html#a31c0d9e2e92376fbcb5f0746dba865cc',1,'VtxCorr.m']]],
+  ['ei',['Ei',['../qu_kinetic_spec_8m.html#aeb18f0a633a577e3df26febe83d26525',1,'quKineticSpec.m']]],
+  ['ekc',['EKc',['../kin_spec_8m.html#abc72b49cc62ffc8cf650ebf048144f82',1,'kinSpec.m']]],
+  ['eki',['EKi',['../kin_spec_8m.html#a479d3c50d209e19928259606e055c79c',1,'kinSpec.m']]],
+  ['ekp',['EKp',['../_g_p_e__2d_8m.html#a49335a2e3d31ef2982c5ac65fc0ca921',1,'GPE_2d.m']]],
+  ['el1',['EL1',['../_g_p_e__2d_8m.html#a2ddb0141c247bb2f6e51fb46746ef44c',1,'GPE_2d.m']]],
+  ['el2',['EL2',['../_g_p_e__2d_8m.html#a8b04da5634cd39bd1693a8ce7239995b',1,'GPE_2d.m']]],
+  ['en',['en',['../namespacestats.html#a5d09b599545fcd2f51b146559fb8e8e5',1,'stats']]],
+  ['end',['end',['../classplot_1_1params.html#af38f325f86aeafc1b1dcf6e17b701ce9',1,'plot::params']]],
+  ['ev_5fproc',['ev_proc',['../namespacevis.html#a7524185a5fc8dc36cd8b38f56a729301',1,'vis']]],
+  ['evimglist',['evImgList',['../namespacempi__vis.html#a9a0dde6c7197f0549081cb2395e9e80e',1,'mpi_vis.evImgList()'],['../namespacevis.html#afea7911ba4a7a46b32114bb3b0671f2e',1,'vis.evImgList()']]],
+  ['evmaxval',['evMaxVal',['../namespaceen.html#ab7add6499fc04c6aababff8ec0027218',1,'en.evMaxVal()'],['../namespacehist3d.html#a821b125d579287bcb389c2989c7a26fe',1,'hist3d.evMaxVal()'],['../namespacempi__vis.html#a10848affb65805eb8a9f6bf2f4bf2341',1,'mpi_vis.evMaxVal()'],['../namespaceobservables.html#a02792ef03881d6b1df2b730f83558996',1,'observables.evMaxVal()'],['../namespacevis.html#a71a1cb6ec664e35ac46d62310661316e',1,'vis.evMaxVal()'],['../namespacevort.html#a0f8c72398ec40651fa04f13b1601af15',1,'vort.evMaxVal()']]],
+  ['evr2',['EVr2',['../_g_p_e__2d_8m.html#a148cb3a082e333edfebc8ecaa7880a4e',1,'GPE_2d.m']]]
 ];

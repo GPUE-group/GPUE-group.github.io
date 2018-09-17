@@ -1,27 +1,9 @@
 var searchData=
 [
-  ['data',['data',['../classLatticeGraph_1_1Node.html#a85fce47d13f68cafb58f6a4d4d11d2d2',1,'LatticeGraph::Node::data()'],['../namespaceen.html#aaef5b5d442374ced158aae69cdfd0d3c',1,'en.data()'],['../namespaceobservables.html#a72aac85cd910988c8175fa21fa5f126d',1,'observables.data()'],['../namespacevis.html#a8270e080e8256269638369634f2647a2',1,'vis.data()'],['../namespacevort.html#a86cda1987fcf03abee2e73b2981dfa03',1,'vort.data()']]],
-  ['data_5fdir',['data_dir',['../classplot_1_1params.html#af31812ab0cc4402635ace96680f93d4c',1,'plot.params.data_dir()'],['../namespacevort.html#ac33335f0b5b67e4217469271139908c9',1,'vort.data_dir()']]],
-  ['dcp',['dcp',['../namespacevort.html#a17bac6858600088581a626dc42b647de',1,'vort']]],
-  ['def_5fscene',['def_scene',['../namespacevisualize__3d.html#a578e40add1d143e089022a18ebc29335',1,'visualize_3d']]],
-  ['delaunay',['delaunay',['../namespacevis.html#a09a37fe3b03c745f0e5df23b89321310',1,'vis']]],
-  ['delimiter',['delimiter',['../namespacevort.html#ac7ba22ba74783b67d75619cfeaf4233e',1,'vort']]],
-  ['dens_5fstruct_5ffact',['dens_struct_fact',['../namespaceobservables.html#aaa97b964ee477b8878e096013d46915c',1,'observables']]],
-  ['destroyvortex',['destroyVortex',['../classLatticeGraph_1_1Lattice.html#a8daca4e579e46e2dca9d3949acbcc8a8',1,'LatticeGraph::Lattice']]],
-  ['direction',['direction',['../classLatticeGraph_1_1Edge.html#ae58eca996a88842d422c019c10378324',1,'LatticeGraph::Edge']]],
-  ['dist',['dist',['../namespacevort.html#a678d501638156b7acae66aec086841d6',1,'vort']]],
-  ['dkx',['dkx',['../namespaceobservables.html#aadde1545b735fcbf97e15f87c52549eb',1,'observables']]],
-  ['dky',['dky',['../namespaceobservables.html#aaa4b782623af7ed93f4e31996638dfe8',1,'observables']]],
-  ['do_5fthe_5fthing',['do_the_thing',['../namespacevort.html#a43173d488e2cea671265cd75f211075c',1,'vort']]],
-  ['dpc',['dpc',['../namespacevort.html#a93a79fa3f3bedc21b67ceb07ae3bc857',1,'vort']]],
-  ['ds_2ecu',['ds.cu',['../ds_8cu.html',1,'']]],
-  ['ds_2eh',['ds.h',['../ds_8h.html',1,'']]],
-  ['dsval',['dsval',['../classGrid.html#a7098e9cc224fc64fdd8ed0080e3dfc83',1,'Grid']]],
-  ['dt',['dt',['../namespaceen.html#a4c01a416107107517bb8fb5a060d96c6',1,'en.dt()'],['../namespacehist3d.html#ae9ebb1b85df6964a0743c2bc65a220e8',1,'hist3d.dt()'],['../namespaceobservables.html#a42c675d54f2e91d653de181f44cc1c23',1,'observables.dt()'],['../namespacevis.html#ab411fec04392c22f6cb3c555c83baa74',1,'vis.dt()'],['../namespacevort.html#a7a08941a849e4dd10704c992b10c6818',1,'vort.dt()']]],
-  ['dtype',['dtype',['../namespacevort.html#ad5d72055420329f1be67f91127f7b743',1,'vort']]],
-  ['dval',['dval',['../classGrid.html#a56967dfcae906b0dfa4624e6e5f064c8',1,'Grid']]],
-  ['dx',['dx',['../namespaceen.html#a4cec7feb6a23622ad88d2d07c9fff286',1,'en.dx()'],['../namespacehist3d.html#a9ae97b5e544249d7062c2bcf2e524d9f',1,'hist3d.dx()'],['../namespaceobservables.html#a14f241a7b7e9e489b4f4f4157b849a1d',1,'observables.dx()'],['../namespacevis.html#a54298abae8ad87a0abbb2117da8041be',1,'vis.dx()'],['../namespacevort.html#ace2207ca7c6fe6e7a316a1fdac965847',1,'vort.dx()']]],
-  ['dy',['dy',['../namespaceen.html#aa49bf733e5ae01297d027a14291c93ab',1,'en.dy()'],['../namespaceobservables.html#a3ba0c6e8205a0847887db7c0386eadb0',1,'observables.dy()']]],
-  ['dynamic_2ecu',['dynamic.cu',['../dynamic_8cu.html',1,'']]],
-  ['dynamic_2eh',['dynamic.h',['../dynamic_8h.html',1,'']]]
+  ['b',['B',['../_g_p_e__2d_8m.html#a9d3d9048db16a7eee539e93e3618cbe7',1,'GPE_2d.m']]],
+  ['bindata_2em',['binData.m',['../bin_data_8m.html',1,'']]],
+  ['braketmult',['braKetMult',['../kernels_8h.html#a17d72928688b1520592b826df56c6abe',1,'kernels.h']]],
+  ['bug_20list',['Bug List',['../bug.html',1,'']]],
+  ['bval',['bval',['../class_grid.html#aabf8a94cae6bdb5fde96272054405ad0',1,'Grid']]],
+  ['by',['by',['../qu_kinetic_spec_8m.html#a5ef135b37af70eff3a22513d27658214',1,'quKineticSpec.m']]]
 ];

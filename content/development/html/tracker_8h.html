@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GPUE:  GPU Gross-Pitaevskii Equation: /Users/mlxd/Desktop/GPUE/include/tracker.h File Reference</title>
+<title>GPUE: include/tracker.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -34,12 +34,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="gpue_1024w.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GPUE:  GPU Gross-Pitaevskii Equation
-   &#160;<span id="projectnumber">0</span>
+   <div id="projectname">GPUE
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
-   <div id="projectbrief">GPU Gross-Pitaevskii equation solver</div>
+   <div id="projectbrief">GPU Gross-Pitaevskii Equation numerical solver for Bose-Einstein condensates</div>
   </td>
  </tr>
  </tbody>
@@ -96,8 +96,7 @@ $(document).ready(function(){initNavTree('tracker_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">tracker.h File Reference</div>  </div>
 </div><!--header-->
@@ -111,32 +110,28 @@ $(document).ready(function(){initNavTree('tracker_8h.html','');});
 <code>#include &lt;cuda.h&gt;</code><br />
 <code>#include &lt;cuda_runtime.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="vort_8h_source.html">vort.h</a>&quot;</code><br />
-</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for tracker.h:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="tracker_8h__incl.png" border="0" usemap="#_2Users_2mlxd_2Desktop_2GPUE_2include_2tracker_8h" alt=""/></div>
-<map name="_2Users_2mlxd_2Desktop_2GPUE_2include_2tracker_8h" id="_2Users_2mlxd_2Desktop_2GPUE_2include_2tracker_8h">
-<area shape="rect" id="node7" href="vort_8h.html" title="Class for keeping track of vortices. Implementation TBC. " alt="" coords="392,97,454,125"/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for tracker.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="tracker_8h__incl.png" border="0" usemap="#include_2tracker_8h" alt=""/></div>
+<map name="include_2tracker_8h" id="include_2tracker_8h">
+<area shape="rect" id="node7" href="vort_8h.html" title="Class for keeping track of vortices. Implementation TBC. " alt="" coords="355,80,410,107"/>
 </map>
 </div>
-</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="tracker_8h__dep__incl.png" border="0" usemap="#_2Users_2mlxd_2Desktop_2GPUE_2include_2tracker_8hdep" alt=""/></div>
-<map name="_2Users_2mlxd_2Desktop_2GPUE_2include_2tracker_8hdep" id="_2Users_2mlxd_2Desktop_2GPUE_2include_2tracker_8hdep">
-<area shape="rect" id="node2" href="node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="115,97,295,141"/>
-<area shape="rect" id="node4" href="lattice_8h.html" title="Class for treating vortices as a graph. " alt="" coords="239,281,425,325"/>
-<area shape="rect" id="node5" href="evolution_8h.html" title="function for evolution. " alt="" coords="378,373,586,417"/>
-<area shape="rect" id="node6" href="init_8h.html" title="/Users/mlxd/Desktop\l/GPUE/include/init.h" alt="" coords="468,465,637,509"/>
-<area shape="rect" id="node8" href="split__op_8h.html" title="command line parser file. " alt="" coords="500,281,699,325"/>
-<area shape="rect" id="node9" href="fileIO_8h.html" title="Routines for input and output of simulation data. " alt="" coords="724,281,905,325"/>
-<area shape="rect" id="node10" href="minions_8h.html" title="Helper functions for evaluating and manipulating data. " alt="" coords="739,189,938,233"/>
-<area shape="rect" id="node3" href="edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="51,189,231,233"/>
-<area shape="rect" id="node7" href="graphtest_8cc.html" title="/Users/mlxd/Desktop\l/GPUE/src/graphtest.cc" alt="" coords="115,373,303,417"/>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="tracker_8h__dep__incl.png" border="0" usemap="#include_2tracker_8hdep" alt=""/></div>
+<map name="include_2tracker_8hdep" id="include_2tracker_8hdep">
+<area shape="rect" id="node2" href="node_8h.html" title="Allow vortex to be treated as node in a graph. " alt="" coords="93,80,200,107"/>
+<area shape="rect" id="node4" href="lattice_8h.html" title="Class for treating vortices as a graph. " alt="" coords="215,229,328,256"/>
+<area shape="rect" id="node5" href="evolution_8h.html" title="function for evolution. " alt="" coords="309,304,440,331"/>
+<area shape="rect" id="node6" href="init_8h.html" title="include/init.h" alt="" coords="378,379,472,405"/>
+<area shape="rect" id="node8" href="split__op_8h.html" title="command line parser file. " alt="" coords="404,229,526,256"/>
+<area shape="rect" id="node9" href="file_i_o_8h.html" title="Routines for input and output of simulation data. " alt="" coords="551,229,662,256"/>
+<area shape="rect" id="node10" href="minions_8h.html" title="Helper functions for evaluating and manipulating data. " alt="" coords="581,155,704,181"/>
+<area shape="rect" id="node3" href="edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="48,155,154,181"/>
+<area shape="rect" id="node7" href="graphtest_8cc.html" title="src/graphtest.cc" alt="" coords="118,304,234,331"/>
 </map>
 </div>
 </div>
@@ -144,53 +139,46 @@ $(document).ready(function(){initNavTree('tracker_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceTracker"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html">Tracker</a></td></tr>
-<tr class="memdesc:namespaceTracker"><td class="mdescLeft">&#160;</td><td class="mdescRight">See the source file for more info on functions. <br /></td></tr>
+<tr class="memitem:namespace_tracker"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html">Tracker</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9f2ba80ee45add6eedc0ca9c07bd8192"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a9f2ba80ee45add6eedc0ca9c07bd8192">Tracker::findOLMaxima</a> (int *marker, double *V, double radius, int xDim, double *x)</td></tr>
-<tr class="memdesc:a9f2ba80ee45add6eedc0ca9c07bd8192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds optical lattice maxima locations.  <a href="namespaceTracker.html#a9f2ba80ee45add6eedc0ca9c07bd8192">More...</a><br /></td></tr>
-<tr class="separator:a9f2ba80ee45add6eedc0ca9c07bd8192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7156d2a14528dfa9702281cf77cbc033"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a7156d2a14528dfa9702281cf77cbc033">Tracker::findVortex</a> (int *marker, const double2 *wfc, double radius, int xDim, const double *x, int timestep)</td></tr>
-<tr class="memdesc:a7156d2a14528dfa9702281cf77cbc033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find vortex locations in the condensate.  <a href="namespaceTracker.html#a7156d2a14528dfa9702281cf77cbc033">More...</a><br /></td></tr>
+<tr class="memitem:a7156d2a14528dfa9702281cf77cbc033"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a7156d2a14528dfa9702281cf77cbc033">Tracker::findVortex</a> (int *marker, const double2 *<a class="el" href="_g_p_e__2d_8m.html#a212e9b238bea446637c4b397de692f98">wfc</a>, double <a class="el" href="_vtx_corr_8m.html#acc620a89e606f875661525fd6365a421">radius</a>, int <a class="el" href="qu_kinetic_spec_8m.html#aecca610f6c610971fa8ecf313bceff87">xDim</a>, const double *<a class="el" href="_g_p_e__2d_8m.html#af930d40a8e53675ae8ef31046573108a">x</a>, int timestep)</td></tr>
+<tr class="memdesc:a7156d2a14528dfa9702281cf77cbc033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find vortex locations in the condensate.  <a href="namespace_tracker.html#a7156d2a14528dfa9702281cf77cbc033">More...</a><br /></td></tr>
 <tr class="separator:a7156d2a14528dfa9702281cf77cbc033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8700fec352c4c5a5d597712ce134ca00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a8700fec352c4c5a5d597712ce134ca00">Tracker::lsFit</a> (std::vector&lt; std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt;&gt; &amp;vortCoords, const double2 *wfc, int xDim)</td></tr>
-<tr class="memdesc:a8700fec352c4c5a5d597712ce134ca00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Least-squares vortex code estimation.  <a href="namespaceTracker.html#a8700fec352c4c5a5d597712ce134ca00">More...</a><br /></td></tr>
-<tr class="separator:a8700fec352c4c5a5d597712ce134ca00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a9509ac2963aa5c20d60fe71e3cf857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a7a9509ac2963aa5c20d60fe71e3cf857">Tracker::olPos</a> (int *marker, int2 *vLocation, int xDim)</td></tr>
-<tr class="memdesc:a7a9509ac2963aa5c20d60fe71e3cf857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts matrix of vortex locations as argument, returns array of x,y coordinates of locations and winding.  <a href="namespaceTracker.html#a7a9509ac2963aa5c20d60fe71e3cf857">More...</a><br /></td></tr>
-<tr class="separator:a7a9509ac2963aa5c20d60fe71e3cf857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874767c0b5b5bc64519d33992824dbc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a874767c0b5b5bc64519d33992824dbc0">Tracker::phaseTest</a> (int2 vLoc, double2 *wfc, int xDim)</td></tr>
-<tr class="memdesc:a874767c0b5b5bc64519d33992824dbc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks given coordinate for phase singularity of +ve winding.  <a href="namespaceTracker.html#a874767c0b5b5bc64519d33992824dbc0">More...</a><br /></td></tr>
-<tr class="separator:a874767c0b5b5bc64519d33992824dbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ca23dce37acfd1210e52ae68901d10b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a1ca23dce37acfd1210e52ae68901d10b">Tracker::sigVOL</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;vArr, const int2 *opLatt, const double *x)</td></tr>
-<tr class="separator:a1ca23dce37acfd1210e52ae68901d10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a6c1ff8993d8e3e95be8217ea1591c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a8a6c1ff8993d8e3e95be8217ea1591c1">Tracker::vortAngle</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt;&gt; &amp;vortCoords, const std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt; central)</td></tr>
-<tr class="memdesc:a8a6c1ff8993d8e3e95be8217ea1591c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the rotation angle of the vortex lattice.  <a href="namespaceTracker.html#a8a6c1ff8993d8e3e95be8217ea1591c1">More...</a><br /></td></tr>
-<tr class="separator:a8a6c1ff8993d8e3e95be8217ea1591c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af98a5f09f8a51a17f63f7cfc23fbf135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#af98a5f09f8a51a17f63f7cfc23fbf135">Tracker::vortArrange</a> (std::vector&lt; std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;vCoordsC, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt;&gt; &amp;vCoordsP)</td></tr>
-<tr class="memdesc:af98a5f09f8a51a17f63f7cfc23fbf135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures the vortices are tracked and arranged in the right order based on minimum distance between previous and current positions.  <a href="namespaceTracker.html#af98a5f09f8a51a17f63f7cfc23fbf135">More...</a><br /></td></tr>
-<tr class="separator:af98a5f09f8a51a17f63f7cfc23fbf135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad66918be0f6b9a2c326c91277236bc4c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#ad66918be0f6b9a2c326c91277236bc4c">Tracker::vortCentre</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;cArray, int xDim)</td></tr>
-<tr class="memdesc:ad66918be0f6b9a2c326c91277236bc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the most central vortex in the condensate.  <a href="namespaceTracker.html#ad66918be0f6b9a2c326c91277236bc4c">More...</a><br /></td></tr>
-<tr class="separator:ad66918be0f6b9a2c326c91277236bc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c7ef48339c59ebcd5f71ca183c7c9a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a2c7ef48339c59ebcd5f71ca183c7c9a0">Tracker::vortPos</a> (const int *marker, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;vLocation, int xDim, const double2 *wfc)</td></tr>
-<tr class="memdesc:a2c7ef48339c59ebcd5f71ca183c7c9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts matrix of vortex locations as argument, returns array of x,y coordinates of locations and winding.  <a href="namespaceTracker.html#a2c7ef48339c59ebcd5f71ca183c7c9a0">More...</a><br /></td></tr>
+<tr class="memitem:a2c7ef48339c59ebcd5f71ca183c7c9a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a2c7ef48339c59ebcd5f71ca183c7c9a0">Tracker::vortPos</a> (const int *marker, std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;vLocation, int <a class="el" href="qu_kinetic_spec_8m.html#aecca610f6c610971fa8ecf313bceff87">xDim</a>, const double2 *<a class="el" href="_g_p_e__2d_8m.html#a212e9b238bea446637c4b397de692f98">wfc</a>)</td></tr>
+<tr class="memdesc:a2c7ef48339c59ebcd5f71ca183c7c9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts matrix of vortex locations as argument, returns array of x,y coordinates of locations and winding.  <a href="namespace_tracker.html#a2c7ef48339c59ebcd5f71ca183c7c9a0">More...</a><br /></td></tr>
 <tr class="separator:a2c7ef48339c59ebcd5f71ca183c7c9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada25462a0f3ae6637f9b808a7dd91969"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#ada25462a0f3ae6637f9b808a7dd91969">Tracker::vortPosDelta</a> (int *cMarker, int2 *pMarker, double *x, double tolerance, int xDim)</td></tr>
-<tr class="memdesc:ada25462a0f3ae6637f9b808a7dd91969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes in vortex positions.  <a href="namespaceTracker.html#ada25462a0f3ae6637f9b808a7dd91969">More...</a><br /></td></tr>
+<tr class="memitem:a7a9509ac2963aa5c20d60fe71e3cf857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a7a9509ac2963aa5c20d60fe71e3cf857">Tracker::olPos</a> (int *marker, int2 *vLocation, int <a class="el" href="qu_kinetic_spec_8m.html#aecca610f6c610971fa8ecf313bceff87">xDim</a>)</td></tr>
+<tr class="memdesc:a7a9509ac2963aa5c20d60fe71e3cf857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts matrix of vortex locations as argument, returns array of x,y coordinates of locations and winding.  <a href="namespace_tracker.html#a7a9509ac2963aa5c20d60fe71e3cf857">More...</a><br /></td></tr>
+<tr class="separator:a7a9509ac2963aa5c20d60fe71e3cf857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada25462a0f3ae6637f9b808a7dd91969"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#ada25462a0f3ae6637f9b808a7dd91969">Tracker::vortPosDelta</a> (int *cMarker, int2 *pMarker, double *<a class="el" href="_g_p_e__2d_8m.html#af930d40a8e53675ae8ef31046573108a">x</a>, double tolerance, int <a class="el" href="qu_kinetic_spec_8m.html#aecca610f6c610971fa8ecf313bceff87">xDim</a>)</td></tr>
+<tr class="memdesc:ada25462a0f3ae6637f9b808a7dd91969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes in vortex positions. Not implemented. See <a class="el" href="vort_8py.html">vort.py</a> for current tracking.  <a href="namespace_tracker.html#ada25462a0f3ae6637f9b808a7dd91969">More...</a><br /></td></tr>
 <tr class="separator:ada25462a0f3ae6637f9b808a7dd91969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4db5c846116f1bb288a46543f9b83581"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a4db5c846116f1bb288a46543f9b83581">Tracker::vortSepAvg</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;vArray, const std::shared_ptr&lt; <a class="el" href="classVtx_1_1Vortex.html">Vtx::Vortex</a> &gt; centre)</td></tr>
-<tr class="memdesc:a4db5c846116f1bb288a46543f9b83581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines average inter-vortex separation about the condensate centre.  <a href="namespaceTracker.html#a4db5c846116f1bb288a46543f9b83581">More...</a><br /></td></tr>
+<tr class="memitem:ad66918be0f6b9a2c326c91277236bc4c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#ad66918be0f6b9a2c326c91277236bc4c">Tracker::vortCentre</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;cArray, int <a class="el" href="qu_kinetic_spec_8m.html#aecca610f6c610971fa8ecf313bceff87">xDim</a>)</td></tr>
+<tr class="memdesc:ad66918be0f6b9a2c326c91277236bc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the most central vortex in the condensate.  <a href="namespace_tracker.html#ad66918be0f6b9a2c326c91277236bc4c">More...</a><br /></td></tr>
+<tr class="separator:ad66918be0f6b9a2c326c91277236bc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6c1ff8993d8e3e95be8217ea1591c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a8a6c1ff8993d8e3e95be8217ea1591c1">Tracker::vortAngle</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt;&gt; &amp;vortCoords, const std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt; central)</td></tr>
+<tr class="memdesc:a8a6c1ff8993d8e3e95be8217ea1591c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the rotation angle of the vortex lattice.  <a href="namespace_tracker.html#a8a6c1ff8993d8e3e95be8217ea1591c1">More...</a><br /></td></tr>
+<tr class="separator:a8a6c1ff8993d8e3e95be8217ea1591c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db5c846116f1bb288a46543f9b83581"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a4db5c846116f1bb288a46543f9b83581">Tracker::vortSepAvg</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;vArray, const std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt; centre)</td></tr>
+<tr class="memdesc:a4db5c846116f1bb288a46543f9b83581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines average inter-vortex separation about the condensate centre.  <a href="namespace_tracker.html#a4db5c846116f1bb288a46543f9b83581">More...</a><br /></td></tr>
 <tr class="separator:a4db5c846116f1bb288a46543f9b83581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a071c70974bf0a593220fef0653c1d694"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTracker.html#a071c70974bf0a593220fef0653c1d694">Tracker::lsq</a> [3][4]</td></tr>
-<tr class="memdesc:a071c70974bf0a593220fef0653c1d694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vortex is used to track specific individual vortices.  <a href="namespaceTracker.html#a071c70974bf0a593220fef0653c1d694">More...</a><br /></td></tr>
-<tr class="separator:a071c70974bf0a593220fef0653c1d694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca23dce37acfd1210e52ae68901d10b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a1ca23dce37acfd1210e52ae68901d10b">Tracker::sigVOL</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;<a class="el" href="_vtx_corr_8m.html#ae603e3d8e45d099f4e3d2d9801a856be">vArr</a>, const int2 *opLatt, const double *<a class="el" href="_g_p_e__2d_8m.html#af930d40a8e53675ae8ef31046573108a">x</a>)</td></tr>
+<tr class="separator:a1ca23dce37acfd1210e52ae68901d10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f2ba80ee45add6eedc0ca9c07bd8192"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a9f2ba80ee45add6eedc0ca9c07bd8192">Tracker::findOLMaxima</a> (int *marker, double *<a class="el" href="vel_field_8m.html#ad425645aa3d1c03053e26a3d471224ee">V</a>, double <a class="el" href="_vtx_corr_8m.html#acc620a89e606f875661525fd6365a421">radius</a>, int <a class="el" href="qu_kinetic_spec_8m.html#aecca610f6c610971fa8ecf313bceff87">xDim</a>, double *<a class="el" href="_g_p_e__2d_8m.html#af930d40a8e53675ae8ef31046573108a">x</a>)</td></tr>
+<tr class="memdesc:a9f2ba80ee45add6eedc0ca9c07bd8192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds optical lattice maxima locations. Deprecated.  <a href="namespace_tracker.html#a9f2ba80ee45add6eedc0ca9c07bd8192">More...</a><br /></td></tr>
+<tr class="separator:a9f2ba80ee45add6eedc0ca9c07bd8192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98a5f09f8a51a17f63f7cfc23fbf135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#af98a5f09f8a51a17f63f7cfc23fbf135">Tracker::vortArrange</a> (std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt; &gt; &amp;vCoordsC, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt;&gt; &amp;vCoordsP)</td></tr>
+<tr class="memdesc:af98a5f09f8a51a17f63f7cfc23fbf135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures the vortices are tracked and arranged in the right order based on minimum distance between previous and current positions.  <a href="namespace_tracker.html#af98a5f09f8a51a17f63f7cfc23fbf135">More...</a><br /></td></tr>
+<tr class="separator:af98a5f09f8a51a17f63f7cfc23fbf135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874767c0b5b5bc64519d33992824dbc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a874767c0b5b5bc64519d33992824dbc0">Tracker::phaseTest</a> (int2 vLoc, double2 *<a class="el" href="_g_p_e__2d_8m.html#a212e9b238bea446637c4b397de692f98">wfc</a>, int <a class="el" href="qu_kinetic_spec_8m.html#aecca610f6c610971fa8ecf313bceff87">xDim</a>)</td></tr>
+<tr class="memdesc:a874767c0b5b5bc64519d33992824dbc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks given coordinate for phase singularity of +ve winding.  <a href="namespace_tracker.html#a874767c0b5b5bc64519d33992824dbc0">More...</a><br /></td></tr>
+<tr class="separator:a874767c0b5b5bc64519d33992824dbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8700fec352c4c5a5d597712ce134ca00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tracker.html#a8700fec352c4c5a5d597712ce134ca00">Tracker::lsFit</a> (std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_vtx_1_1_vortex.html">Vtx::Vortex</a> &gt;&gt; &amp;vortCoords, const double2 *<a class="el" href="_g_p_e__2d_8m.html#a212e9b238bea446637c4b397de692f98">wfc</a>, int <a class="el" href="qu_kinetic_spec_8m.html#aecca610f6c610971fa8ecf313bceff87">xDim</a>)</td></tr>
+<tr class="memdesc:a8700fec352c4c5a5d597712ce134ca00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Least-squares vortex code estimation. Loosely based on c42f's vortutils code.  <a href="namespace_tracker.html#a8700fec352c4c5a5d597712ce134ca00">More...</a><br /></td></tr>
+<tr class="separator:a8700fec352c4c5a5d597712ce134ca00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Vortex lattice position, orientation, and tracking. </p>
@@ -208,7 +196,7 @@ DESCRIPTION</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="tracker_8h.html">tracker.h</a></li>
-    <li class="footer">Generated on Thu Aug 23 2018 16:30:32 for GPUE:  GPU Gross-Pitaevskii Equation by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

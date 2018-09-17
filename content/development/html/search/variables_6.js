@@ -1,7 +1,22 @@
 var searchData=
 [
-  ['has_5fop',['has_op',['../ds_8h.html#a2e9597880afc002a53bc43d326bd1e91',1,'EqnNode']]],
-  ['hbar',['hbar',['../namespaceextract__gauge.html#a47ebd614095a6938309e4af78cd6fe1a',1,'extract_gauge.hbar()'],['../namespaceobservables.html#a6c28487d188d41856546ba25be18d59c',1,'observables.hbar()'],['../namespaceobservables.html#ad72c3c21bf06d005944fd64d4a596d0f',1,'observables.HBAR()']]],
-  ['head',['head',['../namespacevort.html#a19fc69a596b09fd02e582adbf8052ccf',1,'vort']]],
-  ['help',['help',['../namespaceplot.html#aa537d5a8cc4b592799c925b91cfe4a3b',1,'plot']]]
+  ['d',['d',['../defect_triangulation_8m.html#a8f5ae177038811db9ecdc0d34cb2f619',1,'defectTriangulation.m']]],
+  ['data',['data',['../namespaceen.html#aaef5b5d442374ced158aae69cdfd0d3c',1,'en.data()'],['../namespacempi__vis.html#a77b6a7d40607937b2b3a3d82ebbf2e7c',1,'mpi_vis.data()'],['../namespaceobservables.html#a72aac85cd910988c8175fa21fa5f126d',1,'observables.data()'],['../namespacevis.html#a8270e080e8256269638369634f2647a2',1,'vis.data()'],['../namespacevort.html#a86cda1987fcf03abee2e73b2981dfa03',1,'vort.data()'],['../_vtx_corr_8m.html#a68ceaa2a3ef7a71a6e5f922338c050f1',1,'data():&#160;VtxCorr.m']]],
+  ['data_5fdir',['data_dir',['../classplot_1_1params.html#af31812ab0cc4402635ace96680f93d4c',1,'plot.params.data_dir()'],['../namespacevort.html#ac33335f0b5b67e4217469271139908c9',1,'vort.data_dir()']]],
+  ['dataset',['dataset',['../load_vtx_8m.html#ae2fdfcf5e59290b07ed0a68f84929b54',1,'loadVtx.m']]],
+  ['datasteps',['dataSteps',['../_vtx_corr_8m.html#a538b68a68da42b6ee73a3ac3edf3a2a8',1,'VtxCorr.m']]],
+  ['dcp',['dcp',['../namespacevort.html#a17bac6858600088581a626dc42b647de',1,'vort']]],
+  ['defcount',['DefCount',['../defect_triangulation_8m.html#a3f5c33c2313181e16f04bb2bff5a093f',1,'defectTriangulation.m']]],
+  ['delimiter',['delimiter',['../namespacevort.html#ac7ba22ba74783b67d75619cfeaf4233e',1,'vort']]],
+  ['dimensions',['dimensions',['../vtx_trajectory_8m.html#af285943919a2f47ae2d89a130156c9e3',1,'vtxTrajectory.m']]],
+  ['dimsize',['dimSize',['../qu_kinetic_spec_8m.html#a5dfd5fb6643e3ae649d6887a1cec9d9d',1,'dimSize():&#160;quKineticSpec.m'],['../_vtx_corr_8m.html#a5dfd5fb6643e3ae649d6887a1cec9d9d',1,'dimSize():&#160;VtxCorr.m']]],
+  ['div',['div',['../qu_kinetic_spec_8m.html#a00b49825eb9b4ffce1a4877d83ce126c',1,'quKineticSpec.m']]],
+  ['dkx',['dkx',['../namespaceobservables.html#aadde1545b735fcbf97e15f87c52549eb',1,'observables']]],
+  ['dky',['dky',['../namespaceobservables.html#aaa4b782623af7ed93f4e31996638dfe8',1,'observables.dky()'],['../qu_kinetic_spec_8m.html#a59650fdddef08cde1605e75fa4181c5e',1,'dky():&#160;quKineticSpec.m']]],
+  ['dpc',['dpc',['../namespacevort.html#a93a79fa3f3bedc21b67ceb07ae3bc857',1,'vort']]],
+  ['drawnow',['drawnow',['../_g_p_e__2d_8m.html#aadd84b46ee6d2e3ae04d2920f4e78bfd',1,'drawnow():&#160;GPE_2d.m'],['../qu_kinetic_spec_8m.html#aadd84b46ee6d2e3ae04d2920f4e78bfd',1,'drawnow():&#160;quKineticSpec.m'],['../_vtx_corr_8m.html#aba0f96481782bcff4c89f51937d283fa',1,'drawnow():&#160;VtxCorr.m']]],
+  ['dt',['DT',['../defect_triangulation_8m.html#ada4df8e2e2e62d6e013b5ce6eda38c94',1,'DT():&#160;defectTriangulation.m'],['../voronoi2d_cell_colour_8m.html#af471b81801bd23de233b0c589e5c1392',1,'DT():&#160;voronoi2dCellColour.m'],['../_g_p_e__2d_8m.html#a66b5d781f2eb435af87ede2ed7513f4b',1,'Dt():&#160;GPE_2d.m'],['../namespaceen.html#a4c01a416107107517bb8fb5a060d96c6',1,'en.dt()'],['../namespacehist3d.html#ae9ebb1b85df6964a0743c2bc65a220e8',1,'hist3d.dt()'],['../namespacempi__vis.html#a9efe63726eb04e315f1f809d236e58f3',1,'mpi_vis.dt()'],['../namespaceobservables.html#a42c675d54f2e91d653de181f44cc1c23',1,'observables.dt()'],['../namespacevis.html#ab411fec04392c22f6cb3c555c83baa74',1,'vis.dt()'],['../namespacevort.html#a7a08941a849e4dd10704c992b10c6818',1,'vort.dt()']]],
+  ['dtype',['dtype',['../namespacevort.html#ad5d72055420329f1be67f91127f7b743',1,'vort']]],
+  ['dx',['dx',['../namespaceen.html#a4cec7feb6a23622ad88d2d07c9fff286',1,'en.dx()'],['../namespacehist3d.html#a9ae97b5e544249d7062c2bcf2e524d9f',1,'hist3d.dx()'],['../namespacempi__vis.html#ad3084f48e16a9b070481fc8c4f2c628c',1,'mpi_vis.dx()'],['../namespaceobservables.html#a14f241a7b7e9e489b4f4f4157b849a1d',1,'observables.dx()'],['../namespacevis.html#a54298abae8ad87a0abbb2117da8041be',1,'vis.dx()'],['../namespacevort.html#ace2207ca7c6fe6e7a316a1fdac965847',1,'vort.dx()'],['../vel_field_8m.html#a90f3dc1036febf49c5c3afcea62550d2',1,'dx():&#160;velField.m'],['../voronoi2d_cell_colour_8m.html#aacddc911cdfe5cd5ec97b084754542d4',1,'dx():&#160;voronoi2dCellColour.m']]],
+  ['dy',['dy',['../namespaceen.html#aa49bf733e5ae01297d027a14291c93ab',1,'en.dy()'],['../namespaceobservables.html#a3ba0c6e8205a0847887db7c0386eadb0',1,'observables.dy()']]]
 ];

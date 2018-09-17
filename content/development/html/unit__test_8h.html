@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GPUE:  GPU Gross-Pitaevskii Equation: /Users/mlxd/Desktop/GPUE/include/unit_test.h File Reference</title>
+<title>GPUE: include/unit_test.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -34,12 +34,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="gpue_1024w.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GPUE:  GPU Gross-Pitaevskii Equation
-   &#160;<span id="projectnumber">0</span>
+   <div id="projectname">GPUE
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
-   <div id="projectbrief">GPU Gross-Pitaevskii equation solver</div>
+   <div id="projectbrief">GPU Gross-Pitaevskii Equation numerical solver for Bose-Einstein condensates</div>
   </td>
  </tr>
  </tbody>
@@ -100,27 +100,26 @@ $(document).ready(function(){initNavTree('unit__test_8h.html','');});
 <div class="title">unit_test.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>function for evolution.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ds_8h_source.html">ds.h</a>&quot;</code><br />
-</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for unit_test.h:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="unit__test_8h__incl.png" border="0" usemap="#_2Users_2mlxd_2Desktop_2GPUE_2include_2unit__test_8h" alt=""/></div>
-<map name="_2Users_2mlxd_2Desktop_2GPUE_2include_2unit__test_8h" id="_2Users_2mlxd_2Desktop_2GPUE_2include_2unit__test_8h">
-<area shape="rect" id="node2" href="ds_8h.html" title="Dastructure for simulation runtime parameters. " alt="" coords="635,97,687,125"/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for unit_test.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="unit__test_8h__incl.png" border="0" usemap="#include_2unit__test_8h" alt=""/></div>
+<map name="include_2unit__test_8h" id="include_2unit__test_8h">
+<area shape="rect" id="node2" href="ds_8h.html" title="Dastructure for simulation runtime parameters. " alt="" coords="575,80,622,107"/>
 </map>
 </div>
-</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="unit__test_8h__dep__incl.png" border="0" usemap="#_2Users_2mlxd_2Desktop_2GPUE_2include_2unit__test_8hdep" alt=""/></div>
-<map name="_2Users_2mlxd_2Desktop_2GPUE_2include_2unit__test_8hdep" id="_2Users_2mlxd_2Desktop_2GPUE_2include_2unit__test_8hdep">
-<area shape="rect" id="node2" href="evolution_8h.html" title="function for evolution. " alt="" coords="5,97,213,141"/>
-<area shape="rect" id="node3" href="init_8h.html" title="/Users/mlxd/Desktop\l/GPUE/include/init.h" alt="" coords="166,189,335,233"/>
-<area shape="rect" id="node4" href="parser_8h.html" title="/Users/mlxd/Desktop\l/GPUE/include/parser.h" alt="" coords="288,97,477,141"/>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="unit__test_8h__dep__incl.png" border="0" usemap="#include_2unit__test_8hdep" alt=""/></div>
+<map name="include_2unit__test_8hdep" id="include_2unit__test_8hdep">
+<area shape="rect" id="node2" href="evolution_8h.html" title="function for evolution. " alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="init_8h.html" title="include/init.h" alt="" coords="126,155,221,181"/>
+<area shape="rect" id="node4" href="parser_8h.html" title="include/parser.h" alt="" coords="211,80,325,107"/>
 </map>
 </div>
 </div>
@@ -131,11 +130,18 @@ Functions</h2></td></tr>
 <tr class="memitem:aa1c715cac916839a95e25b65b4071c4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__test_8h.html#aa1c715cac916839a95e25b65b4071c4a">test_all</a> ()</td></tr>
 <tr class="memdesc:aa1c715cac916839a95e25b65b4071c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs all necessary unit tests to ensure proper function  <a href="#aa1c715cac916839a95e25b65b4071c4a">More...</a><br /></td></tr>
 <tr class="separator:aa1c715cac916839a95e25b65b4071c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7ee3122481aeef6cfdb504f1a87ec3f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__test_8h.html#ab7ee3122481aeef6cfdb504f1a87ec3f">trapz</a> (double *array, int dimension, double dx)</td></tr>
-<tr class="memdesc:ab7ee3122481aeef6cfdb504f1a87ec3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a simple integral with trapezoidal sum.  <a href="#ab7ee3122481aeef6cfdb504f1a87ec3f">More...</a><br /></td></tr>
-<tr class="separator:ab7ee3122481aeef6cfdb504f1a87ec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>function for evolution. </p>
+<dl class="section author"><dt>Author</dt><dd>James Ryan Schloss (leios) </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>5/31/2016 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1</dd></dl>
+<h1><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h1>
+<p>These functions and variables are necessary for carrying out the GPUE simulations. This file will be re-written in an improved form in some future release. </p>
+
+<p class="definition">Definition in file <a class="el" href="unit__test_8h_source.html">unit_test.h</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="aa1c715cac916839a95e25b65b4071c4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1c715cac916839a95e25b65b4071c4a">&#9670;&nbsp;</a></span>test_all()</h2>
 
@@ -155,57 +161,13 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab7ee3122481aeef6cfdb504f1a87ec3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7ee3122481aeef6cfdb504f1a87ec3f">&#9670;&nbsp;</a></span>trapz()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double trapz </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>array</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dimension</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>dx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Performs a simple integral with trapezoidal sum. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">array</td><td>to be integrated </td></tr>
-    <tr><td class="paramname">dimension</td><td>of the array to be integrated </td></tr>
-    <tr><td class="paramname">dx</td><td>of the array (assuming we are integrating along x) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="unit__test_8h.html">unit_test.h</a></li>
-    <li class="footer">Generated on Thu Aug 23 2018 16:30:32 for GPUE:  GPU Gross-Pitaevskii Equation by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

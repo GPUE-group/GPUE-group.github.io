@@ -40,3 +40,20 @@ enableMissingTranslationPlaceholders = false
 #Activate searchability
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+
+[[menu.shortcuts]]
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-github'></i> <label>GPUE repo</label>"
+url = "https://github.com/gpue-group/gpue"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-cloud-download'></i> <label>Download</label>"
+url = "https://github.com/gpue-group/gpue/archive/master.zip"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bookmark'></i> <label>GPUE API</label>"
+url = "/development/html/"
+weight = 20

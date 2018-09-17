@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['edge',['Edge',['../classLatticeGraph_1_1Edge.html',1,'LatticeGraph']]],
-  ['eqnnode',['EqnNode',['../ds_8h.html#structEqnNode',1,'']]],
-  ['eqnnode_5fgpu',['EqnNode_gpu',['../ds_8h.html#structEqnNode__gpu',1,'']]]
+  ['edge',['Edge',['../class_lattice_graph_1_1_edge.html',1,'LatticeGraph']]],
+  ['eqnnode',['EqnNode',['../struct_eqn_node.html',1,'']]],
+  ['eqnnode_5fgpu',['EqnNode_gpu',['../struct_eqn_node__gpu.html',1,'']]]
 ];

@@ -4,7 +4,7 @@ var dir_15fe2cec17dffb22c04117b383426cd3 =
     [ "extract_gauge.py", "extract__gauge_8py.html", "extract__gauge_8py" ],
     [ "gen_data.py", "gen__data_8py.html", "gen__data_8py" ],
     [ "hist3d.py", "hist3d_8py.html", "hist3d_8py" ],
-    [ "hist_it.py", "hist__it_8py.html", null ],
+    [ "mpi_vis.py", "mpi__vis_8py.html", "mpi__vis_8py" ],
     [ "observables.py", "observables_8py.html", "observables_8py" ],
     [ "paraview_plot.py", "paraview__plot_8py.html", "paraview__plot_8py" ],
     [ "plot.py", "plot_8py.html", "plot_8py" ],

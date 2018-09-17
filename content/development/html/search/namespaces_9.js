@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tracker',['Tracker',['../namespaceTracker.html',1,'']]]
+  ['tracker',['Tracker',['../namespace_tracker.html',1,'']]]
 ];

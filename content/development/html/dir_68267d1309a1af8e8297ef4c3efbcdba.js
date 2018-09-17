@@ -4,7 +4,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "dynamic.cu", "dynamic_8cu.html", null ],
     [ "edge.cu", "edge_8cu.html", null ],
     [ "evolution.cu", "evolution_8cu.html", null ],
-    [ "fileIO.cu", "fileIO_8cu.html", null ],
+    [ "fileIO.cu", "file_i_o_8cu.html", null ],
     [ "graphtest.cc", "graphtest_8cc.html", "graphtest_8cc" ],
     [ "init.cu", "init_8cu.html", null ],
     [ "kernels.cu", "kernels_8cu.html", null ],
@@ -22,6 +22,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "unit_test.cu", "unit__test_8cu.html", null ],
     [ "vort.cu", "vort_8cu.html", null ],
     [ "vortex_3d.cu", "vortex__3d_8cu.html", null ],
-    [ "VtxTest.cc", "VtxTest_8cc.html", "VtxTest_8cc" ],
+    [ "VtxTest.cc", "_vtx_test_8cc.html", "_vtx_test_8cc" ],
     [ "wavefunction.cu", "wavefunction_8cu.html", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GPUE:  GPU Gross-Pitaevskii Equation: /Users/mlxd/Desktop/GPUE/py/stats.py File Reference</title>
+<title>GPUE: py/stats.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -34,12 +34,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="gpue_1024w.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GPUE:  GPU Gross-Pitaevskii Equation
-   &#160;<span id="projectnumber">0</span>
+   <div id="projectname">GPUE
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
-   <div id="projectbrief">GPU Gross-Pitaevskii equation solver</div>
+   <div id="projectbrief">GPU Gross-Pitaevskii Equation numerical solver for Bose-Einstein condensates</div>
   </td>
  </tr>
  </tbody>
@@ -119,12 +119,16 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a4de3edec761768952ea5dfefe26d1fd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#a4de3edec761768952ea5dfefe26d1fd1">stats.c</a> = ConfigParser.ConfigParser()</td></tr>
 <tr class="separator:a4de3edec761768952ea5dfefe26d1fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14afa5f9e9cc239ea9c9f1bb90d56b93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#a14afa5f9e9cc239ea9c9f1bb90d56b93">stats.incr</a> = int(c.getfloat('Params','print_out'))</td></tr>
-<tr class="separator:a14afa5f9e9cc239ea9c9f1bb90d56b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a198381c3858af8f570db5addb64bb0f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#a198381c3858af8f570db5addb64bb0f7">stats.xDim</a> = int(c.getfloat('Params','xDim'))</td></tr>
-<tr class="separator:a198381c3858af8f570db5addb64bb0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77f36f6d5b104598ed1cdf47f770c34e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#a77f36f6d5b104598ed1cdf47f770c34e">stats.yDim</a> = int(c.getfloat('Params','yDim'))</td></tr>
-<tr class="separator:a77f36f6d5b104598ed1cdf47f770c34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23ab95fcb3e8213fa470d704f329090"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#ab23ab95fcb3e8213fa470d704f329090">stats.incr</a> = int(c.getfloat('Params','printSteps'))</td></tr>
+<tr class="separator:ab23ab95fcb3e8213fa470d704f329090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b597e8153ac3c891a0e73db0cb4e37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#ae7b597e8153ac3c891a0e73db0cb4e37">stats.xDim</a> = int(c.getfloat('Params','xDim'))</td></tr>
+<tr class="separator:ae7b597e8153ac3c891a0e73db0cb4e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb73ddb993b3765fffe47337f4c2dd7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#adb73ddb993b3765fffe47337f4c2dd7c">stats.yDim</a> = int(c.getfloat('Params','yDim'))</td></tr>
+<tr class="separator:adb73ddb993b3765fffe47337f4c2dd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada14a6100361170f7fe35feb8fee379c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#ada14a6100361170f7fe35feb8fee379c">stats.st</a> = int(sys.argv[1])</td></tr>
+<tr class="separator:ada14a6100361170f7fe35feb8fee379c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d09b599545fcd2f51b146559fb8e8e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestats.html#a5d09b599545fcd2f51b146559fb8e8e5">stats.en</a> = int(sys.argv[2])</td></tr>
+<tr class="separator:a5d09b599545fcd2f51b146559fb8e8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -132,7 +136,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_15fe2cec17dffb22c04117b383426cd3.html">py</a></li><li class="navelem"><a class="el" href="stats_8py.html">stats.py</a></li>
-    <li class="footer">Generated on Thu Aug 23 2018 16:30:32 for GPUE:  GPU Gross-Pitaevskii Equation by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

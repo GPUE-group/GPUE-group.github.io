@@ -1,18 +1,12 @@
 var searchData=
 [
-  ['edge',['Edge',['../classLatticeGraph_1_1Edge.html#a3e2b5b6660b37bfe901d1526b045bd99',1,'LatticeGraph::Edge::Edge()'],['../classLatticeGraph_1_1Edge.html#a51ee2ed0e9f47dc04391101df29260b0',1,'LatticeGraph::Edge::Edge(std::weak_ptr&lt; Node &gt; n1, std::weak_ptr&lt; Node &gt; n2)'],['../classLatticeGraph_1_1Edge.html#a43fb534754ac538db9a4b23895c48ecf',1,'LatticeGraph::Edge::Edge(std::weak_ptr&lt; Node &gt; n1, std::weak_ptr&lt; Node &gt; n2, int dir, double weight)']]],
-  ['element',['element',['../namespacevort.html#a2eaeae7eb94f43c9b73d7219c0206f19',1,'vort']]],
-  ['energy_5fangmom',['energy_angmom',['../split__op_8h.html#ac790342df44431d570ab0c8029a9b556',1,'split_op.h']]],
-  ['energy_5fcalc',['energy_calc',['../split__op_8h.html#a1c3d76341fa16b3ff2f54c43bbd04365',1,'split_op.h']]],
-  ['energy_5fkinetic',['energy_kinetic',['../namespaceobservables.html#a9564b1f5f3779e78da6c98ddd9ebabaf',1,'observables']]],
-  ['energy_5fpotential',['energy_potential',['../namespaceobservables.html#a97b52ea9a4be6c91b59b73717f63fbfd',1,'observables']]],
-  ['energy_5ftotal',['energy_total',['../namespaceen.html#ab43eea44aa8ad8a8ca1f9f4521e61a2d',1,'en.energy_total()'],['../namespaceobservables.html#a09d3b04aafa504101156d8053c42cc5e',1,'observables.energy_total()']]],
-  ['energycalc',['energyCalc',['../kernels_8h.html#a9d9b86f06eb672f2771758f22eb0a058',1,'kernels.h']]],
-  ['evaluate_5feqn_5fgpu',['evaluate_eqn_gpu',['../dynamic_8h.html#ae8c6476325296510881cd60308fa6600',1,'dynamic.h']]],
-  ['evolve',['evolve',['../evolution_8h.html#aaa34633fbbcfa10c0ffad3b0a741eb41',1,'evolution.h']]],
-  ['expec_5fval_5f',['expec_val_',['../namespaceobservables.html#ae413428c47d7f9b12fe38dd8da32ecfb',1,'observables']]],
-  ['expec_5fval_5fmonopole',['expec_val_monopole',['../namespaceobservables.html#af17849707b5d72bd22e2ee43df59524f',1,'observables']]],
-  ['expec_5fval_5fquadrupole',['expec_val_quadrupole',['../namespaceobservables.html#ac0f3c9c099bdbdc1c2535d8c6ba49b34',1,'observables']]],
-  ['expectvaluer',['expectValueR',['../namespaceen.html#abf7478f1cbb75b72f5b7ded05783a522',1,'en']]],
-  ['extract_5ffield',['extract_field',['../namespaceextract__gauge.html#a115d1fe02162f2d81f9e1b3b807882f1',1,'extract_gauge']]]
+  ['def_5fscene',['def_scene',['../namespacevisualize__3d.html#a578e40add1d143e089022a18ebc29335',1,'visualize_3d']]],
+  ['defcount',['DefCount',['../defect_triangulation_8m.html#a9ce1dfb2e0f4c2b5e31a1ed337f83005',1,'DefCount(ii+1, 5):&#160;defectTriangulation.m'],['../defect_triangulation_8m.html#adb90ce1e22720d0c55241bce69e50d08',1,'DefCount(ii+1, 7):&#160;defectTriangulation.m'],['../defect_triangulation_8m.html#a6247957961b91cf79dd6610fe3347d2b',1,'DefCount(ii+1, 3):&#160;defectTriangulation.m'],['../defect_triangulation_8m.html#aa3f589045ac2ce9d386f25c5d8361f8e',1,'DefCount(ii+1, 9):&#160;defectTriangulation.m'],['../defect_triangulation_8m.html#a06ae5cc61bebefc6399b21fb35bd2cdc',1,'DefCount(ii+1, 4):&#160;defectTriangulation.m'],['../defect_triangulation_8m.html#af1add4958637cb526abf2125480c92cc',1,'DefCount(ii+1, 8):&#160;defectTriangulation.m']]],
+  ['delaunay',['delaunay',['../namespacevis.html#a09a37fe3b03c745f0e5df23b89321310',1,'vis']]],
+  ['dens_5fstruct_5ffact',['dens_struct_fact',['../namespaceobservables.html#aaa97b964ee477b8878e096013d46915c',1,'observables']]],
+  ['destroyvortex',['destroyVortex',['../class_lattice_graph_1_1_lattice.html#a8daca4e579e46e2dca9d3949acbcc8a8',1,'LatticeGraph::Lattice']]],
+  ['dimsize',['dimSize',['../kin_spec_8m.html#a15b2d182ea9c276f40b6c6a4586d499c',1,'kinSpec.m']]],
+  ['dist',['dist',['../namespacevort.html#a678d501638156b7acae66aec086841d6',1,'vort']]],
+  ['dsval',['dsval',['../class_grid.html#a7098e9cc224fc64fdd8ed0080e3dfc83',1,'Grid']]],
+  ['dval',['dval',['../class_grid.html#a56967dfcae906b0dfa4624e6e5f064c8',1,'Grid']]]
 ];

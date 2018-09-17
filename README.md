@@ -1,4 +1,7 @@
-# GPUE-group.github.io
+<a href="https//github.com/gpue-grpu/gpue">
+<img src="/img/logo.png" width=320>
+</a>
+
 Documentation website for GPUE.
 If you are new to GPUE, please go to the [introduction](../intro/index.html) to learn what it's about!
 

@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['k',['K',['../namespaceen.html#ac39842aa41b29c5e232aa7babc55057c',1,'en.K()'],['../namespaceobservables.html#a53f12c3c5a4a4f672fda748d60e4167b',1,'observables.K()']]],
-  ['k_5fmag',['k_mag',['../namespaceobservables.html#af719a83fd64e32ebbe713ff8650724db',1,'observables']]],
-  ['kfn',['Kfn',['../classGrid.html#a02f8f414287acd3f62cf31e0f94c2e1f',1,'Grid']]],
-  ['km_5fmag',['km_mag',['../namespaceobservables.html#a0356df75894ff9f820434d1e2d6c87c4',1,'observables']]],
-  ['kmax',['kMax',['../namespaceobservables.html#a6ecb45c4e6c56b1ecc0ffc33c5cbe7da',1,'observables']]],
-  ['kx',['kx',['../namespaceobservables.html#a50217a000eb2351728c679c0ee62352b',1,'observables']]],
-  ['kxm',['kxm',['../namespaceobservables.html#a9940e24ec4e8c3b0ed43d1df4dd1a424',1,'observables']]],
-  ['ky',['ky',['../namespaceobservables.html#a9dfbaa141cc628729695a53e44cc6e34',1,'observables']]],
-  ['kym',['kym',['../namespaceobservables.html#ac4bd535198aed0753f49d0c0094f0ad5',1,'observables']]]
+  ['f',['f',['../load_vtx_8m.html#a633de4b0c14ca52ea2432a3c8a5c4c31',1,'loadVtx.m']]],
+  ['figure',['figure',['../_g_p_e__2d_8m.html#a391e34f2de441d79152a7b3d6e4c9c86',1,'figure():&#160;GPE_2d.m'],['../qu_kinetic_spec_8m.html#a525ba57b3456993e969940fab5f4603c',1,'figure():&#160;quKineticSpec.m']]],
+  ['fmt',['fmt',['../namespacevort.html#aac861bf31a93e2574d51ba3f007f9be4',1,'vort']]],
+  ['fontname',['FontName',['../defect_triangulation_8m.html#abe5b9926ba6a214d013879a16df3bb15',1,'FontName():&#160;defectTriangulation.m'],['../qu_kinetic_spec_8m.html#abe5b9926ba6a214d013879a16df3bb15',1,'FontName():&#160;quKineticSpec.m'],['../vel_field_8m.html#abe5b9926ba6a214d013879a16df3bb15',1,'FontName():&#160;velField.m'],['../_vtx_corr_8m.html#abe5b9926ba6a214d013879a16df3bb15',1,'FontName():&#160;VtxCorr.m']]],
+  ['fontsize',['FontSize',['../defect_triangulation_8m.html#a26c9644ed9b4dce4c397ff45ae009680',1,'FontSize():&#160;defectTriangulation.m'],['../qu_kinetic_spec_8m.html#a26c9644ed9b4dce4c397ff45ae009680',1,'FontSize():&#160;quKineticSpec.m'],['../vel_field_8m.html#a26c9644ed9b4dce4c397ff45ae009680',1,'FontSize():&#160;velField.m'],['../_vtx_corr_8m.html#a26c9644ed9b4dce4c397ff45ae009680',1,'FontSize():&#160;VtxCorr.m']]],
+  ['function',['function',['../bin_data_8m.html#a3deaa2f7b356df986f35569718b73fe9',1,'function():&#160;binData.m'],['../defect_triangulation_8m.html#a5b0a4dc901a7fb1838ef159827c28167',1,'function():&#160;defectTriangulation.m'],['../find_n_n_8m.html#a2c2537f4015d9242a1d753df721bf8ff',1,'function():&#160;findNN.m'],['../g6__struct_8m.html#a8ecfe664d31df82fb9f92c515f9939d7',1,'function():&#160;g6_struct.m'],['../get_angle_8m.html#a7d833a599531c1551d91a831009d3ba5',1,'function():&#160;getAngle.m'],['../kin_spec_8m.html#abcf043ec258138309b3fc229dae868dc',1,'function():&#160;kinSpec.m'],['../load_vtx_8m.html#a1d8c8987a5b4912641ee6bd0e7d259ea',1,'function():&#160;loadVtx.m'],['../psi6_8m.html#afc63a2928041e5c2078b4645a58ef750',1,'function():&#160;psi6.m'],['../psi6___d_t_8m.html#afc63a2928041e5c2078b4645a58ef750',1,'function():&#160;psi6_DT.m'],['../qu_kinetic_spec_8m.html#a741cc4686047d8b1ccfbc5e02baf02a3',1,'function():&#160;quKineticSpec.m'],['../uniq_pair_idx__precalc_8m.html#a575ac5f8900774bd240aeef56bba8334',1,'function():&#160;uniqPairIdx_precalc.m'],['../vel_field_8m.html#a2420833d971716e9bab41cc9fb3abba1',1,'function():&#160;velField.m'],['../voronoi2d_cell_colour_8m.html#a2510e0b16f762fa7f9f03174c6a11360',1,'function():&#160;voronoi2dCellColour.m'],['../_vtx_corr_8m.html#a2420833d971716e9bab41cc9fb3abba1',1,'function():&#160;VtxCorr.m'],['../vtx_trajectory_8m.html#a1d8c8987a5b4912641ee6bd0e7d259ea',1,'function():&#160;vtxTrajectory.m']]]
 ];

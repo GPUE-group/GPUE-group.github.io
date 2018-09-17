@@ -1,18 +1,14 @@
 var searchData=
 [
-  ['p',['p',['../namespacevis.html#a85c4a2037fbbd3b5a9f5e23357db002e',1,'vis']]],
-  ['par',['par',['../namespaceplot.html#a9cdb2ffa1d187dc071d990fe35035424',1,'plot']]],
-  ['param_5fast',['param_ast',['../classGrid.html#a14fbb05b7d4d5ab8ceaadffbe7d0f120',1,'Grid']]],
-  ['param_5fast_5fcpu',['param_ast_cpu',['../classGrid.html#aef465f70c749ff178a8f275031e5f4ca',1,'Grid']]],
-  ['param_5fbool',['param_bool',['../classGrid.html#a8c8da21f21d3bfc924c3fcd7683f9c85',1,'Grid']]],
-  ['param_5fdouble',['param_double',['../classGrid.html#a77f499bcbefd039e8a9d2c16b578b9f4',1,'Grid']]],
-  ['param_5fdstar',['param_dstar',['../classGrid.html#a8374bc95a5a57fade437eb9eec7d4d25',1,'Grid']]],
-  ['param_5fint',['param_int',['../classGrid.html#aa9f574addfd147ad9a00e23ab1af2e1f',1,'Grid']]],
-  ['param_5fstring',['param_string',['../classGrid.html#a1673fffaf893b8667112c0a4b42b3f0e',1,'Grid']]],
-  ['parser',['parser',['../namespaceplot.html#a317c6dde45ab87cc27da3754c5c0fac4',1,'plot']]],
-  ['pi',['PI',['../namespaceobservables.html#afd7e03e45b418a3ca52235a703da695a',1,'observables']]],
-  ['pos',['pos',['../namespacevort.html#a0e1e557e9568d9aa2870fabaffbdfc34',1,'vort']]],
-  ['pos_5fl',['pos_l',['../namespacevort.html#a44a42936183c9477183f8d9a5d97cabe',1,'vort']]],
-  ['prec',['prec',['../namespaceen.html#a335d0f2c45d4e0d98594299dcc38ae74',1,'en.prec()'],['../namespaceobservables.html#a246fef598817582e1b3fc238830ab4ac',1,'observables.prec()'],['../namespacevis.html#ac2a375bf8b2cbe75a691ea03e485dea6',1,'vis.prec()']]],
-  ['proc',['proc',['../namespacevis.html#a298c08ba27cd4b41e2b98cfc6badd447',1,'vis']]]
+  ['k',['k',['../defect_triangulation_8m.html#a8535a36cfbd724a91d7f02105866696d',1,'k():&#160;defectTriangulation.m'],['../namespaceen.html#ac39842aa41b29c5e232aa7babc55057c',1,'en.K()'],['../namespaceobservables.html#a53f12c3c5a4a4f672fda748d60e4167b',1,'observables.K()'],['../_g_p_e__2d_8m.html#a16e4ef534cec559430e07e05eb71c719',1,'K():&#160;GPE_2d.m']]],
+  ['k_5fmag',['k_mag',['../namespaceobservables.html#af719a83fd64e32ebbe713ff8650724db',1,'observables.k_mag()'],['../qu_kinetic_spec_8m.html#acd478893d7508c24a2e76f96e22c03ec',1,'k_mag():&#160;quKineticSpec.m']]],
+  ['kfn',['Kfn',['../class_grid.html#a02f8f414287acd3f62cf31e0f94c2e1f',1,'Grid']]],
+  ['kk',['kk',['../bin_data_8m.html#af29949bd63fb009eacab5efd11399e40',1,'kk():&#160;binData.m'],['../qu_kinetic_spec_8m.html#a748ebc850c1318dde98849bbcb38ea26',1,'kk():&#160;quKineticSpec.m']]],
+  ['km_5fmag',['km_mag',['../namespaceobservables.html#a0356df75894ff9f820434d1e2d6c87c4',1,'observables.km_mag()'],['../qu_kinetic_spec_8m.html#a3071393af4ed09dfdbb90676679be4b8',1,'km_mag():&#160;quKineticSpec.m']]],
+  ['kmax',['kMax',['../namespaceobservables.html#a6ecb45c4e6c56b1ecc0ffc33c5cbe7da',1,'observables.kMax()'],['../qu_kinetic_spec_8m.html#acb3331fe9e02f87b9b1209fc119f2fcf',1,'kMax():&#160;quKineticSpec.m']]],
+  ['kx',['kx',['../namespaceobservables.html#a50217a000eb2351728c679c0ee62352b',1,'observables.kx()'],['../qu_kinetic_spec_8m.html#a7d62e13f9dba56dfbd9a08101e6bfd77',1,'kx():&#160;quKineticSpec.m']]],
+  ['kxm',['kxm',['../namespaceobservables.html#a9940e24ec4e8c3b0ed43d1df4dd1a424',1,'observables']]],
+  ['kxmkym',['kxmkym',['../qu_kinetic_spec_8m.html#a18e375d9144c512388bb323bba4580c7',1,'quKineticSpec.m']]],
+  ['ky',['ky',['../namespaceobservables.html#a9dfbaa141cc628729695a53e44cc6e34',1,'observables.ky()'],['../qu_kinetic_spec_8m.html#ae83a3dfda6520a0fe8f0dc112b82bdbc',1,'ky():&#160;quKineticSpec.m']]],
+  ['kym',['kym',['../namespaceobservables.html#ac4bd535198aed0753f49d0c0094f0ad5',1,'observables']]]
 ];

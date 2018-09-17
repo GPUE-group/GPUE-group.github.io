@@ -1,7 +1,7 @@
-<map id="/Users/mlxd/Desktop/GPUE/include/node.h" name="/Users/mlxd/Desktop/GPUE/include/node.h">
-<area shape="rect" id="node2" href="$edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="164,97,344,141"/>
-<area shape="rect" id="node3" href="$lattice_8h.html" title="Class for treating vortices as a graph. " alt="" coords="188,189,374,233"/>
-<area shape="rect" id="node5" href="$init_8h.html" title="/Users/mlxd/Desktop\l/GPUE/include/init.h" alt="" coords="359,373,528,417"/>
-<area shape="rect" id="node6" href="$graphtest_8cc.html" title="/Users/mlxd/Desktop\l/GPUE/src/graphtest.cc" alt="" coords="5,281,194,325"/>
-<area shape="rect" id="node4" href="$evolution_8h.html" title="function for evolution. " alt="" coords="269,281,477,325"/>
+<map id="include/node.h" name="include/node.h">
+<area shape="rect" id="node2" href="$edge_8h.html" title="Class for creating edges between adjacent vortices in graph. " alt="" coords="129,80,235,107"/>
+<area shape="rect" id="node3" href="$lattice_8h.html" title="Class for treating vortices as a graph. " alt="" coords="152,155,265,181"/>
+<area shape="rect" id="node5" href="$init_8h.html" title="include/init.h" alt="" coords="265,304,360,331"/>
+<area shape="rect" id="node6" href="$graphtest_8cc.html" title="src/graphtest.cc" alt="" coords="5,229,121,256"/>
+<area shape="rect" id="node4" href="$evolution_8h.html" title="function for evolution. " alt="" coords="197,229,327,256"/>
 </map>

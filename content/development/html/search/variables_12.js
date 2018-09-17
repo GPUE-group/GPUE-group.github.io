@@ -1,6 +1,22 @@
 var searchData=
 [
-  ['uid',['uid',['../classLatticeGraph_1_1Edge.html#a30cafd945298cb0e79ac301a3df0f1f8',1,'LatticeGraph::Edge::uid()'],['../classLatticeGraph_1_1Node.html#a9d40ff6c263c1752f15ce5d70b1443ed',1,'LatticeGraph::Node::uid()'],['../classVtx_1_1Vortex.html#a1e779e07252ea70a169f1abd87f2c7e4',1,'Vtx::Vortex::uid()'],['../namespacevort.html#a59249b1e9af3390c94a0500200875327',1,'vort.uid()']]],
-  ['uid_5fc',['uid_c',['../namespacevort.html#acbf727735f7cc007a049e254766f7e39',1,'vort']]],
-  ['uid_5fp',['uid_p',['../namespacevort.html#a3ecba3af22e8090d6e6a51955b66dff5',1,'vort']]]
+  ['p',['p',['../namespacevis.html#a85c4a2037fbbd3b5a9f5e23357db002e',1,'vis.p()'],['../defect_triangulation_8m.html#af8af2d7f7db7405fdcb133a37f09fb74',1,'p():&#160;defectTriangulation.m'],['../_g_p_e__2d_8m.html#ac483f6ce851c9ecd9fb835ff7551737c',1,'p():&#160;GPE_2d.m']]],
+  ['p6cp6',['p6cp6',['../_vtx_corr_8m.html#a5afb16a734fa6b9c3a24dbc294f2f247',1,'VtxCorr.m']]],
+  ['par',['par',['../namespaceplot.html#a9cdb2ffa1d187dc071d990fe35035424',1,'plot']]],
+  ['parser',['parser',['../namespaceplot.html#a317c6dde45ab87cc27da3754c5c0fac4',1,'plot']]],
+  ['phase',['phase',['../qu_kinetic_spec_8m.html#a75dca23e1b25e1e03ef1fa5e6bcc9cb4',1,'phase():&#160;quKineticSpec.m'],['../vel_field_8m.html#a28c4273c03e5ee0a03efbb8f35665b31',1,'phase():&#160;velField.m']]],
+  ['pi',['PI',['../namespaceobservables.html#afd7e03e45b418a3ca52235a703da695a',1,'observables']]],
+  ['plot_5fvtx',['plot_vtx',['../namespacempi__vis.html#aa7aaf7eb7f4b87dde2c984461e8fbf85',1,'mpi_vis']]],
+  ['plots',['plots',['../_vtx_corr_8m.html#a9e1f222c969c57283e408cb96a446274',1,'VtxCorr.m']]],
+  ['points',['points',['../g6__struct_8m.html#aaebb51e681e53ccb16b9bd3d27306c10',1,'g6_struct.m']]],
+  ['pos',['pos',['../namespacevort.html#a0e1e557e9568d9aa2870fabaffbdfc34',1,'vort']]],
+  ['pos_5fl',['pos_l',['../namespacevort.html#a44a42936183c9477183f8d9a5d97cabe',1,'vort']]],
+  ['position',['position',['../_g_p_e__2d_8m.html#aaa5c1ff29d2a13542b02f459b3b4b693',1,'GPE_2d.m']]],
+  ['prec',['prec',['../namespaceen.html#a335d0f2c45d4e0d98594299dcc38ae74',1,'en.prec()'],['../namespacempi__vis.html#a0bee732364c5f2e4f39927af5e51a6dc',1,'mpi_vis.prec()'],['../namespaceobservables.html#a246fef598817582e1b3fc238830ab4ac',1,'observables.prec()'],['../namespacevis.html#ac2a375bf8b2cbe75a691ea03e485dea6',1,'vis.prec()']]],
+  ['printit',['printIt',['../_vtx_corr_8m.html#ad1f1724406d009e44539832319d8eab9',1,'VtxCorr.m']]],
+  ['proc',['proc',['../namespacevis.html#a298c08ba27cd4b41e2b98cfc6badd447',1,'vis']]],
+  ['psi6_5f1',['psi6_1',['../g6__struct_8m.html#a6f195db106c475976b02ba4ad5f63b89',1,'g6_struct.m']]],
+  ['psi6_5f2',['psi6_2',['../g6__struct_8m.html#a52823632bb02392dda4445dac14c14c0',1,'g6_struct.m']]],
+  ['psi6_5fpos',['psi6_pos',['../psi6_8m.html#a325201ec76c1eade2a3ea13da3d3ffd2',1,'psi6_pos():&#160;psi6.m'],['../psi6___d_t_8m.html#a325201ec76c1eade2a3ea13da3d3ffd2',1,'psi6_pos():&#160;psi6_DT.m']]],
+  ['psik',['Psik',['../qu_kinetic_spec_8m.html#a9ce611fc3afb8207d4fc5b77443ebc78',1,'quKineticSpec.m']]]
 ];

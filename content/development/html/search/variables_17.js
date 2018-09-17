@@ -1,5 +1,19 @@
 var searchData=
 [
-  ['z',['z',['../ds_8h.html#a2bde6fdec2850fdc495a25de1e3ab8e3',1,'pos::z()'],['../classGrid.html#ab88f44ca129fd51bc7e14fc779a8c8fd',1,'Grid::z()']]],
-  ['zp',['zp',['../classGrid.html#a63a492effdfb9b29508f40db847d508d',1,'Grid']]]
+  ['u',['U',['../_g_p_e__2d_8m.html#a81cf6107131a3583e2b0b762cb9c2862',1,'GPE_2d.m']]],
+  ['u_5fkx',['u_kx',['../qu_kinetic_spec_8m.html#abbca38cbc022d3a3a0c07ea950ac253b',1,'quKineticSpec.m']]],
+  ['u_5fky',['u_ky',['../qu_kinetic_spec_8m.html#af3c7c0a45fe989b1a23726122d324efe',1,'quKineticSpec.m']]],
+  ['u_5fx',['u_x',['../qu_kinetic_spec_8m.html#a6af455849a5a03c64dbbbaf07016b80f',1,'quKineticSpec.m']]],
+  ['u_5fy',['u_y',['../qu_kinetic_spec_8m.html#a59f65240b1ce3b898de4606f8aa6dc79',1,'quKineticSpec.m']]],
+  ['uc_5fkx',['uc_kx',['../qu_kinetic_spec_8m.html#a94387fc055b4b2f5615fa67c25faa7dd',1,'quKineticSpec.m']]],
+  ['uc_5fky',['uc_ky',['../qu_kinetic_spec_8m.html#ae64e254a0fcc69c6947bdd1be8d51de9',1,'quKineticSpec.m']]],
+  ['uc_5fx',['uc_x',['../qu_kinetic_spec_8m.html#a3529e7adf8458d01fd703b4132e431d2',1,'quKineticSpec.m']]],
+  ['uc_5fy',['uc_y',['../qu_kinetic_spec_8m.html#af80564c97233ccbe8ec2737b9883624d',1,'quKineticSpec.m']]],
+  ['ui_5fkx',['ui_kx',['../qu_kinetic_spec_8m.html#a83e4db142788ad0505863007a76bf292',1,'quKineticSpec.m']]],
+  ['ui_5fky',['ui_ky',['../qu_kinetic_spec_8m.html#a57ed7333e3ae202ec85678984f39f7a9',1,'quKineticSpec.m']]],
+  ['ui_5fx',['ui_x',['../qu_kinetic_spec_8m.html#ae6eb3602a810237362f0a5ae938bf430',1,'quKineticSpec.m']]],
+  ['ui_5fy',['ui_y',['../qu_kinetic_spec_8m.html#ab0400cc5c578f24c7475fbee2374e864',1,'quKineticSpec.m']]],
+  ['uid',['uid',['../class_lattice_graph_1_1_edge.html#a30cafd945298cb0e79ac301a3df0f1f8',1,'LatticeGraph::Edge::uid()'],['../class_lattice_graph_1_1_node.html#a9d40ff6c263c1752f15ce5d70b1443ed',1,'LatticeGraph::Node::uid()'],['../class_vtx_1_1_vortex.html#a1e779e07252ea70a169f1abd87f2c7e4',1,'Vtx::Vortex::uid()'],['../namespacevort.html#a59249b1e9af3390c94a0500200875327',1,'vort.uid()']]],
+  ['uid_5fc',['uid_c',['../namespacevort.html#acbf727735f7cc007a049e254766f7e39',1,'vort']]],
+  ['uid_5fp',['uid_p',['../namespacevort.html#a3ecba3af22e8090d6e6a51955b66dff5',1,'vort']]]
 ];

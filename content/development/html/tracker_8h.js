@@ -11,6 +11,5 @@ var tracker_8h =
     [ "vortCentre", "tracker_8h.html#ad66918be0f6b9a2c326c91277236bc4c", null ],
     [ "vortPos", "tracker_8h.html#a2c7ef48339c59ebcd5f71ca183c7c9a0", null ],
     [ "vortPosDelta", "tracker_8h.html#ada25462a0f3ae6637f9b808a7dd91969", null ],
-    [ "vortSepAvg", "tracker_8h.html#a4db5c846116f1bb288a46543f9b83581", null ],
-    [ "lsq", "tracker_8h.html#a071c70974bf0a593220fef0653c1d694", null ]
+    [ "vortSepAvg", "tracker_8h.html#a4db5c846116f1bb288a46543f9b83581", null ]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vortex',['Vortex',['../classVtx_1_1Vortex.html',1,'Vtx::Vortex'],['../namespacevort.html#classvort_1_1Vortex',1,'vort.Vortex']]],
-  ['vtxlist',['VtxList',['../namespacevort.html#classvort_1_1VtxList',1,'vort.VtxList'],['../classVtx_1_1VtxList.html',1,'Vtx::VtxList']]]
+  ['vortex',['Vortex',['../classvort_1_1_vortex.html',1,'vort.Vortex'],['../class_vtx_1_1_vortex.html',1,'Vtx::Vortex']]],
+  ['vtxlist',['VtxList',['../class_vtx_1_1_vtx_list.html',1,'Vtx::VtxList'],['../classvort_1_1_vtx_list.html',1,'vort.VtxList']]]
 ];
