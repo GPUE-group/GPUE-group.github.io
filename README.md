@@ -1,4 +1,4 @@
-<a href="https//github.com/gpue-grpu/gpue">
+<a href="https://github.com/gpue-group/gpue">
 <img src="/img/logo.png" width=320>
 </a>
 
