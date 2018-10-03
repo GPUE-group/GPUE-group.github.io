@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.46" />
+<meta name="generator" content="Hugo 0.49" />
 <title>Running GPUE :: GPUE</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -434,6 +434,48 @@ Otherwise, the flag&rsquo;s default will be <code>harmonic</code></li>
 All configuration files are expected to be in this directory.
 If the directory does not exist at the start of the simulation, GPUE will create the directory.</li>
 </ol>
+
+<h2 id="example-simulation">Example simulation</h2>
+
+<p>In addition to the <code>./gpue -u</code> command, the help menu recommends running the following command:</p>
+
+<pre><code>./gpue -x 512 -y 512 -g 50000 -e 1 -p 5000 -W -w 0.6 -n 1e5 -s -l -Z 100
+</code></pre>
+
+<p>Here, we will run a slightly modified version of this:</p>
+
+<pre><code>./gpue -x 512 -y 512 -g 50001 -e 1 -p 5000 -W -w 0.6 -n 1e5 -s -l -Z 100 -d data_2d_example
+</code></pre>
+
+<p>This will simulate a BEC in imaginary time influenced by a typical angular momentum field and will provide several quantized vortices.
+Here are the parameters of this simulation:</p>
+
+<ul>
+<li><code>-x 512 -y 512</code>: 512x512 resolution</li>
+<li><code>-g 50001</code>: 50001 imaginary time steps. Note that we start counting at 0, so adding the 1 guarantees evolving through the 50000th step</li>
+<li><code>-e 1</code>: 1 real time step.</li>
+<li><code>-p 5000</code>: printing to terminal every 5000 steps</li>
+<li><code>-W</code>: writing to file when printing to terminal</li>
+<li><code>-w 0.6</code>: rotational omega value of 0.6 (1 is the maximum)</li>
+<li><code>-n 1e5</code>: 100000 atoms</li>
+<li><code>-s</code>: using nonlinear Schr&ouml;dinger equation</li>
+<li><code>-l</code>: turning on angular momentum (gauge fields)</li>
+<li><code>-Z 100</code>: strongly confined in the Z direction with a trapping frequency of 100</li>
+<li><code>-d data_2d_example</code>: outputting data into the <code>data_2d_example</code> directory</li>
+</ul>
+
+<p>If more ground state evolution timesteps were requested by increasing the value after the <code>-g</code> flag, a triangular vortex lattice can be generated.</p>
+
+<p>The data can be plotted with the <code>plot.py</code> file in the <code>py/</code> directory with the following command:</p>
+
+<pre><code>python plot.py i wfc r 0 50000 5000 d data_2d_example
+</code></pre>
+
+<p>Here, we are plotting the wavefunction (<code>i wfc</code>) from 0 to 50,000 in steps of 5000 (<code>r 0 50000 5000</code>) in the <code>data_2d_example</code> directory (<code>d data_2d_example</code>).</p>
+
+<p>This will provide a series of images that should look something like this:</p>
+
+<p><img src="output.gif" alt="Gif of imaginary time evolution" /></p>
 
 
 

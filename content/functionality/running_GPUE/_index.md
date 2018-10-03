@@ -152,3 +152,46 @@ Otherwise, the flag's default will be `harmonic`
 5. `-d`: This flag will specify a data directory.
 All configuration files are expected to be in this directory.
 If the directory does not exist at the start of the simulation, GPUE will create the directory.
+
+## Example simulation
+
+In addition to the `./gpue -u` command, the help menu recommends running the following command:
+
+```
+./gpue -x 512 -y 512 -g 50000 -e 1 -p 5000 -W -w 0.6 -n 1e5 -s -l -Z 100
+```
+
+Here, we will run a slightly modified version of this:
+
+```
+./gpue -x 512 -y 512 -g 50001 -e 1 -p 5000 -W -w 0.6 -n 1e5 -s -l -Z 100 -d data_2d_example
+```
+
+This will simulate a BEC in imaginary time influenced by a typical angular momentum field and will provide several quantized vortices.
+Here are the parameters of this simulation:
+
+* `-x 512 -y 512`: 512x512 resolution
+* `-g 50001`: 50001 imaginary time steps. Note that we start counting at 0, so adding the 1 guarantees evolving through the 50000th step
+* `-e 1`: 1 real time step.
+* `-p 5000`: printing to terminal every 5000 steps
+* `-W`: writing to file when printing to terminal
+* `-w 0.6`: rotational omega value of 0.6 (1 is the maximum)
+* `-n 1e5`: 100000 atoms
+* `-s`: using nonlinear Schr&ouml;dinger equation
+* `-l`: turning on angular momentum (gauge fields)
+* `-Z 100`: strongly confined in the Z direction with a trapping frequency of 100
+* `-d data_2d_example`: outputting data into the `data_2d_example` directory
+
+If more ground state evolution timesteps were requested by increasing the value after the `-g` flag, a triangular vortex lattice can be generated.
+
+The data can be plotted with the `plot.py` file in the `py/` directory with the following command:
+
+```
+python plot.py i wfc r 0 50000 5000 d data_2d_example
+```
+
+Here, we are plotting the wavefunction (`i wfc`) from 0 to 50,000 in steps of 5000 (`r 0 50000 5000`) in the `data_2d_example` directory (`d data_2d_example`).
+
+This will provide a series of images that should look something like this:
+
+![Gif of imaginary time evolution](output.gif)
