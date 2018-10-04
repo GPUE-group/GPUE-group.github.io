@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"namespace_minions.html":[2,0,6],
 "namespace_tracker.html":[2,0,12],
 "namespace_vtx.html":[2,0,17],
 "namespace_vtx.html":[3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "qu_kinetic_spec_8m.html#a986785cf75733eb5890c93e15d776d02":[4,0,1,11,19],
 "qu_kinetic_spec_8m.html#a99235517efbd6cf65fb14a7e82bda246":[4,0,1,11,12],
 "qu_kinetic_spec_8m.html#a9ce611fc3afb8207d4fc5b77443ebc78":[4,0,1,11,57],
-"qu_kinetic_spec_8m.html#a9f2e54fb8e59340ff3fc2fe4eea2fd9e":[4,0,1,11,75],
-"qu_kinetic_spec_8m.html#aa560443f982cf1d3c073e836a003ba7a":[4,0,1,11,0]
+"qu_kinetic_spec_8m.html#a9f2e54fb8e59340ff3fc2fe4eea2fd9e":[4,0,1,11,75]
 };

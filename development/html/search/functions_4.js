@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cell',['cell',['../voronoi2d_cell_colour_8m.html#a4b1b90a420e80ba3a00c957ff150ea38',1,'voronoi2dCellColour.m']]],
+  ['check_5fmemory',['check_memory',['../init_8h.html#a94994a27abee273d74b603196ed71ae3',1,'init.h']]],
   ['clear',['clear',['../_g_p_e__2d_8m.html#a617d17276396a39b1f20468a5a81f959',1,'GPE_2d.m']]],
   ['cmult',['cMult',['../kernels_8h.html#a0680ab25dfa8874e0433b8f4029f7c69',1,'kernels.h']]],
   ['cmultdensity',['cMultDensity',['../kernels_8h.html#ab3b9cc488dcdf05e22253298cf0b3cd3',1,'kernels.h']]],

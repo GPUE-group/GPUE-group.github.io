@@ -84,8 +84,9 @@ var NAVTREEINDEX2 =
 "init_8cu.html":[4,0,3,6],
 "init_8cu_source.html":[4,0,3,6],
 "init_8h.html":[4,0,0,6],
-"init_8h.html#a277396e4c7d7c461b106efdc87a610e0":[4,0,0,6,1],
-"init_8h.html#aaa9d1f5752bac6c52792b906cc3a1fd0":[4,0,0,6,0],
+"init_8h.html#a277396e4c7d7c461b106efdc87a610e0":[4,0,0,6,2],
+"init_8h.html#a94994a27abee273d74b603196ed71ae3":[4,0,0,6,0],
+"init_8h.html#aaa9d1f5752bac6c52792b906cc3a1fd0":[4,0,0,6,1],
 "init_8h_source.html":[4,0,0,6],
 "kernels_8cu.html":[4,0,3,7],
 "kernels_8cu_source.html":[4,0,3,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "multigpu_8cu_source.html":[4,0,3,11],
 "namespace_file_i_o.html":[2,0,2],
 "namespace_lattice_graph.html":[3,0,0],
-"namespace_lattice_graph.html":[2,0,5],
-"namespace_minions.html":[2,0,6]
+"namespace_lattice_graph.html":[2,0,5]
 };

@@ -62,9 +62,9 @@ var NAVTREEINDEX =
 "_g_p_e__2d_8m.html",
 "class_vtx_1_1_vortex.html#a62568691c80f4652035d27936515cca3",
 "globals_func_p.html",
-"namespace_tracker.html",
-"qu_kinetic_spec_8m.html#aadd84b46ee6d2e3ae04d2920f4e78bfd",
-"vort_8py.html#a3ecba3af22e8090d6e6a51955b66dff5"
+"namespace_minions.html",
+"qu_kinetic_spec_8m.html#aa560443f982cf1d3c073e836a003ba7a",
+"vort_8py.html#a3d9176f380246129be8a11c6c69840a6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

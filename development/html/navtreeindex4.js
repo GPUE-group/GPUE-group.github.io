@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"qu_kinetic_spec_8m.html#aa560443f982cf1d3c073e836a003ba7a":[4,0,1,11,0],
 "qu_kinetic_spec_8m.html#aadd84b46ee6d2e3ae04d2920f4e78bfd":[4,0,1,11,33],
 "qu_kinetic_spec_8m.html#ab0400cc5c578f24c7475fbee2374e864":[4,0,1,11,73],
 "qu_kinetic_spec_8m.html#ab3166529a4238e35c6f204c25664abf4":[4,0,1,11,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "vort_8py.html#a32178cb077ec94ed9c655bb3b56e9210":[4,0,2,12,65],
 "vort_8py.html#a35e30d26b620c6a27772675b83810b02":[4,0,2,12,39],
 "vort_8py.html#a37d7947233d6b72f785082e627f3608c":[4,0,2,12,71],
-"vort_8py.html#a39ca6bbf4b91af143f9ed6cab7e5d3d0":[4,0,2,12,38],
-"vort_8py.html#a3d9176f380246129be8a11c6c69840a6":[4,0,2,12,11]
+"vort_8py.html#a39ca6bbf4b91af143f9ed6cab7e5d3d0":[4,0,2,12,38]
 };
