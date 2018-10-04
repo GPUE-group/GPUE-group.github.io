@@ -136,38 +136,7 @@ Variables</h2></td></tr>
 <tr class="memitem:aa0b5f525df40648b8de632107b546ff5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehist3d.html#aa0b5f525df40648b8de632107b546ff5">num_vort</a> = 0</td></tr>
 <tr class="separator:aa0b5f525df40648b8de632107b546ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">hist3d.py - GPUE: Split Operator based GPU solver for Nonlinear 
-Schrodinger Equation, Copyright (C) 2011-2015, Lee J. O'Riordan 
-&lt;loriordan@gmail.com&gt;, Tadhg Morgan, Neil Crowley. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without 
-modification, are permitted provided that the following conditions are 
-met:
-
-1. Redistributions of source code must retain the above copyright 
-notice, this list of conditions and the following disclaimer.
-
-2. Redistributions in binary form must reproduce the above copyright 
-notice, this list of conditions and the following disclaimer in the 
-documentation and/or other materials provided with the distribution.
-
-3. Neither the name of the copyright holder nor the names of its 
-contributors may be used to endorse or promote products derived from 
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
-PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
-HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
-TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a7025f5751fcff2a146ec280ffc1d36e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7025f5751fcff2a146ec280ffc1d36e3">&#9670;&nbsp;</a></span>plot_hist_pcolor()</h2>
 
@@ -206,8 +175,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00087">87</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">def </span><a class="code" href="namespacehist3d.html#a7025f5751fcff2a146ec280ffc1d36e3">plot_hist_pcolor</a>(start,fin,incr, barcolor):</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    fig = plt.figure()</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        </div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    data =[]</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(start, fin, incr):   </div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        v_arr=genfromtxt(<span class="stringliteral">&#39;vort_lsq_&#39;</span> + str(i) + <span class="stringliteral">&#39;.csv&#39;</span>,delimiter=<span class="stringliteral">&#39;,&#39;</span> )</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        datatmp=[]</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        count=0</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span> i1 <span class="keywordflow">in</span> range(0,v_arr.size/2):</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">for</span> i2 <span class="keywordflow">in</span> range(i1,v_arr.size/2):</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                m_tmp = m.sqrt(abs(v_arr[i1][0]*sep - v_arr[i2][0]*sep)**2  +  abs(v_arr[i1][1]*sep - v_arr[i2][1]*sep)**2 )</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                datatmp.append( m_tmp )</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                count = count + 1</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        hist=np.histogram(datatmp,bins=np.arange(0.0,240.0,0.1))</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        data.append(hist[:][0])</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="comment">#  print data</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        ax = fig.add_subplot(111)</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        ax.imshow(data)</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    plt.gca().invert_yaxis()</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        ax.set_aspect(<span class="stringliteral">&#39;auto&#39;</span>)</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">#        plt.jet()</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    fig.savefig(<span class="stringliteral">&quot;HIST_PCOLOR.pdf&quot;</span>)</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<div class="ttc" id="namespacehist3d_html_a7025f5751fcff2a146ec280ffc1d36e3"><div class="ttname"><a href="namespacehist3d.html#a7025f5751fcff2a146ec280ffc1d36e3">hist3d.plot_hist_pcolor</a></div><div class="ttdeci">def plot_hist_pcolor(start, fin, incr, barcolor)</div><div class="ttdef"><b>Definition:</b> <a href="hist3d_8py_source.html#l00087">hist3d.py:87</a></div></div>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00054">54</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">def </span><a class="code" href="namespacehist3d.html#a7025f5751fcff2a146ec280ffc1d36e3">plot_hist_pcolor</a>(start,fin,incr, barcolor):</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    fig = plt.figure()</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        </div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    data =[]</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(start, fin, incr):   </div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        v_arr=genfromtxt(<span class="stringliteral">&#39;vort_lsq_&#39;</span> + str(i) + <span class="stringliteral">&#39;.csv&#39;</span>,delimiter=<span class="stringliteral">&#39;,&#39;</span> )</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        datatmp=[]</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        count=0</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> i1 <span class="keywordflow">in</span> range(0,v_arr.size/2):</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">for</span> i2 <span class="keywordflow">in</span> range(i1,v_arr.size/2):</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                m_tmp = m.sqrt(abs(v_arr[i1][0]*sep - v_arr[i2][0]*sep)**2  +  abs(v_arr[i1][1]*sep - v_arr[i2][1]*sep)**2 )</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                datatmp.append( m_tmp )</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                count = count + 1</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        hist=np.histogram(datatmp,bins=np.arange(0.0,240.0,0.1))</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        data.append(hist[:][0])</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="comment">#  print data</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        ax = fig.add_subplot(111)</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        ax.imshow(data)</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    plt.gca().invert_yaxis()</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        ax.set_aspect(<span class="stringliteral">&#39;auto&#39;</span>)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">#        plt.jet()</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    fig.savefig(<span class="stringliteral">&quot;HIST_PCOLOR.pdf&quot;</span>)</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<div class="ttc" id="namespacehist3d_html_a7025f5751fcff2a146ec280ffc1d36e3"><div class="ttname"><a href="namespacehist3d.html#a7025f5751fcff2a146ec280ffc1d36e3">hist3d.plot_hist_pcolor</a></div><div class="ttdeci">def plot_hist_pcolor(start, fin, incr, barcolor)</div><div class="ttdef"><b>Definition:</b> <a href="hist3d_8py_source.html#l00054">hist3d.py:54</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,8 +218,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00057">57</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">def </span><a class="code" href="namespacehist3d.html#a558351d9b8943d1f430fc702a82671b0">plot_xyz_histogram</a>(start,fin,incr, barcolor):</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    fig = plt.figure()</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ax = Axes3D(fig)</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    data =[]</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(start, fin, incr):   </div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        v_arr=genfromtxt(<span class="stringliteral">&#39;vort_lsq_&#39;</span> + str(i) + <span class="stringliteral">&#39;.csv&#39;</span>,delimiter=<span class="stringliteral">&#39;,&#39;</span> )</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        datatmp=[]</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        count=0</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">for</span> i1 <span class="keywordflow">in</span> range(0,v_arr.size/2):</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">for</span> i2 <span class="keywordflow">in</span> range(i1,v_arr.size/2):</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                datatmp.append(m.sqrt( abs(v_arr[i1][0]*sep - v_arr[i2][0]*sep)**2  +  abs(v_arr[i1][1]*sep - v_arr[i2][1]*sep)**2 ))</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                count = count + 1</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        hist=np.histogram(datatmp,bins=np.arange(1.0,m.sqrt(xDim**2 + yDim**2),1.0))</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        data.append(hist[:][0])</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="stringliteral">&quot;&quot;&quot; Takes in a matrix (see structure above) and generate a pseudo-3D histogram by overlaying close, semitransparent bars. &quot;&quot;&quot;</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span> time, occurrence <span class="keywordflow">in</span> zip(range(len(data)), data):</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        dist = range(len(occurrence))</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        barband = range(-45, 45, 5)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">#for modifier in barband:</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        ax.bar(dist, occurrence, zs=time, zdir=<span class="stringliteral">&#39;y&#39;</span>, color=np.random.rand(3,1), alpha=0.8)</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="comment">#ax.bar(current, occurrence, zs=duration+(float(modifier)/100), zdir=&#39;y&#39;, color=np.random.rand(3,1), alpha=0.6)</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ax.set_xlabel(<span class="stringliteral">&#39;Dist&#39;</span>)</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ax.set_ylabel(<span class="stringliteral">&#39;Time&#39;</span>)</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    ax.set_zlabel(<span class="stringliteral">&#39;Occurrances&#39;</span>)</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    plt.savefig(<span class="stringliteral">&quot;HIST_N.pdf&quot;</span>)</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    plt.show()</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="ttc" id="namespacehist3d_html_a558351d9b8943d1f430fc702a82671b0"><div class="ttname"><a href="namespacehist3d.html#a558351d9b8943d1f430fc702a82671b0">hist3d.plot_xyz_histogram</a></div><div class="ttdeci">def plot_xyz_histogram(start, fin, incr, barcolor)</div><div class="ttdef"><b>Definition:</b> <a href="hist3d_8py_source.html#l00057">hist3d.py:57</a></div></div>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00024">24</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">def </span><a class="code" href="namespacehist3d.html#a558351d9b8943d1f430fc702a82671b0">plot_xyz_histogram</a>(start,fin,incr, barcolor):</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    fig = plt.figure()</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ax = Axes3D(fig)</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    data =[]</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(start, fin, incr):   </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        v_arr=genfromtxt(<span class="stringliteral">&#39;vort_lsq_&#39;</span> + str(i) + <span class="stringliteral">&#39;.csv&#39;</span>,delimiter=<span class="stringliteral">&#39;,&#39;</span> )</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        datatmp=[]</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        count=0</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">for</span> i1 <span class="keywordflow">in</span> range(0,v_arr.size/2):</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">for</span> i2 <span class="keywordflow">in</span> range(i1,v_arr.size/2):</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                datatmp.append(m.sqrt( abs(v_arr[i1][0]*sep - v_arr[i2][0]*sep)**2  +  abs(v_arr[i1][1]*sep - v_arr[i2][1]*sep)**2 ))</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                count = count + 1</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        hist=np.histogram(datatmp,bins=np.arange(1.0,m.sqrt(xDim**2 + yDim**2),1.0))</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        data.append(hist[:][0])</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="stringliteral">&quot;&quot;&quot; Takes in a matrix (see structure above) and generate a pseudo-3D histogram by overlaying close, semitransparent bars. &quot;&quot;&quot;</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> time, occurrence <span class="keywordflow">in</span> zip(range(len(data)), data):</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        dist = range(len(occurrence))</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        barband = range(-45, 45, 5)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">#for modifier in barband:</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        ax.bar(dist, occurrence, zs=time, zdir=<span class="stringliteral">&#39;y&#39;</span>, color=np.random.rand(3,1), alpha=0.8)</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="comment">#ax.bar(current, occurrence, zs=duration+(float(modifier)/100), zdir=&#39;y&#39;, color=np.random.rand(3,1), alpha=0.6)</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ax.set_xlabel(<span class="stringliteral">&#39;Dist&#39;</span>)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ax.set_ylabel(<span class="stringliteral">&#39;Time&#39;</span>)</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ax.set_zlabel(<span class="stringliteral">&#39;Occurrances&#39;</span>)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    plt.savefig(<span class="stringliteral">&quot;HIST_N.pdf&quot;</span>)</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    plt.show()</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="ttc" id="namespacehist3d_html_a558351d9b8943d1f430fc702a82671b0"><div class="ttname"><a href="namespacehist3d.html#a558351d9b8943d1f430fc702a82671b0">hist3d.plot_xyz_histogram</a></div><div class="ttdeci">def plot_xyz_histogram(start, fin, incr, barcolor)</div><div class="ttdef"><b>Definition:</b> <a href="hist3d_8py_source.html#l00024">hist3d.py:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -267,7 +236,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00041">41</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00008">8</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -283,7 +252,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00051">51</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00018">18</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -299,7 +268,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00050">50</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00017">17</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -315,7 +284,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00047">47</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00014">14</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -331,7 +300,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00046">46</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00013">13</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -347,7 +316,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00048">48</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00015">15</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -363,7 +332,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00054">54</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00021">21</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -379,7 +348,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00049">49</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00016">16</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -395,7 +364,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00044">44</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00011">11</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -411,7 +380,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00052">52</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00019">19</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -427,7 +396,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00045">45</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00012">12</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>
@@ -443,7 +412,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00053">53</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hist3d_8py_source.html#l00020">20</a> of file <a class="el" href="hist3d_8py_source.html">hist3d.py</a>.</p>
 
 </div>
 </div>

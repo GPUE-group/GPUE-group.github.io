@@ -2,7 +2,7 @@ var searchData=
 [
   ['off',['off',['../qu_kinetic_spec_8m.html#a14bc9643c2beb22fce5d8f540f16a40e',1,'off():&#160;quKineticSpec.m'],['../vel_field_8m.html#a835accca41274fb237599d9b3c117fcf',1,'off():&#160;velField.m']]],
   ['omega',['Omega',['../_g_p_e__2d_8m.html#a8e738aac44eedf7f0452a9e49bd9a3a7',1,'Omega():&#160;GPE_2d.m'],['../namespaceobservables.html#abc6fb4bb6aefd68915c966049474c9de',1,'observables.omega()']]],
-  ['omegax',['omegax',['../_g_p_e__2d_8m.html#aba2f324a99371ccffa79f2dca12a22de',1,'omegax():&#160;GPE_2d.m'],['../namespaceobservables.html#a8835948bd18ea6bad5e616421d260543',1,'observables.omegaX()']]],
+  ['omegax',['omegaX',['../namespaceobservables.html#a8835948bd18ea6bad5e616421d260543',1,'observables.omegaX()'],['../_g_p_e__2d_8m.html#aba2f324a99371ccffa79f2dca12a22de',1,'omegax():&#160;GPE_2d.m']]],
   ['omegay',['omegay',['../_g_p_e__2d_8m.html#a6bac9dea10b92d508f655993cce77c65',1,'GPE_2d.m']]],
   ['omegaz',['omegaz',['../_g_p_e__2d_8m.html#ade5e1213c5ef85c8a473f2d7f9824212',1,'omegaz():&#160;GPE_2d.m'],['../namespaceobservables.html#ad154c15474bdf8cd727894639b17e90c',1,'observables.omegaZ()']]],
   ['on',['on',['../defect_triangulation_8m.html#a58ab1fd68e97078232808206b850161b',1,'on():&#160;defectTriangulation.m'],['../voronoi2d_cell_colour_8m.html#a58ab1fd68e97078232808206b850161b',1,'on():&#160;voronoi2dCellColour.m'],['../_vtx_corr_8m.html#a6074b4a2d035a2066799d02511be68f6',1,'on():&#160;VtxCorr.m']]],
