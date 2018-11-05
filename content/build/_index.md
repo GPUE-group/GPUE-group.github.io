@@ -11,19 +11,32 @@ GPUE is designed with both a traditional Makefile and CMake, both of which may b
 
 ## Dependencies and Hardware
 
-We attempted to keep the dependency list small for GPUE, so we only require the following dependencies:
+We have attempted to maintain a small dependency list for GPUE, and so only require the following dependencies:
 
-1. CUDA (version $>=$ 7.5.18)
+1. CUDA (version $\geq$7.5.18)
 2. CUFFT (bundled with CUDA)
-3. GCC or clang
-4. CMake (version $>=$ 3.8; optional)
+3. GCC (version $\geq$4.9) or clang (version $\geq$3.9)
+4. CMake (version $\geq$3.8; optional)
 
 GPUE performs computation almost entirely on GPU hardware, and the `sm_2.0` (Fermi) to `sm_7.0` (Volta) architectures are all supported.
 A list of all cards within these ranges can be found [on wikipedia](https://en.wikipedia.org/wiki/CUDA#GPUs_supported).
 
-## Makefile
+## CMake
 
-Here a slightly modified GPUE Makefile:
+CMake is the preferred building system for GPUE; however, a CMake version $>=$ 3.8 must be used.
+In this case, run 
+
+```
+cmake .
+```
+
+in the primary GPUE directory and then run `make` as in the Makefile example.
+`make clean` will clean the directory for rebuilding.
+
+## Makefile
+If you wish to build without CMake, a sample makefile is provided that may 
+be modified to suit the CUDA paths on your test system. Here a slightly 
+modified GPUE Makefile:
 
 ```
 CUDA_HOME = /path/to/cuda/
@@ -39,7 +52,7 @@ CUDA_LIB        = $(CUDA_HOME)/lib64
 CUDA_HEADER     = $(CUDA_HOME)/include
 CC              = $(CUDA_HOME)/bin/nvcc --ptxas-options=-v --compiler-options -Wall
 CHOSTFLAGS      = #-fopenmp
-CFLAGS          = -g -O0 -std=c++11 -Xcompiler '-std=c++11' -Xcompiler '-fopenmp'
+CFLAGS          = -g -O3 -std=c++11 -Xcompiler '-std=c++11' -Xcompiler '-fopenmp'
 endif
 
 CUDA_FLAGS      = -lcufft
@@ -78,18 +91,6 @@ After this, simply `make` to build the code.
 If rebuilding is necessary, run `make clean` then `make`.
 
 If you are developing GPUE, this file will need to be modified as new code is developed.
-
-## CMake
-
-CMake is the preferred building system for GPUE; however, if a CMake version $>=$ 3.8 must be used.
-In this case, run 
-
-```
-cmake .
-```
-
-in the primary GPUE directory and then run `make` as in the Makefile example.
-`make clean` will clean the directory for rebuilding.
 
 ## Testing GPUE
 
