@@ -110,7 +110,7 @@ Docker environment, a local GPUE Docker image can be built using:
 
 After the build, the container may be run as
 ```bash
-docker run --runtime=nvidia --rm <IMAGE TAG> /gpue/gpue -u
+docker run --runtime=nvidia <IMAGE TAG> /gpue/gpue -u
 ```
 The provided GPUE path assumes it has been installed within the root (`/`) directory on the container.
 Additionally, an automated build is available for the latest changes of the GPUE source code using the Dockerhub
