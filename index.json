@@ -88,7 +88,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "\nDocumentation website for GPUE. If you are new to GPUE, please go to the introduction to learn what it\u0026rsquo;s about!\nIf you are having trouble building GPUE, please go the the building instructions.\nIf you would like to learn about what GPUE can do, please go to the functionality page\nAnd if you would like to begin developing for GPUE, please go to the development section.\nAll of these can be found in the navigational side-bar to the left.\n"
+	"content": "\nDocumentation website for GPUE. If you are new to GPUE, please go to the introduction to learn what it\u0026rsquo;s about!\nIf you are having trouble building GPUE, please go the the building instructions.\nIf you would like to learn about what GPUE can do, please go to the functionality page\nAnd if you would like to begin developing for GPUE, please go to the development section.\nAll of these can be found in the navigational side-bar to the left.\nAn overview of the GPUE can be found in our Journal of Open Source Software publication (pdf). If you use GPUE for your research, pelase let us know and cite us as:\n James Schloss and Lee James O\u0026rsquo;Riordan, GPUE: Graphics Processing Unit Gross\u0026ndash;Pitaevskii Equation solver. Journal of Open Source Software, 3(32), 1037 (2018), https://doi.org/10.21105/joss.01037  "
 },
 {
 	"uri": "https://gpue-group.github.io/build/gpue_build/",
