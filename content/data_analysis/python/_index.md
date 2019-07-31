@@ -17,12 +17,12 @@ If more advanced functions are required, please create these on your own or disc
 This file is a stand-alone plotting script for 2 dimensional data and can be run like so:
 
 ```
-python plot.py i wfc g 256 256 r 0 1000 100 d data
+python plot.py -i wfc -c 0 -r 0 1000 100 -f ../data/output.h5
 ```
 
-This will plot the wavefunction from imaginary-time evolution using a grid of 256x256 from values 0 to 1000 in steps of 100.
+This will plot the first wavefunction from imaginary-time evolution one the range [0, 1000] in steps of 100.
 Obviously, the code requires these data files to exist in the `data` directory before plotting.
-The script will default to plotting only a single 512x512 data file from the `data` directory if no gridsize, range, or directory is provided.
+The script will default to plotting the first imaginary-time wavefunction in the data/ directory, for a single frame
 
 All 2 dimensional variables can be plotted in this way.
 If real-time dynamics are desired, simply use the `wfc_ev` flag instead of `wfc`.

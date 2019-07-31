@@ -35,7 +35,6 @@
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
 
-
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
     <nav class="shortcuts">
@@ -80,21 +79,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/build/" class="dd-item alwaysopen haschildren
+    <li data-nav-id="/build/" class="dd-item alwaysopen
         ">
       <div>
-      <a href="/build/">Building GPUE</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/build/">Building GPUE</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
-        <ul>
-      <li data-nav-id="/build/gpue_build/" class="dd-item">
-        <div>
-          <a href="/build/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
     </li>
     <li data-nav-id="/functionality/" class="dd-item alwaysopen haschildren
         ">
@@ -127,13 +116,6 @@
       <a href="/functionality/dynamic_fields/">Dynamic Fields</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-      <li data-nav-id="/functionality/gpue_functionality/" class="dd-item">
-        <div>
-          <a href="/functionality/gpue_functionality/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/data_analysis/" class="dd-item alwaysopen haschildren
@@ -161,13 +143,6 @@
       <a href="/data_analysis/matlab/">Matlab Scripts</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-      <li data-nav-id="/data_analysis/gpue_build/" class="dd-item">
-        <div>
-          <a href="/data_analysis/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/development/" class="dd-item alwaysopen haschildren
@@ -177,13 +152,6 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/development/gpue_build/" class="dd-item">
-        <div>
-          <a href="/development/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/development/html/" class="dd-item">
         <div>
           <a href="/development/html/">
@@ -213,7 +181,6 @@
   
     <option value="/build/" >
    Building GPUE</option> 
-      <option value="/build/gpue_build/" >- </option>
   
     <option value="/functionality/" >
    GPUE functionality</option> 
@@ -233,7 +200,6 @@
   - 
    Dynamic Fields</option> 
   
-      <option value="/functionality/gpue_functionality/" >- </option>
   
     <option value="/data_analysis/" >
    Data analysis</option> 
@@ -249,11 +215,9 @@
   - 
    Matlab Scripts</option> 
   
-      <option value="/data_analysis/gpue_build/" >- </option>
   
     <option value="/development/" >
    Development</option> 
-      <option value="/development/gpue_build/" >- </option>
       <option value="/development/html/" >- </option>
   
 
@@ -315,7 +279,7 @@ Here, the GPE is shown in 1 dimension, but it can easily be extended to 2 or 3 d
 <p>From this equation, we can describe how superfluid BEC systems will behave in an experimental setting.
 As such, the Gross-Pitaevskii equation is a powerful tool that allows theoretical quantum physicists to better understand superfluid dynamics and explore areas like quantum turbulence in a straightforward computational system.</p>
 
-<p>Currently, there are standard software packages like <a href="http://gpelab.math.cnrs.fr/">GPELab</a> in Matlab or <a href="https://trotter-suzuki-mpi.readthedocs.io/en/stable/index.html">TrotterSuzuki</a> which uses GPU acceleration.
+<p>Currently, there are standard software packages like <a href="http://gpelab.math.cnrs.fr/">GPELab</a> in Matlab or <a href="https://trotter-suzuki-mpi.readthedocs.io/en/stable/index.html">TrotterSuzuki</a> which use GPU acceleration.
 These software packages are either too slow or too narrowly focused on other areas of superfluid simulations for simulating vortex dynamics quickly and efficiently.
 As such, we have designed GPUE to provide an experimentally realistic model of how a BEC could behave in superfluid turbulence simulations.</p>
 

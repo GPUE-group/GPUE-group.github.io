@@ -29,7 +29,7 @@ Here, the GPE is shown in 1 dimension, but it can easily be extended to 2 or 3 d
 From this equation, we can describe how superfluid BEC systems will behave in an experimental setting.
 As such, the Gross-Pitaevskii equation is a powerful tool that allows theoretical quantum physicists to better understand superfluid dynamics and explore areas like quantum turbulence in a straightforward computational system.
 
-Currently, there are standard software packages like [GPELab](http://gpelab.math.cnrs.fr/) in Matlab or [TrotterSuzuki](https://trotter-suzuki-mpi.readthedocs.io/en/stable/index.html) which uses GPU acceleration.
+Currently, there are standard software packages like [GPELab](http://gpelab.math.cnrs.fr/) in Matlab or [TrotterSuzuki](https://trotter-suzuki-mpi.readthedocs.io/en/stable/index.html) which use GPU acceleration.
 These software packages are either too slow or too narrowly focused on other areas of superfluid simulations for simulating vortex dynamics quickly and efficiently.
 As such, we have designed GPUE to provide an experimentally realistic model of how a BEC could behave in superfluid turbulence simulations.
 

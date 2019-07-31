@@ -69,11 +69,6 @@ This is useful for debugging in certain cases
 3. *Test:* This is used with the `./gpue -A test` flag.
 Here, we apply a constant field in $A_y$ and $A_z$ and provide a sinusoudal field in $A_x$.
 This is another testing field that does not use standard rotation.
-4. *File:* This is used with the `./gpue -A file` flag.
-Here, we read the fields in from file.
-This will naturally look for the fields in `data/Axgauge`, `data/Aygauge`, and `data/Azgauge`.
-If these files are not found, it will ask for an appropriate filename.
-If the file length does not match the dimensions of the system, it will also ask for a new file.
 
 To run the simulation with gauge fields, the `-l` flag is necessary and will turn on the part of the simulation with the additional FFT's for applying the necessary gauge field.
 *No gauge field will be applied without the `-l` flag!*

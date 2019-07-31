@@ -35,7 +35,6 @@
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
 
-
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
     <nav class="shortcuts">
@@ -80,21 +79,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/build/" class="dd-item alwaysopen haschildren
+    <li data-nav-id="/build/" class="dd-item alwaysopen
         ">
       <div>
-      <a href="/build/">Building GPUE</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/build/">Building GPUE</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
-        <ul>
-      <li data-nav-id="/build/gpue_build/" class="dd-item">
-        <div>
-          <a href="/build/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
     </li>
     <li data-nav-id="/functionality/" class="dd-item alwaysopen haschildren
         ">
@@ -127,13 +116,6 @@
       <a href="/functionality/dynamic_fields/">Dynamic Fields</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-      <li data-nav-id="/functionality/gpue_functionality/" class="dd-item">
-        <div>
-          <a href="/functionality/gpue_functionality/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/data_analysis/" class="dd-item parent alwaysopen haschildren
@@ -161,13 +143,6 @@
       <a href="/data_analysis/matlab/">Matlab Scripts</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-      <li data-nav-id="/data_analysis/gpue_build/" class="dd-item">
-        <div>
-          <a href="/data_analysis/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/development/" class="dd-item alwaysopen haschildren
@@ -177,13 +152,6 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/development/gpue_build/" class="dd-item">
-        <div>
-          <a href="/development/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/development/html/" class="dd-item">
         <div>
           <a href="/development/html/">
@@ -213,7 +181,6 @@
   
     <option value="/build/" >
    Building GPUE</option> 
-      <option value="/build/gpue_build/" >- </option>
   
     <option value="/functionality/" >
    GPUE functionality</option> 
@@ -233,27 +200,12 @@
   - 
    Dynamic Fields</option> 
   
-      <option value="/functionality/gpue_functionality/" >- </option>
   
     <option value="/data_analysis/" >
    Data analysis</option> 
-    <option value="/data_analysis/output/" >
-  - 
-   GPUE Output Format</option> 
-  
-    <option value="/data_analysis/python/"  selected>
-  - 
-   Python Scripts</option> 
-  
-    <option value="/data_analysis/matlab/" >
-  - 
-   Matlab Scripts</option> 
-  
-      <option value="/data_analysis/gpue_build/" >- </option>
   
     <option value="/development/" >
    Development</option> 
-      <option value="/development/gpue_build/" >- </option>
       <option value="/development/html/" >- </option>
   
 
@@ -296,12 +248,12 @@ If more advanced functions are required, please create these on your own or disc
 
 <p>This file is a stand-alone plotting script for 2 dimensional data and can be run like so:</p>
 
-<pre><code>python plot.py i wfc g 256 256 r 0 1000 100 d data
+<pre><code>python plot.py -i wfc -c 0 -r 0 1000 100 -f ../data/output.h5
 </code></pre>
 
-<p>This will plot the wavefunction from imaginary-time evolution using a grid of 256x256 from values 0 to 1000 in steps of 100.
+<p>This will plot the first wavefunction from imaginary-time evolution one the range [0, 1000] in steps of 100.
 Obviously, the code requires these data files to exist in the <code>data</code> directory before plotting.
-The script will default to plotting only a single 512x512 data file from the <code>data</code> directory if no gridsize, range, or directory is provided.</p>
+The script will default to plotting the first imaginary-time wavefunction in the data/ directory, for a single frame</p>
 
 <p>All 2 dimensional variables can be plotted in this way.
 If real-time dynamics are desired, simply use the <code>wfc_ev</code> flag instead of <code>wfc</code>.</p>

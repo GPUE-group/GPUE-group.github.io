@@ -5,6 +5,10 @@ weight = 3
 alwaysopen = true
 +++
 
+# Deprecated
+## Output format has changed, and the scripts have not been updated.
+## To use these scripts, checkout an older version of GPUE
+
 GPUE provides a number of MATLAB scripts in the `matlab/` directory.
 This page explains what each script is and its intended use. Please note that these scripts were verified to work under MATLAB r2016b, but have not been tested with newer releases. Some in-built function changes may require updating, but it is expected that most scripts work as standard. MATLAB development has ceased on this project, and any newer funcionality required should be performed in Julia, Python, or C++/CUDA directly.
 

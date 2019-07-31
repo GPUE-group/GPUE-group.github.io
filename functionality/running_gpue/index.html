@@ -35,7 +35,6 @@
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
 
-
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
     <nav class="shortcuts">
@@ -80,21 +79,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/build/" class="dd-item alwaysopen haschildren
+    <li data-nav-id="/build/" class="dd-item alwaysopen
         ">
       <div>
-      <a href="/build/">Building GPUE</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/build/">Building GPUE</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
-        <ul>
-      <li data-nav-id="/build/gpue_build/" class="dd-item">
-        <div>
-          <a href="/build/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
     </li>
     <li data-nav-id="/functionality/" class="dd-item parent alwaysopen haschildren
         ">
@@ -127,13 +116,6 @@
       <a href="/functionality/dynamic_fields/">Dynamic Fields</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-      <li data-nav-id="/functionality/gpue_functionality/" class="dd-item">
-        <div>
-          <a href="/functionality/gpue_functionality/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/data_analysis/" class="dd-item alwaysopen haschildren
@@ -161,13 +143,6 @@
       <a href="/data_analysis/matlab/">Matlab Scripts</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-      <li data-nav-id="/data_analysis/gpue_build/" class="dd-item">
-        <div>
-          <a href="/data_analysis/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/development/" class="dd-item alwaysopen haschildren
@@ -177,13 +152,6 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/development/gpue_build/" class="dd-item">
-        <div>
-          <a href="/development/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/development/html/" class="dd-item">
         <div>
           <a href="/development/html/">
@@ -213,7 +181,6 @@
   
     <option value="/build/" >
    Building GPUE</option> 
-      <option value="/build/gpue_build/" >- </option>
   
     <option value="/functionality/" >
    GPUE functionality</option> 
@@ -233,7 +200,6 @@
   - 
    Dynamic Fields</option> 
   
-      <option value="/functionality/gpue_functionality/" >- </option>
   
     <option value="/data_analysis/" >
    Data analysis</option> 
@@ -249,11 +215,9 @@
   - 
    Matlab Scripts</option> 
   
-      <option value="/data_analysis/gpue_build/" >- </option>
   
     <option value="/development/" >
    Development</option> 
-      <option value="/development/gpue_build/" >- </option>
       <option value="/development/html/" >- </option>
   
 
@@ -310,7 +274,7 @@ The easiest way to run GPUE is by using the provided help menu with the <code>./
 <li><em>Bessel Test:</em> this is a test of the polynomial approximation to the bessel functions used in the AST data structure</li>
 <li><em>Make Complex Test:</em> A test of the <code>make_complex</code> function that turns potentials into operators for evolution</li>
 <li><em>cMultPhi_test:</em> Test of the <code>cMultPhi</code> kernel for evolution with an imprinted Phi parameter
-10.*<em>Evolution Test:</em> Test of imaginary and real0time evolution in 1, 2, and 3 dimensions. This first runs the simulation in imaginary time to ensure the appropriate energy for a single particle in the ground state of an <em>n</em>-dimensional harmonic oscillator and then runs the simulation in real-time to ensure the energy does not vary from this value.</li>
+10.<em>Evolution Test:</em> Test of imaginary and real0time evolution in 1, 2, and 3 dimensions. This first runs the simulation in imaginary time to ensure the appropriate energy for a single particle in the ground state of an <em>n</em>-dimensional harmonic oscillator and then runs the simulation in real-time to ensure the energy does not vary from this value.</li>
 </ol>
 
 <p>These are all done with the <code>./gpue -u</code> command.
@@ -336,7 +300,9 @@ Options:
 -c 2            Set coords (1, 2, 3 dimensions)
 -D 0.0          Set's offset for kill (-K flag) distance radially
 -d data         Set data directory - where to store / read data (here in data/)
--E              Perform energy calculation every writing step
+-E 0.0001 123   Perform energy calculations, exit groundstate simulations early
+                    The calculation frequency defaults to printSteps.
+                    Otherwise the threshold and frequency must be given.
 -e 1            Set esteps, number of real-time evolution steps
 -f              Unset write to file flag
 -G 1            Set GammaY, ratio of omega_y to omega_x
@@ -345,33 +311,35 @@ Options:
 -h              Print help menu, exit GPUE
 -I &quot;param.cfg&quot;  Set Input parameter file
 -i 1            Set interaction strength between particles
--j 1            Set threshold multiplier for easier vortex detection 
+-j 1            Set threshold multiplier for easier vortex detection
 -J              Set cylindrical coordinate output for B-field (no letters)
--K 0            Selects vortex with specified ID to be 
+-K 0            Selects vortex with specified ID to be
                     killed/flipped/mutliply-charged
 -k 0            Set kick_it, kicking for Moire lattice simulations
                     0 = off, 1 = periodic kicking, 2 = single kick
 -L 0            Set l, vortex winding [2*pi*L]
 -l              Set ang_mom flag to use angular momentum
 -m              Set 2d_mask for vortex tracking
--n 1            Set N, number of particles in simulation
+-N 1            Set N, number of wavefunctions to simulate
+-n 1            Set n, number of particles in simulation
 -O 0            Set angle_sweep, kicking potential rotation angle
 -P 0            Set laser_power, strength of kicking [hbar * omega_perp]
 -p 100          Set printSteps, frequency of printing
 -Q 0            Set z0_shift, z shift of kicking potential (bad flag, I know)
--q 0            Set the vortex winding for imprinting/annihilation/flipping 
+-q 0            Set the vortex winding for imprinting/annihilation/flipping
                     during real-time. The value is the charge of the new vortex
 -R 1            Set ramping flag for imaginary time evolution
                     1 for ramping up, 0 for ramping down
--r              Set read_wfc to read wavefunction from file
+-r              Set read_wfc to continue simulation from file (data/output.h5)
+                    All flags will be the same, and only `-g` and `-e` flags can be set
 -S 0            Set sepMinEpsilon, kicking potential lattice spacing scaling
 -s              Set gpe, flag for using Gross-Pitaevskii Equation
 -T 1e-4         Set gdt, timestep for imaginary-time
 -t 1e-4         Set dt, timestep for real-time
--U 0            Set x0_shift, x shift of kicking potential, shift of the 
+-U 0            Set x0_shift, x shift of kicking potential, shift of the
                     imprinting vortex position defined by K and q
 -u              Performs all unit tests
--V 0            Set y0_shift, y shift of kicking potential, shift of the 
+-V 0            Set y0_shift, y shift of kicking potential, shift of the
                     imprinting vortex position defined by K and q
 -v              Set potential [beta]
 -W              Set write_it, flag to write to file
@@ -384,19 +352,19 @@ Options:
 -Z 6.283        Set omega_z, confinement in z-dimension
 -z 256          Set zDim, dimension in Z (power of 2, please!)
 
-
 Notes:
 
-- Parameters specified above represent the default values for the classic 
+- Parameters specified above represent the default values for the classic
   linear Schrodinger equation and may need to be modified to match your
   specific problem.
 
 - We use real units with an Rb87 condensate
 
 - You may generate a simple vortex lattice in 2d with the following command:
-  ./gpue -x 512 -y 512 -g 50000 -e 1 -p 5000 -W -w 0.5 -n 1e5 -s -l -Z 10
+  ./gpue -x 512 -y 512 -g 50000 -e 1 -p 5000 -W -w 0.6 -n 1e5 -s -l -Z 100
 
 - Thanks for using GPUE!
+
 </code></pre>
 
 <p>If you would like to search this for a particular flag, please use the <code>./gpue -H search_variable</code> command.
@@ -422,12 +390,9 @@ For example, if I wanted to change <code>omega_x</code> I might search for it li
 <p>There are several flags that need special consideration here:</p>
 
 <ol>
-<li><code>-r</code>: This flag will read in a wavefunction from file and will naturally look for it in the <code>data/wfc_load</code> and <code>data_wfci_load</code> files.
-If these files do not exist, GPUE will ask for appropriate filenames.
-If the file lengths do not match the dimensions of the simulation, it will ask for new filenames again.</li>
-<li><code>-A</code>: This flag will read in a gauge field, which can be <code>rotation</code>, <code>constant</code>, <code>test</code>, or <code>file</code>.
-If the gauge field is being read in from a file, it will look for the field in the <code>data/Axgauge</code>, <code>data/Aygauge</code>, and <code>data/Azgauge</code> files.
-If they do not exist or are of the wrong dimensions, GPUE will prompt for a new file.</li>
+<li><code>-r</code>: This flag will load and continue a simulation from a file, preserving all parameters specified initially.
+If the output file is not in the default location, you will be prompted to enter its path.</li>
+<li><code>-A</code>: This flag will read in a gauge field, which can be <code>rotation</code>, <code>constant</code>, or <code>test</code>.</li>
 <li><code>-v</code>: This flag is naturally set to be a harmonic oscillator, but can use the <code>torus</code> option in 3D.
 Otherwise, the flag&rsquo;s default will be <code>harmonic</code></li>
 <li><code>-I</code>: This flag will read in a configuration file for dynamic fields, which will be described later in the documentation</li>
@@ -469,10 +434,11 @@ Here are the parameters of this simulation:</p>
 
 <p>The data can be plotted with the <code>plot.py</code> file in the <code>py/</code> directory with the following command:</p>
 
-<pre><code>python plot.py i wfc r 0 50000 5000 d data_2d_example
+<pre><code>python plot.py -i wfc -c 0 -r 0 50000 5000 -f ../data_2d_example/output.h5
 </code></pre>
 
-<p>Here, we are plotting the wavefunction (<code>i wfc</code>) from 0 to 50,000 in steps of 5000 (<code>r 0 50000 5000</code>) in the <code>data_2d_example</code> directory (<code>d data_2d_example</code>).</p>
+<p>Here, we are plotting the first (<code>-c 0</code>) wavefunction (<code>-i wfc</code>) from 0 to 50,000 in steps of 5000 (<code>-r 0 50000 5000</code>) in the <code>data_2d_example</code> directory (<code>-f ../data_2d_example/output.h5</code>).
+Note that the <code>-i</code> and <code>-c</code> flags are extraneous here, as they are both set to their default values.</p>
 
 <p>This will provide a series of images that should look something like this:</p>
 

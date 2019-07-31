@@ -35,7 +35,6 @@
     <a class="baselink" href="https://gpue-group.github.io/">GPUE</a>
   
 
-
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
     <nav class="shortcuts">
@@ -80,21 +79,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/build/" class="dd-item alwaysopen haschildren
+    <li data-nav-id="/build/" class="dd-item alwaysopen
         ">
       <div>
-      <a href="/build/">Building GPUE</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/build/">Building GPUE</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
-        <ul>
-      <li data-nav-id="/build/gpue_build/" class="dd-item">
-        <div>
-          <a href="/build/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
     </li>
     <li data-nav-id="/functionality/" class="dd-item alwaysopen haschildren
         ">
@@ -127,13 +116,6 @@
       <a href="/functionality/dynamic_fields/">Dynamic Fields</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-      <li data-nav-id="/functionality/gpue_functionality/" class="dd-item">
-        <div>
-          <a href="/functionality/gpue_functionality/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/data_analysis/" class="dd-item parent alwaysopen haschildren
@@ -161,13 +143,6 @@
       <a href="/data_analysis/matlab/">Matlab Scripts</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
     </li>
-      <li data-nav-id="/data_analysis/gpue_build/" class="dd-item">
-        <div>
-          <a href="/data_analysis/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/development/" class="dd-item alwaysopen haschildren
@@ -177,13 +152,6 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/development/gpue_build/" class="dd-item">
-        <div>
-          <a href="/development/gpue_build/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/development/html/" class="dd-item">
         <div>
           <a href="/development/html/">
@@ -213,7 +181,6 @@
   
     <option value="/build/" >
    Building GPUE</option> 
-      <option value="/build/gpue_build/" >- </option>
   
     <option value="/functionality/" >
    GPUE functionality</option> 
@@ -233,7 +200,6 @@
   - 
    Dynamic Fields</option> 
   
-      <option value="/functionality/gpue_functionality/" >- </option>
   
     <option value="/data_analysis/" >
    Data analysis</option> 
@@ -249,11 +215,9 @@
   - 
    Matlab Scripts</option> 
   
-      <option value="/data_analysis/gpue_build/" >- </option>
   
     <option value="/development/" >
    Development</option> 
-      <option value="/development/gpue_build/" >- </option>
       <option value="/development/html/" >- </option>
   
 
@@ -285,119 +249,97 @@
 
 
 
-<p>GPUE outputs data in a simple ASCII format where all arrays have been re-indexed and output element-by-element in a 1 dimensional array.
-For 1 dimensional simulations, these values can be immediately plotted with separate plotters like gnuplot.
-For 2 and 3 dimensional simulations, a certain amount of data analysis is required; however, this should be straightforward depending on the application.</p>
+<p>GPUE outputs data via HDF5 in a single <code>output.h5</code> file containing simulation data and parameters.</p>
 
-<p>GPUE will automatically output the following files unless the <code>-f</code> flag is used:</p>
+<p>To output the wavefunction every printStep (<code>-p N</code>), set the <code>-W</code> flag.</p>
 
-<ol>
-<li>V_0: The potential of the first timestep</li>
-<li>K_0: The momentum-space components used in the split-operator method</li>
-<li>Ax_0, Ay_0, Az_0: The gauge field in the x, y, and z directions</li>
-<li>Bx_0, By_0, Bz_0: The magnetic field in the x, y, and z directions</li>
-</ol>
-
-<p>Note that if the <code>-J</code> flag is used, the magnetic fields will be output in polar coordinates.</p>
-
-<p>If the <code>-W</code> flag is used, the wavefunction will be output every printstep, which is set by the <code>-p</code> flag.
-For example:</p>
+<p>For example,</p>
 
 <pre><code>./gpue -e 1000 -W -p 100
 </code></pre>
 
-<p>will run GPUE in real-time for 1000 steps and output the wavefunction every timestep.
-In 2 dimensions, this will also output vortex tracking values and in 3 dimensions, this will output an additional <code>Edges_n</code> file, which is the sobel filter of the wavefunction density.
-The <code>Edges_n</code> file can be used for vortex highlighting in 3 dimensions.</p>
+<p>Will run GPUE in real-time for 1000 steps and output the wavefunction every 100 steps.</p>
 
-<p>The <code>-d</code> flag sets the data directory relative to the gpue executable.
-If the data directory does not exist, that directory will be created.</p>
+<p>The <code>-d</code> flag sets the data directory relative to the executor, and will create the given directory if it does not exist.
+This defaults to <code>data/</code></p>
 
-<h2 id="reshaping-arrays-for-usage-in-various-scripting-languages">Reshaping arrays for usage in various scripting languages</h2>
+<h2 id="reading-the-output-in-various-languages">Reading the output in various languages</h2>
 
-<p>If GPUE is run in 2 or 3 dimensions and it is necessary to analyze the data, it may be worthwhile to <code>reshape</code> the data.
-For example, in python, this might look like:</p>
+<p>The HDF5 output format can be read by many languages using their respective HDF5 bindings.
+Here we will look at how to read the data in Python and in Julia.</p>
 
-<pre><code>    data = data_dir + &quot;/&quot; + val
-    lines = np.loadtxt(data)
-    A = np.reshape(lines, (xDim,yDim,zDim));
-    return A
-</code></pre>
+<p>The following examples open the output file, and read the wavefunction and some of the simulation&rsquo;s attributes</p>
 
-<p>This will create a 3 dimensional array that can be read as <code>A[i,j,k]</code>.
-A simlar procedure must be done in 2 dimensions, simply dropping the <code>k</code> index and <code>zDim</code> from the array indexing and reshaping function, respectively.</p>
+<p>Python:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Import the hdf5 python binding</span>
+<span style="color:#f92672">import</span> <span style="color:#111">h5py</span>
 
-<h2 id="params-dat-file">Params.dat file</h2>
+<span style="color:#75715e"># Open the file in read-only mode</span>
+<span style="color:#111">f</span> <span style="color:#f92672">=</span> <span style="color:#111">h5py</span><span style="color:#f92672">.</span><span style="color:#111">File</span><span style="color:#111">(</span><span style="color:#d88200">&#34;data/output.h5&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;r&#34;</span><span style="color:#111">)</span>
 
-<p>GPUE holds many variables in an unordered map for usage within the code, itself.
-This allows us to keep a name associated with each variable for dynamic equation parsing and also allows us to output each variable into a single file for data analysis later.
-All of these variables can be found in the <code>Params.dat</code> file in the data directory.
-If the user needs a single variable for data analysis (such as <code>xDim</code> or <code>dx</code>), they can find it there.
-An example can be found here:</p>
+<span style="color:#75715e"># Load the wavefunction</span>
+<span style="color:#111">wfc_dataset</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#111">[</span><span style="color:#d88200">&#34;/WFC/CONST/0&#34;</span><span style="color:#111">]</span>
 
-<pre><code>[Params]
-dpz=125664
-sepMinEpsilon=0
-y0_shift=0
-a0z=7.62574e-06
-x0_shift=0
-dy=1.95313e-07
-fudge=1
-winding=0
-mask_2d=0.00015
-yMax=2.5e-05
-laser_power=0
-gdt=0.0001
-omegaX=6.283
-xMax=2.5e-05
-gammaY=1
-omega=1
-z0_shift=0
-omegaZ=6.283
-dpy=125664
-DX=0
-box_size=2.5e-05
-interaction=1
-thresh_const=1
-omegaY=6.283
-mass=1.44316e-25
-a_s=4.76e-09
-angle_sweep=0
-a0x=7.62574e-06
-a0y=7.62574e-06
-dpx=125664
-gDenConst=4.6095e-51
-dt=0.0001
-Rxy=0.36659
-zMax=2.5e-05
-pyMax=1.6085e+07
-pxMax=1.6085e+07
-pzMax=1.6085e+07
-dz=1.95313e-07
-dx=1.95313e-07
-plan_dim3=5
-plan_3d=6
-plan_other2d=2
-yDim=256
-kill_idx=-1
-gsteps=1
-esteps=1
-zDim=256
-plan_dim2=4
-plan_2d=1
-atoms=1
-xDim=256
-dimnum=3
-printSteps=100
-kick_it=0
-ramp_type=1
-gSize=16777216
-device=2
-charge=0
-result=0
-plan_1d=3
+<span style="color:#75715e"># Compose the dataset into a complex-valued numpy array</span>
+<span style="color:#111">wfc</span> <span style="color:#f92672">=</span> <span style="color:#111">wfc_dataset</span><span style="color:#111">[</span><span style="color:#d88200">&#34;re&#34;</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">wfc_dataset</span><span style="color:#111">[</span><span style="color:#d88200">&#34;im&#34;</span><span style="color:#111">]</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1j</span>
 
-</code></pre>
+<span style="color:#75715e"># Load the dimension parameters</span>
+<span style="color:#75715e"># Since default values are not stored on the output, pass a default into get</span>
+<span style="color:#111">wfc_num</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#f92672">.</span><span style="color:#111">attrs</span><span style="color:#f92672">.</span><span style="color:#111">get</span><span style="color:#111">(</span><span style="color:#d88200">&#34;wfc_num&#34;</span><span style="color:#111">,</span> <span style="color:#111">default</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#111">)</span>
+<span style="color:#111">xDim</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#f92672">.</span><span style="color:#111">attrs</span><span style="color:#f92672">.</span><span style="color:#111">get</span><span style="color:#111">(</span><span style="color:#d88200">&#34;xDim&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">256</span><span style="color:#111">)</span>
+<span style="color:#111">yDim</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#f92672">.</span><span style="color:#111">attrs</span><span style="color:#f92672">.</span><span style="color:#111">get</span><span style="color:#111">(</span><span style="color:#d88200">&#34;yDim&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">256</span><span style="color:#111">)</span>
+
+<span style="color:#75715e"># Compare the shape</span>
+<span style="color:#00a8c8">print</span><span style="color:#111">((</span><span style="color:#111">wfc_num</span><span style="color:#111">,</span> <span style="color:#111">xDim</span><span style="color:#111">,</span> <span style="color:#111">yDim</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#111">(</span><span style="color:#111">wfc</span><span style="color:#f92672">.</span><span style="color:#111">shape</span><span style="color:#111">))</span> <span style="color:#75715e"># True if wfc is 2D</span></code></pre></div>
+<p>Julia:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#75715e"># Import the hdf5 julia binding</span>
+<span style="color:#00a8c8">using</span> <span style="color:#111">HDF5</span>
+
+<span style="color:#75715e"># Open the file in read-only mode</span>
+<span style="color:#111">f</span> <span style="color:#f92672">=</span> <span style="color:#111">h5open</span><span style="color:#111">(</span><span style="color:#d88200">&#34;data/output.h5&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;r&#34;</span><span style="color:#111">)</span>
+
+<span style="color:#75715e"># Load the wavefunction dataset</span>
+<span style="color:#111">wfc_dataset</span> <span style="color:#f92672">=</span> <span style="color:#111">f</span><span style="color:#111">[</span><span style="color:#d88200">&#34;/WFC/CONST/0&#34;</span><span style="color:#111">]</span>
+
+<span style="color:#75715e"># Load the wavefunction as a flat array, since HDF5.jl doesn&#39;t support indexing on compositely typed datasets</span>
+<span style="color:#111">wfc_arr</span> <span style="color:#f92672">=</span> <span style="color:#111">read</span><span style="color:#111">(</span><span style="color:#111">f</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;/WFC/CONST/0&#34;</span><span style="color:#111">)</span>
+
+<span style="color:#75715e"># Convert the wavefunction array to complex numbers</span>
+<span style="color:#111">wfc_arr</span> <span style="color:#f92672">=</span> <span style="color:#111">map</span><span style="color:#111">(</span><span style="color:#111">x</span> <span style="color:#f92672">-&gt;</span> <span style="color:#111">x</span><span style="color:#f92672">.</span><span style="color:#111">data</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">x</span><span style="color:#f92672">.</span><span style="color:#111">data</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1</span><span style="color:#111">im</span><span style="color:#111">,</span> <span style="color:#111">wfc_arr</span><span style="color:#111">)</span>
+
+<span style="color:#75715e"># Reshape the wavefunction array to the correct dimensions</span>
+<span style="color:#111">wfc_arr</span> <span style="color:#f92672">=</span> <span style="color:#111">reshape</span><span style="color:#111">(</span><span style="color:#111">wfc_arr</span><span style="color:#111">,</span> <span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#111">w</span><span style="color:#111">))</span>
+
+
+<span style="color:#75715e"># Load the attributes on the file</span>
+<span style="color:#111">attr_obj</span> <span style="color:#f92672">=</span> <span style="color:#111">attrs</span><span style="color:#111">(</span><span style="color:#111">f</span><span style="color:#111">)</span>
+
+<span style="color:#75715e"># Load the dimension parameters</span>
+<span style="color:#75715e"># Since default values are not stored on the output, set defaults and check for attribute existence</span>
+<span style="color:#111">wfc_num</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+<span style="color:#111">xDim</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
+<span style="color:#111">yDim</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
+
+<span style="color:#75715e"># Load wfc_num</span>
+<span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">exists</span><span style="color:#111">(</span><span style="color:#111">attr_obj</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;wfc_num&#34;</span><span style="color:#111">))</span>
+  <span style="color:#111">wfc_num</span> <span style="color:#f92672">=</span> <span style="color:#111">read</span><span style="color:#111">(</span><span style="color:#111">attr_obj</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;wfc_num&#34;</span><span style="color:#111">)[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span>
+<span style="color:#00a8c8">end</span>
+
+<span style="color:#75715e"># Load xDim</span>
+<span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">exists</span><span style="color:#111">(</span><span style="color:#111">attr_obj</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;xDim&#34;</span><span style="color:#111">))</span>
+  <span style="color:#111">xDim</span> <span style="color:#f92672">=</span> <span style="color:#111">read</span><span style="color:#111">(</span><span style="color:#111">attr_obj</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;xDim&#34;</span><span style="color:#111">)[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span>
+<span style="color:#00a8c8">end</span>
+
+<span style="color:#75715e"># Load yDim</span>
+<span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">exists</span><span style="color:#111">(</span><span style="color:#111">attr_obj</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;yDim&#34;</span><span style="color:#111">))</span>
+  <span style="color:#111">yDim</span> <span style="color:#f92672">=</span> <span style="color:#111">read</span><span style="color:#111">(</span><span style="color:#111">attr_obj</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;yDim&#34;</span><span style="color:#111">)[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span>
+<span style="color:#00a8c8">end</span>
+
+<span style="color:#75715e"># Compare the shape</span>
+<span style="color:#75af00">@assert</span> <span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#111">wfc_arr</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#111">(</span><span style="color:#111">xDim</span><span style="color:#111">,</span> <span style="color:#111">yDim</span><span style="color:#111">,</span> <span style="color:#111">wfc_num</span><span style="color:#111">)</span></code></pre></div>
+<p>For more on hdf5 storage, see <a href="https://portal.hdfgroup.org/display/HDF5/Introduction+to+HDF5">the official documentation.</a></p>
+
+<p>The documentation for the HDF5 bindings are found here: <a href="http://docs.h5py.org/en/stable/">Python</a>, <a href="https://github.com/JuliaIO/HDF5.jl">Julia</a></p>
 
 
 
